@@ -670,9 +670,14 @@ a {
   .navbar-toggler {
     border: none;
     font-size: 1.1rem;
+    padding-right: 5px;
   }
-
-  .nav-item {
+ .navbar-toggler:focus {
+  text-decoration: none;
+    outline: 0;
+    box-shadow: none
+ }
+.nav-item {
     margin: 8px 0;
     text-align: right;
   }
@@ -760,6 +765,9 @@ a {
   .row > [class*="col-12"] {
     flex: 0 0 50%;
     max-width: 30%;
+  }
+  .navbar-nav , .login{
+    margin-right: 10px !important;
   }
 }
 
