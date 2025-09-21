@@ -1,4 +1,3 @@
-
 :root {
   --main-color: #7c3aed;
   --secondary-color: #ffbe0b;
@@ -40,26 +39,26 @@ body {
 
 .whatsappLink {
   background: #fff;
-  border-radius: 999px;          
-  padding: 0 2px;               
+  border-radius: 999px;
+  padding: 0 2px;
   transition: all 0.3s;
   text-decoration: none !important;
   display: flex;
-  align-items: center;          
-  height: 52px;                
-  overflow: hidden;            
+  align-items: center;
+  height: 52px;
+  overflow: hidden;
 }
 
 .whatsappBoxmob {
   background: #fff;
   border-radius: 999px;
-  padding: 6px 10px;        
+  padding: 6px 10px;
   transition: all 0.3s ease;
   display: flex;
   align-items: center;
-  max-width: 140px;        
-  height: auto;            
-  flex-shrink: 0;          
+  max-width: 140px;
+  height: auto;
+  flex-shrink: 0;
 }
 
 .whatsappIcons img {
@@ -73,9 +72,9 @@ body {
   line-height: 1.1;
   margin-left: 6px;
   color: #000;
-  overflow: hidden;       
-  text-overflow: ellipsis; 
-  white-space: nowrap;     
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .service-box-mob .line1,
@@ -91,7 +90,7 @@ body {
   height: 12px;
 }
 
-.whatsappIcons img{
+.whatsappIcons img {
   width: 28px;
   height: 28px;
 }
@@ -103,8 +102,8 @@ body {
 
 .service-box {
   font-size: 0.8rem;
-  line-height: 1.2;             
-  margin-left: 8px;              
+  line-height: 1.2;
+  margin-left: 8px;
 }
 
 .line1,
@@ -112,7 +111,7 @@ body {
   font-size: 0.7rem;
   color: #666;
   display: flex;
-  align-items: center;          
+  align-items: center;
 }
 
 .line1 img,
@@ -124,7 +123,7 @@ body {
 
 .whatsappNumber {
   font-size: 1rem;
-  line-height: 1.2;           
+  line-height: 1.2;
 }
 
 .lang {
@@ -175,8 +174,9 @@ body {
   color: var(--main-color);
   border: none;
   border-radius: 4px;
-  padding: 8px 20px;
-  font-weight: 500;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 1rem;
   transition: all 0.3s;
 }
 
@@ -190,8 +190,8 @@ body {
 }
 
 .rate img {
-  height: 36px;
-  width: 50px;
+  width: 41.3px;
+  height: auto;
 }
 
 .home .nav-tabs {
@@ -265,7 +265,7 @@ input {
   border: 0;
   outline: 0;
 }
-
+  
 flatpickr-day.selected,
 .flatpickr-day.startRange,
 .flatpickr-day.endRange,
@@ -288,6 +288,7 @@ flatpickr-day.selected,
 .flatpickr-months .flatpickr-prev-month svg,
 .flatpickr-months .flatpickr-next-month svg {
   fill: #7c3aed;
+  
 }
 
 .btnekam {
@@ -297,86 +298,12 @@ flatpickr-day.selected,
   outline: 0;
   border-radius: 8px;
 }
+/* flights */
 
-.list-group {
-  display: none;
-  padding: 5px;
-  max-height: 200px;
-  overflow: scroll;
-  transition: all 0.5s;
-  margin-top: 20px !important;
-}
 
-.list-group-item {
-  border: none;
-  transition: all 0.5s;
-}
 
-.list-group-item:hover {
-  background-color: var(--btn-color);
-  border-radius: 9px;
-}
 
-.nav-pills .nav-link {
-  color: #7c3aed;
-  border-radius: 12px;
-}
 
-.nav-pills .nav-link.active {
-  background-color: #7c3aed;
-}
-
-.contentTayran {
-  border: #7c3aed solid 4px;
-  border-radius: 12px;
-  padding: 4px;
-}
-
-.zahab-awda-box {
-  font-size: 10px;
-}
-
-.tayran-boxes {
-  border: 5px solid #efe5ff;
-  padding: 10px;
-  border-radius: 8px;
-}
-
-.zahab-awda-box::after {
-  content: url(../images/change.PNG);
-  text-align: center;
-  width: 41px;
-  height: 41px;
-  background-color: #efe5ff;
-  top: 50px;
-  left: 46px;
-  border-radius: 8px;
-  position: absolute;
-  cursor: pointer;
-}
-
-#travelList,
-#onewaytravelList,
-#onewayarriveList {
-  display: none;
-  padding: 5px;
-  max-height: 1000px;
-  overflow: hidden;
-  transition: all 0.5s;
-  margin-top: 20px !important;
-}
-
-.airport-list:hover {
-  border-radius: 0;
-}
-
-.airport-list {
-  font-size: 16px;
-}
-
-.dropdownpassengers li span {
-  font-size: 12px;
-}
 
 .mincebtn {
   width: 20px;
@@ -425,38 +352,12 @@ a {
   text-decoration: none;
 }
 
-.cities-content {
-  border-radius: 6px;
-  border: solid 3px var(--btn-color);
-}
 
-.arrive-box-cities,
-.leave-box-cities {
-  border: 4px solid var(--btn-color);
-  padding: 3px 10px;
-  border-radius: 9px;
-}
 
-.transferCities {
-  display: flex;
-  align-items: center;
-  border-radius: 5px;
-  font-size: 20px;
-  color: var(--btn-color);
-  cursor: pointer;
-}
 
-#citiesArriveList {
-  top: 100%;
-  z-index: 999;
-  width: 300px;
-  max-height: 200px;
-  overflow: scroll;
-}
 
-#addTrip {
-  cursor: pointer;
-}
+
+
 
 .btn-circle,
 .carousel-control-next,
@@ -588,9 +489,9 @@ a {
 }
 
 .card-img-top {
-  height: 96px;       
-  width: 100%;         
-  object-fit: cover;   
+  height: 96px;
+  width: 100%;
+  object-fit: cover;
 }
 
 .cards .cardss {
@@ -598,16 +499,16 @@ a {
 }
 
 .cards .cardss > div {
-  flex: 1; 
+  flex: 1;
 }
 
 #cardsContainer {
-  scrollbar-width: none;   
-  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 #cardsContainer::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
 .login-overlay {
@@ -621,7 +522,13 @@ a {
 }
 
 .jok {
-  background-image: linear-gradient(90deg, #FFF8E7 0%, #EAF9F8 33.33%, #DEEDFE 66.66%, #F3F1FE 100%);
+  background-image: linear-gradient(
+    90deg,
+    #fff8e7 0%,
+    #eaf9f8 33.33%,
+    #deedfe 66.66%,
+    #f3f1fe 100%
+  );
 }
 
 .login-overlay {
@@ -643,22 +550,22 @@ a {
 @media (max-width: 991.98px) {
   .navbar-collapse {
     width: 60%;
-           background-color: white;
-        padding: 20px;
-        padding-right: 2px;
-        margin-top: 15px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        position: absolute;
-        top: 53px;
-        right: 0;
-        z-index: 9999;
-        height: 100vh;
+    background-color: white;
+    padding: 20px;
+    padding-right: 2px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 53px;
+    right: 0;
+    z-index: 9999;
+    height: 100vh;
   }
-   
+
   .container {
     max-width: 100%;
   }
-  
+
   .whatsapp-link-desktop {
     display: none !important;
   }
@@ -672,12 +579,12 @@ a {
     font-size: 1.1rem;
     padding-right: 5px;
   }
- .navbar-toggler:focus {
-  text-decoration: none;
+  .navbar-toggler:focus {
+    text-decoration: none;
     outline: 0;
-    box-shadow: none
- }
-.nav-item {
+    box-shadow: none;
+  }
+  .nav-item {
     margin: 8px 0;
     text-align: right;
   }
@@ -695,25 +602,25 @@ a {
   .login button {
     width: 100%;
   }
-  
+
   .container {
     max-width: 100% !important;
   }
-  
+
   .navbar-collapse .nav-item {
     margin: 10px 0;
     text-align: right;
   }
-  
+
   .footer {
     display: flex;
   }
-  
-  .login-overlay{
+
+  .login-overlay {
     padding: 22px;
   }
-  
-  .login-overlay .container .row{
+
+  .login-overlay .container .row {
     justify-content: center;
     border-radius: 5px !important;
     height: 630px !important;
@@ -724,11 +631,10 @@ a {
   .container {
     max-width: 95% !important;
   }
-.hotels {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
-
-}
+  .hotels {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
   .card-img-top {
     height: 180px;
     object-fit: cover;
@@ -739,7 +645,7 @@ a {
   .container {
     max-width: 95% !important;
   }
-  
+
   .card-img-top {
     height: 180px;
     object-fit: cover;
@@ -766,7 +672,8 @@ a {
     flex: 0 0 50%;
     max-width: 30%;
   }
-  .navbar-nav , .login{
+  .navbar-nav,
+  .login {
     margin-right: 10px !important;
   }
 }
@@ -789,21 +696,21 @@ a {
   }
 
   .righSummer .col-md-4 {
-    flex: 0 0 95%; 
+    flex: 0 0 95%;
     scroll-snap-align: start;
   }
 
   .righSummer::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
-  
-  .righSummer img{
+
+  .righSummer img {
     height: 120px !important;
   }
 }
 
 .responsive-slider .col-lg-6 {
-  flex: 1 1 calc(50% - 10px); 
+  flex: 1 1 calc(50% - 10px);
 }
 
 @media (max-width: 768px) {
@@ -813,33 +720,33 @@ a {
     scroll-snap-type: x mandatory;
     margin-bottom: 0;
   }
-  
-  .responsive-slider .row{
+
+  .responsive-slider .row {
     margin-top: 0 !important;
   }
 
   .responsive-slider .col-lg-6 {
-    flex: 0 0 95%;      
+    flex: 0 0 95%;
     scroll-snap-align: start;
   }
 
   .responsive-slider::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 
   .responsive-slider img {
-    height: 150px !important; 
-    object-fit: cover; 
+    height: 150px !important;
+    object-fit: cover;
   }
-  
-  .card-body-mob img{
+
+  .card-body-mob img {
     display: none;
   }
 }
 
 @media (max-width: 768px) {
   .responsive-slider .card-body {
-    flex-direction: row;  
+    flex-direction: row;
     justify-content: center;
     align-items: flex-start;
     gap: 0px !important;
@@ -847,13 +754,12 @@ a {
   }
 }
 
-
 @media (min-width: 768px) and (max-width: 991px) {
   .responsive-slider {
     display: flex;
     flex-direction: column;
     gap: 0px;
-    overflow: visible !important;  
+    overflow: visible !important;
     scroll-snap-type: none !important;
     padding-top: 0 !important;
     margin-top: 0 !important;
@@ -874,12 +780,301 @@ a {
   }
 
   .responsive-slider > .col-lg-6 {
-    flex: 0 0 90%;   /* عرض الكارت */
+    flex: 0 0 90%; /* عرض الكارت */
     max-width: 90%;
     scroll-snap-align: start;
   }
 
   .responsive-slider::-webkit-scrollbar {
-    display: none; 
+    display: none;
   }
 }
+@media (min-width: 1600px) {
+  .home .booking {
+    max-width: 500px;
+  }
+  .navbar {
+    margin-right: 5%;
+  }
+
+  .container {
+    max-width: 1200px !important; /* أو 1320px حسب التصميم */
+    margin: 0 auto;
+  }
+  .login-overlay .container .row {
+    height: 50vh !important;
+  }
+  .login-overlay .container .row i {
+    right: 93%;
+    margin-top: 20px;
+  }
+}
+
+/* الفورم  */
+.ekama-form {
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 4px;
+}
+.ekama-form span{
+      font-size: 12px;
+    color: var(--main-color);
+    margin-bottom: 8px;
+    display: block;
+}
+.ekama-form input{
+      font-size: 13px;
+    border-radius: 0;
+    padding-right: 3px;
+    color: var(--main-color);
+    line-height: 18.5px;
+}
+.search-distnation{
+      background-color: #ffffff;
+    border-radius: 8px ;
+    color: var(var--main-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.chickout-content{
+      border-radius: 8px 6px !important;
+    background-color: #ffff !important;
+
+}
+.app-calender {
+  display: flex;
+  background-color: transparent;
+  border-radius: 0;
+    column-gap: 3.5px;
+}
+
+.chickin {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-right: none;             
+  border-radius: 8px 6px;
+  flex: 1;
+}
+
+.chickOut {
+  padding-right: 3px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px 8px;
+  flex: 1;
+}
+/* ليست الاقامة  */
+.distnation-list-group{
+  background-color: #fff;
+      position: absolute;
+     width: calc(100% + 19px);
+    right: -9px;
+    max-height: 50vh;
+    overflow: scroll;
+    border-radius: 6px;
+    z-index: 999;
+    box-shadow: 0 6px 6px #00000029;
+    display: none;
+}
+.distnation-list-group::-webkit-scrollbar {
+  width: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-thumb:hover {
+  background: #5b21b6;
+}
+.distnation-head{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.list-group-item{
+border: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+padding-block: 12px;
+    padding-inline: 6px 10px;}
+.list-group-item:hover{
+    background-color:#e5d6fe
+}
+/* /////////// */
+.flight-box .nav-pills .nav-link{
+  color: var(--main-color);
+}
+.flight-box .nav-pills .nav-link.active{
+ background-color:var(--main-color); 
+     border-radius: 12px 12px 0 0;
+     padding: 9px;
+     cursor: pointer;
+     position: relative;
+     z-index: 1;
+     color: #fff;
+}
+.flight-box .go-back-tap .nav-link.active::before{
+content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+    left: 0;
+    transform: translate(-100%);
+    box-shadow: 10px 0 0 var(--main-color)
+}
+.flight-box .go-only-tap .nav-link.active::before{
+content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+    left: 0;
+    transform: translate(-100%);
+    box-shadow: 10px 0 0 var(--main-color)
+}
+.flight-box .go-only-tap .nav-link.active::after{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+        right: 0;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color)
+}
+.go-back-form{
+  display: flex
+;
+    flex-direction: column;
+    border: 4px solid var(--main-color);
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -8px;
+}
+
+
+.flight-box .Multiple-cities-tap .nav-link.active::after{
+      content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+        right: 0;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color)
+}
+.flight-box .go-back-tap .nav-link.active::after{
+   content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -7px;
+   width: 6.1px;
+    height: 8px;
+    border-radius: 0px 0px 0px 0px;
+    right: -3.6px;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color);
+
+}
+
+.go-back-form::before{
+      content: "";
+    position: absolute;
+    inset: -4px;
+    border: 4px solid var(--main-color);
+    border-radius: 12px;
+    z-index: -1;
+        border-start-end-radius:4px
+}
+@media (max-width: 991px) { /* لحد التابلت والموبايل */
+  .flight-box .nav-pills {
+    margin-bottom: 0 !important;
+  }
+  .go-back-form {
+    margin-top: -15px !important;
+  }
+}
+@media (max-width: 991px) {
+  .go-back-form {
+    border-top: none !important;
+    border-radius: 0 0 10px 10px !important; /* بس الحواف من تحت */
+    margin-top: -5px !important;
+  }
+}
+/* ليست الطيران  */
+#flightList{
+  display: none;
+  cursor: pointer;
+}
+#arriveFlightList{
+  display: none;
+  cursor: pointer;
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  #arriveFlightList{
+    width: 100% !important;
+    max-width: 300px;
+    
+  }
+   #leaveMultibleCitiesList{
+    width: 100% !important;
+  }
+  }
+  @media(max-width: 991px) {
+  #arriveFlightList{
+    width: 100% !important;
+  }
+  #leaveMultibleCitiesList{
+    width: 100% !important;
+  }
+  #arrivesssMultibleCitiesList{
+    
+        width: 100%;
+    left: 0%;
+  }
+  }
+  /* ذهاب بس */
+  #goOnlyFLightList{
+    display: none;
+  }
+  #goOnlyArriveFlightList{
+    display: none;
+  }
+  #leaveMultibleCitiesList{
+    display: none;
+  }
+  #arrivesssMultibleCitiesList{
+    display: none;
+  }
+  .Add-Trip{
+    cursor: pointer;
+  }
