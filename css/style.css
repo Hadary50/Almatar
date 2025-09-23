@@ -402,11 +402,7 @@ a {
   border-radius: 0.5rem !important;
 }
 
-.sidebar {
-  position: fixed;
-  height: auto;
-  overflow: visible;
-}
+
 
 .my-box::-webkit-scrollbar {
   width: 3px;
@@ -652,13 +648,7 @@ a {
   }
 }
 
-@media (min-width: 768px) {
-  .sidebar {
-    position: sticky;
-    top: 0;
-    overflow-y: auto;
-  }
-}
+
 
 @media (max-width: 900.98px) {
   .row > [class*="col-12"] {
@@ -1078,3 +1068,21 @@ content: "";
   .Add-Trip{
     cursor: pointer;
   }
+  @media (max-width: 767px) {
+  .why-section, .cards {
+    display: block !important;
+  }
+}
+.sidebar {
+  position: relative;   
+  height: auto;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+  }
+}
