@@ -1,0 +1,3188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المطار - حجز تذاكر الطيران والإقامات</title>
+
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="">
+  <div class="login-overlay  justify-content-center  align-items-center">
+    <div class="container">
+      <div class="row vh-100 position-relative">
+
+        <div class="col-md-5 jok d-flex flex-column justify-content-between py-3">
+          <div>
+            <img src="images/gawwak-logo (1).png" alt="">
+          </div>
+
+          <div>
+            <h3>جوّك يعطيك أكثر</h3>
+            <span class="fs-5">برنامج ولاء يقرّب لك العالم ويعطيك نقاط مدى الحياة</span>
+          </div>
+
+          <div class="mt-auto text-center">
+            <img src="images/almatar_logo_ar.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-md-7 d-flex bg-white justify-content-center align-items-center flex-column ">
+          <div>
+            <h4>رقم الجوال</h4>
+            <p>أدخل رقم جوالك لتسجيل الدخول أو لإنشاء حساب جديد</p>
+          </div>
+          <div class="d-flex ">
+            <input type="text" class=" w-25 form-control" placeholder="+966">
+            <input type="text" class="py-3 w-100 form-control ms-1" placeholder="رقم الجوال *">
+          </div>
+          <div class="mt-4">
+            <span class="text-secondary">التسجيل أنت توافق على</span> <span class="main-color">الشروط والأحكام و سياسة
+              الخصوصية</span>
+          </div>
+          <button class="btn btn-secondary w-75 mt-2">
+            استمر
+          </button>
+        </div>
+
+        <div class="position-absolute mt-2" style="right:90%; " id="exitBtn">
+          <i class="fa-solid fa-circle-xmark fs-4 main-color"></i>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-------------- navbar section -------------->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary top-bar fixed-top">
+    <div class="container">
+      <div class="d-flex navbox align-items-center "> <a class="navbar-brand logo" href="#"> <img
+            src="images/almatar_logo_ar.png" alt="شعار المطار"> </a> 
+            <a href="#" class="mobile-whatsapp"> 
+ <div class="whatsappBoxmob">
+            <div class="whatsappIcons ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+            <div class="service-box-mob">
+               <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span> </div>
+            <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+            <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع"> <span>نرد في 8
+                ثواني</span> </div>
+            </div>
+          </div> 
+          
+        </a> 
+      </div> <button class="navbar-toggler" type="button"
+        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 " style="margin-right: 73px;">
+          <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">الإقامات</a> </li>
+          <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">طيران</a> </li>
+          <li class="nav-item"> <a class="nav-link active main-color d-flex m" aria-current="page" href="#"> <img
+                src="images/offer.png" alt="عروض"> عروض </a> </li>
+        </ul>
+         <a href="https://wa.me/966920005511" target="_blank"
+          class="whatsappLink whatsapp-link-desktop mx-3 d-flex text-decoration-none align-items-center">
+          <div class="whatsappBox">
+            <div class="whatsappIcon ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+          </div>
+          <div class="service-box">
+            <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span> </div>
+            <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+            <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع"> <span>نرد في 8
+                ثواني</span> </div>
+          </div>
+        </a>
+        <div class="d-flex align-items-center lang-and-currency">
+          <div class="lang px-2"> <img src="images/en.png" alt="English"> <span>English</span> </div>
+          <div class="dropdown me-2"> <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> SAR </button>
+            <ul class="dropdown-menu mt-2">
+              <li><button class="dropdown-item" type="button"><img src="images/sa_icon.png" alt=""> <span
+                    class="fw-semibold">SAR </span> <span>الريال السعودي</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/ae_icon.png" alt=""> <span
+                    class="fw-semibold">AED </span> <span>درهم اماراتي</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/bh_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> دينار بحريني</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/eu_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> اليورو الاوروبي </span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/kw_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الدينار الكويتي </span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/qa_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الريال القطري</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/us_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الدولار الامريكي </span></button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="login"> <button>تسجيل دخول</button> </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- -------------- home section ------------->
+  <section>
+    <div class="container home  ">
+      <div class="row">
+        <!-------------- السكشن اليمين------------ -->
+        <div class="col-md-5  mt-2  booking rounded-3 p-4 bg-white  ">
+          <!--------------- الجزء الثابت ف الحجز ---------- -->
+          <div>
+            <h4 class="main-color">المطار, يفهمك </h4>
+            <p class="fw-semibold"> حجز الفنادق ورحلات الطيران بأفضل الأسعار </p>
+          </div>
+          <div class="rate d-flex justify-content-center align-items-center"> <img src="images/score.png" alt="">
+            <p class="mt-2 fw-semibold">من أكثر من ربع مليون تقييم</p>
+          </div>
+          <!------------ الزرارين بتوع التنقل بين الافامات والطيران ------- -->
+          <ul class="nav nav-tabs d-flex justify-content-center flex-nowrap" id="myTab" role="tablist"> <button
+              class="nav-link   active" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+              type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="true">الإقامات</button> <button
+              class="nav-link " id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+              type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">الطيران</button>
+          </ul>
+          <div class="tab-content " id="myTabContent">
+            <!------------- محتوي الاقامة   ----------->
+            <div class="tab-pane py-4 ekama-content fade show active" id="profile-tab-pane" role="tabpanel"
+              aria-labelledby="profile-tab" tabindex="0" style="padding: 16px;">
+             <div class="ekama-form">
+              <div class="distnation-box ">
+                <div class="search-distnation ">
+                  <div class="search-items position-relative">
+                    <div>
+                      <span>وين تريد ان تقيم ؟</span>
+                    </div>
+                    <div>
+                      <input  id="distnationInput" type="text  " placeholder="ابحث عن مطعم او مدينة او منطقة او معلم"  class="w-100 text-black">
+                    </div>
+<!-- ليست الاقامة  -->
+ <ul class="list-group distnation-list-group p-3">
+    <h3 class="distnation-head">الأشهر</h3>
+  <li class="list-group-item distnatin-item px-3  ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">مانيلا</span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">الفلبين</span>
+    </div>
+  </li>
+    <li class="list-group-item px-3  distnatin-item ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">سنغافورا</span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">سنغافورا</span>
+    </div>
+  </li>
+   <li class="list-group-item px-3 distnatin-item ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">سرايفو</span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">البوسنة والهرسك</span>
+    </div>
+  </li>
+   <li class="list-group-item px-3 distnatin-item ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">اديس ابابا</span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">أثيبوبيا </span>
+    </div>
+  </li>
+   <li class="list-group-item px-3 distnatin-item ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">بيليس  </span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">جورجيا </span>
+    </div>
+  </li>
+     <li class="list-group-item px-3 distnatin-item ">
+    <div><i class="fa fa-solid fa-location-dot fs-5 main-color"></i></div>
+    <div class="ms-3">
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #1b1a1f ;">أثينا   </span>
+      <span class="mt-0 mb-0" style="font-size: 14px; font-weight: 400; color: #747583;">اليونان </span>
+    </div>
+  </li>
+
+</ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search-calender">
+                <div class="date-picker ">
+                  <div class="app-calender d-flex ">
+                    <div class="chickin col-md-6">
+                      <div class="chickin-content">
+                          <div>
+                            <span>موعد الوصول</span>
+                          </div>
+                          <div>
+                            <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="30-sep-2025">
+                          </div>
+                      </div>
+
+                    </div>
+                    <div class="chickOut col-md-6">
+                    <div class="chickout-content">
+                        <div>
+                        <span>موعد المغادرة</span>
+                      </div>
+                      <div>
+                            <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="30-oct-2025">
+                      </div>
+                    </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+             </div>
+
+              <div class="mt-3"> <span class=" fs-6">2 نزلاء</span> <span class=" fs-6">-</span> <span class=" fs-6">1
+                  غرفة</span> </div>
+              <div> <button class="w-100 btnekam py-3 mt-2"><a href="flights.html" target="_blank" class="text-white"> ابحث عن اقامة </a></button> </div>
+            </div>
+
+            <!------------- محتوى الطيران ----------->
+            <div class="tab-pane mt-3 fade flight-box" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+              tabindex="0">
+              <!---------------- البوتنس للتنقفل ف الطيران --------- -->
+              <ul class="nav nav-pills justify-content-between mb-2 flex-nowrap flight-form" id="pills-tab" role="tablist">
+                <li class="nav-item go-back-tap  " role="presentation"> <button class="nav-link active p-1 p-2 " id="pills-home-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                    aria-controls="pills-home" aria-selected="true">ذهاب وعودة</button> 
+                  </li>
+                <li class="nav-item go-only-tap" role="presentation"> <button class="nav-link p-1 p-2 " id="pills-profile-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                    aria-controls="pills-profile" aria-selected="false">ذهاب فقط</button> 
+                  </li>
+                <li class="nav-item Multiple-cities-tap" role="presentation"> <button class="nav-link p-1 p-2 " id="pills-contact-tab"
+                    data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab"
+                    aria-controls="pills-contact" aria-selected="false">مدن متعددة</button>
+                   </li>
+              </ul>
+
+              <div class="tab-content contentTayran p-3 go-back-form " id="pills-tabContent">
+               <!---------------- ذهاب وعودة بوكس----------- -->
+  <div class="tab-pane fade show active " id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+    <div class="ekama-form">
+      <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="text-black fw-medium">المغادرة من </span>
+            </div>
+            <div>
+              <input id="goBackLeaveInput" type="text" placeholder="Riyadh,Saudi Arabia , Saudi Arabia" class="fs-6 w-100 text-black">
+            </div>
+
+            <!-- ليست المطارات  -->
+            <ol class="list-group list-group shadow-lg" id="flightList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- ///////////////////////// -->
+      <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="text-black fw-medium">الوصول الي </span>
+            </div>
+            <div>
+              <input id="goBackarriveInput" type="text" placeholder="Riyadh,Saudi Arabia , Saudi Arabia" class="fs-6 w-100 text-black">
+            </div>
+
+            <!-- ليست المطارات  -->
+            <ol class="list-group list-group shadow-lg" id="arriveFlightList" style="width: 118%; z-index: 9999999;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////////////////// -->
+      <div class="search-calender">
+        <div class="date-picker ">
+          <div class="app-calender d-flex ">
+            <div class="chickin col-md-6">
+              <div class="chickin-content">
+                <div>
+                  <span>موعد الوصول</span>
+                </div>
+                <div>
+                  <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="30-sep-2025">
+                </div>
+              </div>
+            </div>
+            <div class="chickOut col-md-6">
+              <div class="chickout-content">
+                <div>
+                  <span>موعد المغادرة</span>
+                </div>
+                <div>
+                  <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="30-oct-2025">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="d-flex justify-content-around">
+                      <div class="dropdown"> <button class="btn bg-transparent dropdown-toggle" type="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"> <span class="fs-6" id="passengerNum">1</span>
+                          راكب </button>
+                        <!--------------  الركاب الدروب داون ---------- -->
+                        <ul class="dropdown-menu dropdownpassengers">
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">بالغ</span> <span class="text-secondary">(+ 12 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">أطفال</span> <span class="text-secondary">(12-2 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">رضيع بدون مقعد</span> <span class="text-secondary">(تحت 2
+                                سنوات)</span> </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--================= دروب داون الدرجات =========== -->
+                      <div class="dropdown"> <button id="dropdownBtn" class="btn text-black dropdown-toggle"
+                          type="button" data-bs-toggle="dropdown" aria-expanded="false"> درجة رجال الاعمال </button>
+                        <ul id="dropdownMenu" class="dropdown-menu">
+                          <li><a class="dropdown-item active" href="#">درجة رجال الاعمال</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة الاولي</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية المميزة</a></li>
+                        </ul>
+                      </div>
+                    </div>
+
+    
+ <button class="w-100 btnekam py-3 mt-2 rounded-4"><a href="flights.html"></a> بحث عن رحلات</button>
+  </div>
+  <!--================ الذهاب فقط طيران =========== -->
+  <div class="tab-pane fade zahab-awda-box position-relative" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+    <div class="ekama-form">
+      <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="text-black fw-medium">المغادرة من </span>
+            </div>
+            <div>
+              <input id="goOnlyInput" type="text" placeholder="Riyadh,Saudi Arabia , Saudi Arabia" class="fs-6 w-100 text-black">
+            </div>
+
+            <!-- ليست المطارات  -->
+            <ol class="list-group list-group shadow-lg" id="goOnlyFLightList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- ///////////////////////// -->
+      <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="text-black fw-medium">الوصول الي </span>
+            </div>
+            <div>
+              <input id="goOnlyArriveFlightInput" type="text" placeholder="Riyadh,Saudi Arabia , Saudi Arabia" class="fs-6 w-100 text-black">
+            </div>
+
+            <!-- ليست المطارات  -->
+            <ol class="list-group list-group shadow-lg" id="arriveFlightList" style="width: 118%; z-index: 9999999;">
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- /////////////////////////////// -->
+      <div class="search-calender">
+        <div class="date-picker ">
+          <div class="app-calender d-flex ">
+            <div class="chickin col-md-6">
+              <div class="chickin-content">
+                <div>
+                  <span>موعد الوصول</span>
+                </div>
+                <div>
+                  <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="30-sep-2025">
+                </div>
+              </div>
+            </div>
+            <div class="chickOut col-md-6">
+              <div class="chickout-content">
+                <div>
+                  <span class="f4">اضافة موعد للمغادرة</span>
+                </div>
+                <div>
+                  <input type="date" id="myDate" class="w-100 text-black" style="border-radius: 10px;" placeholder="اضافة موعد للمغادرة">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="d-flex justify-content-around">
+                      <div class="dropdown"> <button class="btn bg-transparent dropdown-toggle" type="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"> <span class="fs-6" id="passengerNum">1</span>
+                          راكب </button>
+                        <!--------------  الركاب الدروب داون ---------- -->
+                        <ul class="dropdown-menu dropdownpassengers" style="background-color: #1b1a1f;">
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">بالغ</span> <span class="text-secondary">(+ 12 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">أطفال</span> <span class="text-secondary">(12-2 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">رضيع بدون مقعد</span> <span class="text-secondary">(تحت 2
+                                سنوات)</span> </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--================= دروب داون الدرجات =========== -->
+                      <div class="dropdown"> <button id="dropdownBtn" class="btn text-black dropdown-toggle"
+                          type="button" data-bs-toggle="dropdown" aria-expanded="false"> درجة رجال الاعمال </button>
+                        <ul id="dropdownMenu" class="dropdown-menu">
+                          <li><a class="dropdown-item active" href="#">درجة رجال الاعمال</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة الاولي</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية المميزة</a></li>
+                        </ul>
+                      </div>
+                    </div>
+ <button class="w-100 btnekam py-3 mt-2 rounded-4"> بحث عن رحلات</button>
+  </div>
+  <!--============== مدن متعددة الطيران ================= -->
+  <div class="tab-pane fade " id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+<div>
+  <p>الرحلة 1</p>
+</div>
+<div class="ekama-form">
+   <div class="search-calender">
+        <div class="date-picker ">
+          <div class="app-calender d-flex " style="column-gap: 35px;">
+            <div class="chickin col-md-6">
+              <div class="chickin-content">
+                <div>
+                  <span class="text-black"> المغادرة من </span>
+                </div>
+                <div>
+                  <input type="text" id="leaveMultibleCitiesInput"  class="w-100 text-black" style="border-radius: 10px;" placeholder="">
+                </div>
+                 <ol class="list-group list-group shadow-lg position-absolute" id="leaveMultibleCitiesList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+              </div>
+            </div>
+            <div class="chickOut col-md-6">
+              <div class="chickout-content">
+                <div>
+                  <span class="text-black">الوصول الي </span>
+                </div>
+                <div>
+                  <input type="text" id="arrivesMultibleCitiesInput" class="w-100 text-black" style="border-radius: 10px;" placeholder="">
+                </div>
+                      <ol class="list-group list-group shadow-lg position-absolute" id="arrivesssMultibleCitiesList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="main-color fw-normal"> تاريخ المغادرة </span>
+            </div>
+            <div>
+              <input id="myDate" type="date" placeholder="" class="fs-6 w-100 text-black">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="mt-2">
+  <p>الرحلة 2</p>
+</div>
+<div class="ekama-form">
+   <div class="search-calender">
+        <div class="date-picker ">
+          <div class="app-calender d-flex " style="column-gap: 35px;">
+            <div class="chickin col-md-6">
+              <div class="chickin-content">
+                <div>
+                  <span class="text-black"> المغادرة من </span>
+                </div>
+                <div>
+                  <input type="text" id="leaveMultibleCitiesInput"  class="w-100 text-black" style="border-radius: 10px;" placeholder="">
+                </div>
+                 <ol class="list-group list-group shadow-lg position-absolute" id="leaveMultibleCitiesList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+              </div>
+            </div>
+            <div class="chickOut col-md-6">
+              <div class="chickout-content">
+                <div>
+                  <span class="text-black">الوصول الي </span>
+                </div>
+                <div>
+                  <input type="text" id="arrivesMultibleCitiesInput" class="w-100 text-black" style="border-radius: 10px;" placeholder="">
+                </div>
+                      <ol class="list-group list-group shadow-lg position-absolute" id="arrivesssMultibleCitiesList" style="width: 118%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="distnation-box ">
+        <div class="search-distnation ">
+          <div class="search-items ">
+            <div>
+              <span class="main-color fw-normal"> تاريخ المغادرة </span>
+            </div>
+            <div>
+              <input id="myDate" type="date" placeholder="" class="fs-6 w-100 text-black">
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<div class="p-2 d-flex align-items-center Add-Trip">
+  <i class="fa-solid fa-circle-plus main-color"></i>
+  <p class="mt-3 ms-2 main-color" style="font-size: 13px;">أضف رحلة أخرى
+( 6 رحلات بحد اقصى )</p>
+</div>
+  <div class="d-flex justify-content-around">
+                      <div class="dropdown"> <button class="btn bg-transparent dropdown-toggle" type="button"
+                          data-bs-toggle="dropdown" aria-expanded="false"> <span class="fs-6" id="passengerNum">1</span>
+                          راكب </button>
+                        <!--------------  الركاب الدروب داون ---------- -->
+                        <ul class="dropdown-menu dropdownpassengers">
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">بالغ</span> <span class="text-secondary">(+ 12 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">أطفال</span> <span class="text-secondary">(12-2 سنة)</span>
+                            </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                          <li class="d-flex justify-content-between">
+                            <div> <span class="fw-medium">رضيع بدون مقعد</span> <span class="text-secondary">(تحت 2
+                                سنوات)</span> </div>
+                            <div class="d-flex justify-content-between ">
+                              <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count"
+                                style="font-size: 15px;">1</span>
+                              <p class="plusBtn">+</p>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!--================= دروب داون الدرجات =========== -->
+                      <div class="dropdown"> <button id="dropdownBtn" class="btn text-black dropdown-toggle"
+                          type="button" data-bs-toggle="dropdown" aria-expanded="false"> درجة رجال الاعمال </button>
+                        <ul id="dropdownMenu" class="dropdown-menu">
+                          <li><a class="dropdown-item active" href="#">درجة رجال الاعمال</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة الاولي</a></li>
+                          <li><a class="dropdown-item" href="#">الدرجة السياحية المميزة</a></li>
+                        </ul>
+                      </div>
+                    </div>
+ <button class="w-100 btnekam py-3 mt-2 rounded-4"> بحث عن رحلات</button>
+
+  </div>
+</div>
+            </div>
+          </div>
+        </div>
+        <!--------------- السكشن الشمال--------- -->
+        <div class="col-md-7 rounded-3 py-3 px-3">
+          <div>
+            <a href="https://almatar.com/ar/travel-offers/689e660c4cf67a7722a6fb91/"> <img
+                src="images/eGpBWWwxekMX1GRwJEGOhcgdPMOEhRX2vzUMinQr.jpg" class="w-100 rounded-3" alt="">
+            </a>
+
+          </div>
+          <!-- slider offers -->
+
+          <div id="multiItemCarousel" class="carousel mt-3 slide" data-bs-ride="carousel">
+            <div class="d-flex justify-content-between align-items-center">
+  <div>
+    <p class="fw-semibold main-color m-0" style="font-size: 1.3rem;">عروض رهيبة ومميزات كثيرة</p>
+  </div>
+
+  <div class="d-flex gap-2">
+    
+    <button class="position-relative carousel-control-next" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="next">
+      <span class="d-flex justify-content-center align-items-center  rounded-circle" style="width:40px;height:40px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M4.646 14.354a.5.5 0 0 1 0-.708L10.293 8 4.646 2.354a.5.5 0 1 1 .708-.708l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708 0"/>
+        </svg>
+      </span>
+    </button>
+    <button class="position-relative carousel-control-prev" type="button" data-bs-target="#multiItemCarousel" data-bs-slide="prev">
+      <span class="d-flex justify-content-center align-items-center  rounded-circle" style="width:40px;height:40px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M11.354 14.354a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 1 1 .708.708L5.707 8l5.647 5.646a.5.5 0 0 1 0 .708"/>
+        </svg>
+      </span>
+    </button>
+
+  </div>
+</div>
+
+            <div class="carousel-inner mt-2">
+              <div class="carousel-item active">
+                <div class="d-flex px-2 rounded-2">
+
+                  <a href="https://almatar.com/ar/travel-offers/689b5d0776ef34f6928c8eee/" class="mx-2"
+                    style="flex:0 0 auto; width:45%;">
+                    <img src="images/carsoul/14.png" class="rounded-3 w-100" alt="...">
+                  </a>
+
+                  <a href="https://almatar.com/ar/travel-offers/685ad031ff99f594f10192c2/" class="mx-2"
+                    style="flex:0 0 auto; width:45%;">
+                    <img src="images/carsoul/9.png" class="rounded-3 w-100" alt="...">
+                  </a>
+
+                  <a href="https://almatar.com/ar/travel-offers/68a5d213983c0fcdcaf9708b/" class="mx-2"
+                    style="flex:0 0 auto; width:45%;">
+                    <img src="images/carsoul/3.png" class="rounded-3 w-100" alt="...">
+                  </a>
+
+                  <a href="https://almatar.com/ar/travel-offers/68a5d213983c0fcdcaf9708b/" class="mx-2"
+                    style="flex:0 0 auto;width:45%;">
+                    <img src="images/carsoul/3.png" class="rounded-3 w-100" alt="...">
+                  </a>
+
+                  <a href="https://almatar.com/ar/travel-offers/688b105a257789859f0b74d2/" class="mx-2"
+                    style="flex:0 0 auto; width:45%;">
+                    <img src="images/carsoul/4.png" class="rounded-3 w-100" alt="...">
+                  </a>
+
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="d-flex ">
+                  <a href="https://almatar.com/ar/travel-offers/677c08cb749ddc43460ce0c2/" class="mx-2"
+                    style="flex:0 0 auto; width: 45%;">
+                    <img src="images/carsoul/7.jpg " class="rounded-3 img-fluid mx-2 w-100" alt="...">
+                  </a>
+                  <a href="https://almatar.com/ar/travel-offers/677c08cb749ddc43460ce0c2/" class="mx-2"
+                    style="flex:0 0 auto; width: 45%;">
+
+                    <img src="images/carsoul/8.png" class="rounded-3 img-fluid mx-2  w-100" alt="...">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="mt-4">
+              <a href="https://apps.apple.com/us/app/almatar-book-travel-save/id1440595039?mt=8" class="w-100">
+
+                <img src="images/banner-desktop-ar.png " class="w-100" alt="">
+              </a>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="container">
+
+      <div class="row justify-content-center">
+        <div class="col-md-5  sidebar ">
+          <div class="mt-3 ">
+            <a href="https://almatar.com/ar/travel-offers/689e660c4cf67a7722a6fb91/">
+              <img class="w-100 rounded-3 " src="images/ZS7ikNNyDbcP9WZRpuZCBWOaZ3Ad1QH69Jkl3rlo.png" alt="">
+            </a>
+          </div>
+          <div class="why  mt-4">
+            <p class="main-color fs-5 fw-bold ">ليش المطار محل ثقة ؟</p>
+            <div class="row g-3 cards">
+              <div class="col-lg-6 cardss h-100">
+                <div class="d-flex shadow-sm bg-white justify-content-between align-items-center p-2 rounded-4 px-3">
+                  <div>
+                    <p class="main-color mb-0 h-100">+250M</p>
+                    <p class="main-color">كل من اختارنا في 2024</p>
+                  </div>
+                  <div>
+                    <img src="images/saved-by-booking.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 cardss ">
+                <div
+                  class="d-flex shadow-sm bg-white p-2 justify-content-between align-items-center p-2 rounded-4 px-3">
+                  <div>
+                    <p class="main-color mb-0 h-100">91% كانوا راضين</p>
+                    <p class="main-color">ويكررون تجربتهم معنا</p>
+                  </div>
+                  <div>
+                    <img src="images/choosing-us.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 cardss ">
+                <div
+                  class="d-flex shadow-sm bg-white p-2 align-items-center justify-content-between p-2 rounded-4 px-3">
+                  <div>
+                    <p class="main-color mb-0 h-100">3M+ يثقون في </p>
+                    <p class="main-color"> المطار</p>
+                  </div>
+                  <div>
+                    <img src="images/trusted.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 cardss ">
+                <div
+                  class="d-flex shadow-sm bg-white p-2 align-items-center justify-content-between p-2 rounded-4 px-3">
+                  <div>
+                    <p class="main-color mb-0">الخيارات واسعة!
+                      2M+ فندق</p>
+                    <p class="main-color"> و500 خطوط طيران</p>
+                  </div>
+                  <div>
+                    <img src="images/plenty-of-choices.png" class="w-100" alt="">
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+
+          </div>
+        </div>
+       <div class="col-md-7 position-relative  my-box" style="max-height: 700px; overflow-y: scroll;">
+  <h3 class="main-color mb-2">اهرب من الحر</h3>
+  <span class="text-secondary">تحقق من الرحلات الجوية الرخيصة مع أكثر من 500 شركة طيران</span>
+
+  <!-- =====================cards================ -->
+  <div class="row mt-2 g-2 responsive-slider">
+
+    <div class="col-lg-6">
+      <a class="text-decoration-none" href="#" target="_blank">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/f22b3778-ca35-42c6-98ba-240452b24535.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <div class=" d-flex flex-column card-body-mob">
+                  <h5 class="card-title">أبها</h5>
+                  <span class="card-text main-color fw-medium">السعودية</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/SV.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">364 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Salalah.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">صلالة</h5>
+                  <span class="card-text">عمان</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/XY.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1106 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5  card-cities">
+              <img src="images/588607_Trabzon.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">طرابزون</h5>
+                  <span class="card-text">تركيا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/SV.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1845 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Rize.jpg" class="img-fluid rounded-start h-100 " alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">مقاطعة ريزا</h5>
+                  <span class="card-text">تركيا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/XY.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1378 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Batumi.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">باتومي</h5>
+                  <span class="card-text main-color fw-medium">جورجيا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/SV.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1508 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/1200x630_Tbilisi.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">تبليسي</h5>
+                  <span class="card-text">جورجيا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/XY.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1468 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Taif.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">الطائف</h5>
+                  <span class="card-text">السعودية</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/F3.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">508 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Sarajevo.jpg" class="img-fluid rounded-start h-100 " alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">سراييفو</h5>
+                  <span class="card-text">البوسنة</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/XY.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">1892 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Vienna.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">فيينا</h5>
+                  <span class="card-text main-color fw-medium">النمسا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/SV.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">3507 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-lg-6">
+      <a href="#">
+        <div class="card mb-3 rounded-4" style="max-width: 540px;">
+          <div class="row g-0">
+            <div class="col-md-5 card-cities">
+              <img src="images/Salzburg.jpg" class="img-fluid rounded-start h-100" alt="...">
+            </div>
+            <div class="col-md-7">
+              <div class="card-body">
+                <div class="d-flex flex-column card-body-mob">
+                  <h5 class="card-title">سالزبورغ</h5>
+                  <span class="card-text">النمسا</span>
+                  <span class="card-text"><small class="text-body-secondary">29-5</small></span>
+                  <div class="d-flex align-items-center">
+                    <div class="bg-light p-2 rounded-circle">
+                      <img src="images/XY.png" style="height: 20px;" alt="">
+                    </div>
+                    <span class="mx-1">0</span>
+                    <span>105</span>
+                  </div>
+                  <div class="d-flex flex-column align-items-end">
+                    <span>ابتداء من </span>
+                    <span class="main-color fs-6 fw-bold">4627 ريال </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+  <!-- ==================== -->
+
+</div>
+        <!-- //////// -->
+        <div class="row mt-5">
+          <div class="col-md-5">
+
+          </div>
+          <div class="col-md-7">
+            <div class="righSummer">
+              <h4 class="main-color">صيّفها صح</h4>
+            </div>
+
+<div class="righSummer">
+  <div class="col-md-4">
+    <a href="#">
+      <div class="card rounded-4">
+        <img src="images/w2AmR40UL34EhRlNCVRj2Wmhhb0PbRxsIbFArzMN.jpeg" class="card-img-top rounded-top-4" alt="دبي">
+        <div class="card-body p-2">
+          <p class="card-text fw-medium mb-0">دبي</p>
+          <span class="main-color">الامارات المتحدة</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="#">
+      <div class="card rounded-4">
+        <img src="images/RReyC5IpR8imwr1MQ4P0a8m8Yb0I6ezDzYemkv5h.png" class="card-img-top rounded-top-4" alt="فوكيت تاون">
+        <div class="card-body p-2">
+          <p class="card-text fw-medium mb-0">فوكيت تاون</p>
+          <span class="main-color">تايلند</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-md-4">
+    <a href="#">
+      <div class="card rounded-4">
+        <img src="images/Jg5zH2UwmCjsXCqQ9CC67ZLoUqzdcAsSKiYiCYKB.png" class="card-img-top rounded-top-4" alt="اسطنبول">
+        <div class="card-body p-2">
+          <p class="card-text fw-medium mb-0">اسطنبول</p>
+          <span class="main-color">تركيا</span>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+            <div class="row mt-4">
+              <div>
+                <h4 class="fw-medium main-color">فنادق تلهمك</h4>
+                <span style="font-size: 12px;" class="text-secondary">أصبح حجز الفنادق سهلاً: اكتشف الفنادق المميزة في
+                  جميع أنحاء العالم مع المطار!</span>
+              </div>
+              <div>
+                <nav class="">
+                  <div class="custom-tabs-wrapper cities-box " style="overflow-x: auto; white-space: nowrap;;">
+                    <div class="nav nav-tabs custom-tabs d-flex flex-nowrap" id="nav-tab" role="tablist">
+
+                      <button class="nav-link active" id="nav-dubai-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-dubai" type="button" role="tab" aria-controls="nav-dubai"
+                        aria-selected="true">
+                        دبي-الامارات <br> 300 فنادق
+                      </button>
+
+                      <button class="nav-link" id="nav-istanboul-tab" data-bs-toggle="tab"
+                        data-bs-target="#nav-istanboul" type="button" role="tab" aria-controls="nav-istanboul"
+                        aria-selected="false">
+                        اسطنبول -تركيا <br> 2151 فنادق
+                      </button>
+
+                      <button class="nav-link" id="nav-marbella-tab" data-bs-toggle="tab" data-bs-target="#nav-marbella"
+                        type="button" role="tab" aria-controls="nav-marbella" aria-selected="false">
+                        ماربيلا - اسبانيا <br> 314 فندق
+                      </button>
+
+                      <button class="nav-link" id="nav-paris-tab" data-bs-toggle="tab" data-bs-target="#nav-paris"
+                        type="button" role="tab" aria-controls="nav-paris" aria-selected="false">
+                        باريس- فرنسا <br> 1653 فنادق
+                      </button>
+
+                      <button class="nav-link" id="nav-bankok-tab" data-bs-toggle="tab" data-bs-target="#nav-bankok"
+                        type="button" role="tab" aria-controls="nav-bankok" aria-selected="false">
+                        بانكوك-تايلند <br> 1834 فنادق
+                      </button>
+
+                      <button class="nav-link" id="nav-tokyo-tab" data-bs-toggle="tab" data-bs-target="#nav-tokyo"
+                        type="button" role="tab" aria-controls="nav-tokyo" aria-selected="false">
+                        طوكيو-اليابان <br> 1836 فندق
+                      </button>
+
+                    </div>
+                  </div>
+                </nav>
+
+
+                <div class="tab-content" id="nav-tabContent">
+                  <div class="tab-pane hotels fade show active p-3" id="nav-dubai" role="tabpanel" tabindex="0">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="https://almatar.com/ar/hotels/rooms/dubai-atlantis-the-palm-14716/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/XHAgbYbmQHEU73n57u6n63koYTwt0D1jvYDMF5sZ.png"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> اتلانتس النخلة </h5>
+                                        <!-- <h5 class="card-title">طوكيو</h5> -->
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">دبي</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/dubai-one-only-royal-mirage-resort-dubai-at-jumeirah-beach-421501/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/UzrOX1o3VBlyCh3R0mykcqIiMOZSoZ7BmV3ezhQ6.png"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> منتجع ون اند </h5>
+                                        <h5 class="card-title">اونلي رويال</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">دبي</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/dubai-ja-lake-view-hotel-1659617/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/YZcfWIrIOZyGkfyfoRH4kbxe1fq10HhIlA7AXz1m.png"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق جيه ايه </h5>
+                                        <h5 class="card-title">ليك فيو</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <!-- المكان (تحت خالص) -->
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">دبي</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d28897.00262202041!2d55.12618827392988!3d25.13145341039736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2KfYqtmE2KfZhtiq2LMg2K_YqNmK!5e0!3m2!1sar!2seg!4v1755950060305!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane hotels fade p-3" id="nav-istanboul" role="tabpanel" tabindex="0">
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/istanbul-holiday-inn-istanbul-sisli-ihg-hotels-74965/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/0mF3JdL0URhmK6BPyo5btPZhbfhS2os9xNQIQ685.jpg"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق هوليداي ان </h5>
+                                        <h5 class="card-title">اسطنبول</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">اسطنبول</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/istanbul-hilton-istanbul-bomonti-hotel-and-conference-center-138616/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/zBWFGQnfpYRNECEbUesWX1f10AzY3X7qMqtf4Y58.jpg"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق ومركز </h5>
+                                        <h5 class="card-title"> مؤتمرات</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">اسطنبول</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/istanbul-intercontinental-istanbul-ihg-hotel-641531/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/1jtZ7y0LKCezrwfHy6EbTgtbg4Opoav0ASFdZ7LY.jpg"
+                                      class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق </h5>
+                                        <h5 class="card-title">انتر كونتيننتال </h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">اسطنبول</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d385275.8263580197!2d29.128207197899588!3d41.02596930381332!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1755952312476!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                  <div class="tab-pane hotels fade p-3" id="nav-marbella" role="tabpanel" tabindex="0">
+
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="https://almatar.com/ar/hotels/rooms/marbella-hard-rock-hotel-marbella-86975/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/hard.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق هارد روك </h5>
+                                        <h5 class="card-title">ماربيلا</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">ماربيلا</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/marcelle-occidental-puerto-ban-s-137662/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/oxeed.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق اوكسيدنتال </h5>
+                                        <h5 class="card-title"> بويرتو بانوس</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">ماربيلا</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/marbella-alanda-hotel-marbella-648754/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/aland.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق الاند </h5>
+                                        <h5 class="card-title"> ماربيلا </h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <!-- المكان (تحت خالص) -->
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">ماربيلا</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410524.30783166!2d-4.584805413932753!3d36.500523272735954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72d809904dabdf%3A0xe6c9db907b5ecab!2z2YXYsdio2YTYqdiMINmF2KfZhNin2KzYp9iMINil2LPYqNin2YbZitin!5e0!3m2!1sar!2seg!4v1755953767795!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+                  </div>
+                  <div class="tab-pane hotels fade p-3" id="nav-paris" role="tabpanel" tabindex="0">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="https://almatar.com/ar/hotels/rooms/paris-lhotel-du-collectionneur-15963/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/du.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق دو </h5>
+                                        <h5 class="card-title">كولكشنيور</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">باريس</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/paris-warwick-paris-15966/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/warw.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> واوريك باريس </h5>
+
+
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">باريس</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/paris-hotel-pullman-paris-tour-eiffel-16043/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/bolman.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق بولمان </h5>
+                                        <h5 class="card-title"> باريس برج ايفل </h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">باريس</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.0136107143544!2d2.309061184324946!3d48.87701707928937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f93eb0d3fbb%3A0x6437240b3623044a!2z2YHZhtiv2YIg2YLZiNizINin2YTZhti12LE!5e0!3m2!1sar!2seg!4v1755953912828!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade
+    allowfullscreen=" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                  <div class="tab-pane hotels fade p-3" id="nav-bankok" role="tabpanel" tabindex="0">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/bangkok-amari-watergate-bangkok-sha-extra-plus-certified-85461/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/amary.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق اماري </h5>
+                                        <h5 class="card-title">وتورجيت</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">بانكوك</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/bangkok-centara-grand-centralworld-sha-extra-plus-85469/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/sentra.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> سنتارا جراند </h5>
+                                        <h5 class="card-title"> سنتارا وورلد </h5>
+
+
+
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">بانكوك</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a
+                          href="https://almatar.com/ar/hotels/rooms/bangkok-avani-plus-riverside-bangkok-hotel-603293/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/afany.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق افاني </h5>
+                                        <h5 class="card-title"> بلس رفساير </h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">بانكوك</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.4631644836304!2d100.54228778516945!3d13.750919590347968!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29ecf5033d5eb%3A0xbd6e934706c92bc3!2z2KPZhdin2LHZiiDZiNmI2KrYsdi62YrYqiDYqNin2YbZg9mI2YM!5e0!3m2!1sar!2seg!4v1755954507728!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade    allowfullscreen=" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+
+
+                  </div>
+                  <div class="tab-pane hotels fade p-3" id="nav-tokyo" role="tabpanel" tabindex="0">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <a href="https://almatar.com/ar/hotels/rooms/tokyo-the-okura-tokyo-hotel-18344/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/okora(1).jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندقذا اوكورا </h5>
+                                        <h5 class="card-title">طوكيو</h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">طوكيو</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/tokyo-the-capitol-hotel-tokyu-18348/">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/capitol.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق ذا كابيتالو </h5>
+                                        <h5 class="card-title"> طوكيو </h5>
+
+
+
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color " style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">طوكيو</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+                        <a href="https://almatar.com/ar/hotels/rooms/tokyo-hotel-chinzanso-tokyo-18354/ ">
+                          <div class="row g-1">
+                            <div class="col-md-12">
+                              <div class="card mb-3 rounded-4" style="max-width: 540px;">
+                                <div class="row g-0 h-100">
+
+                                  <div class="col-md-5 card-cities">
+                                    <img src="images/shenzanso.jpg" class="img-fluid rounded-start h-100" alt="...">
+                                  </div>
+
+                                  <div class="col-md-7 d-flex">
+                                    <div class="card-body d-flex flex-column w-100">
+
+                                      <div>
+                                        <h5 class="card-title"> فندق شينزانسو </h5>
+                                        <h5 class="card-title"> طوكيو </h5>
+                                      </div>
+
+                                      <div>
+                                        <span class="card-text rating-color" style="font-size: 10px;">
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                          <i class="fa-solid fa-star"></i>
+                                        </span>
+                                      </div>
+
+                                      <div class="d-flex align-items-center px-2 mt-auto">
+                                        <i class="fa fa-solid fa-location-dot text-secondary"></i>
+                                        <span class="text-secondary fs-6 ms-1">طوكيو</span>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                          </div>
+                        </a>
+
+
+                      </div>
+                      <div class="col-lg-6 map d-none d-md-block">
+                        <iframe class="w-100 h-100 rounded-3"
+                          src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d207503.28637671663!2d139.95005673595156!3d35.646486498777996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z2YHZhtiv2YIg2KfZg9mI2LHYpyDYt9mI2YPZitmI!5e0!3m2!1sar!2seg!4v1755955037817!5m2!1sar!2seg"
+                          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                          referrerpolicy="no-referrer-when-downgrade" allowfullscreen=" loading=" lazy"
+                          referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                      </div>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="row  ">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="main-color">وش قالوا عنّا؟</h4>
+  <div class="d-flex">
+     <button class="btn rightt me-2" onclick="scrollCards(1)">
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    <button class="btn leftt  " onclick="scrollCards(-1)">
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+   
+  </div>
+</div>
+
+<div class="position-relative">
+  <div class="d-flex overflow-auto flex-nowrap px-2" id="cardsContainer" style="scroll-behavior:smooth;">
+    <div class="card me-3 flex-shrink-0" style="width:243px; max-height:190px;">
+      <div class="card-header border-0 d-flex align-items-center bg-transparent">
+        <div class="bg-success d-flex rounded-circle justify-content-center align-items-center"
+          style="width: 40px; height: 40px; color: #fff;">A</div>
+        <div class="d-flex flex-column mx-2">
+          <p class="fw-medium m-0">ابوسامي</p>
+          <span class="card-text rating-color" style="font-size: 10px;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="card-body overflow-hidden" style="font-size:12px;">
+        من لا يشكر الناس لا يشكر الله شكرا تطبيق المطار 💕 تم معالجة موضوعي بكل حرفية
+        <div class="text-secondary mt-2">08 يونيو 2025</div>
+      </div>
+    </div>
+<div class="card me-3 flex-shrink-0" style="width:243px; max-height:190px;">
+      <div class="card-header border-0 d-flex align-items-center bg-transparent">
+        <div class="bg-warning d-flex rounded-circle justify-content-center align-items-center"
+          style="width: 40px; height: 40px; color: #fff;">M</div>
+        <div class="d-flex flex-column mx-2">
+          <p class="fw-medium m-0">محمد</p>
+          <span class="card-text rating-color" style="font-size: 10px;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="card-body overflow-hidden" style="font-size:12px;">
+        من لا يشكر الناس لا يشكر الله شكرا تطبيق المطار 💕 تم معالجة موضوعي بكل حرفية
+        <div class="text-secondary mt-2">08 يونيو 2025</div>
+      </div>
+    </div>
+    <div class="card me-3 flex-shrink-0" style="width:243px; max-height:190px;">
+      <div class="card-header border-0 d-flex align-items-center bg-transparent">
+        <div class="bg-info d-flex rounded-circle justify-content-center align-items-center"
+          style="width: 40px; height: 40px; color: #fff;">S</div>
+        <div class="d-flex flex-column mx-2">
+          <p class="fw-medium m-0">سمية</p>
+          <span class="card-text rating-color" style="font-size: 10px;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="card-body overflow-hidden" style="font-size:12px;">
+        الحمدلله.. افضل مكسب هي التعامل مع ناس محترمين وصادقين مع العملاء ويخدمون الوطن
+        <div class="text-secondary mt-2">08 يونيو 2025</div>
+      </div>
+    </div>
+      <div class="card me-3 flex-shrink-0" style="width:243px; max-height:190px;">
+      <div class="card-header border-0 d-flex align-items-center bg-transparent">
+        <div class="bg-danger d-flex rounded-circle justify-content-center align-items-center"
+          style="width: 40px; height: 40px; color: #faf7f7;">B</div>
+        <div class="d-flex flex-column mx-2">
+          <p class="fw-medium m-0">بسام</p>
+          <span class="card-text rating-color" style="font-size: 10px;">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </span>
+        </div>
+      </div>
+      <div class="card-body overflow-hidden" style="font-size:12px;">
+        من لا يشكر الناس لا يشكر الله شكرا تطبيق المطار 💕 تم معالجة موضوعي بكل حرفية
+        <div class="text-secondary mt-2">08 يونيو 2025</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+              </div>
+              <div class="row g-1 mt-3 bg-white rounded-3 p-3  footer">
+               <footer class="mt-3 ">
+   <div class="row text-center text-md-start" style="font-size: 13px;">
+
+  <div class="col-12 col-md-4 mb-4 text-black">
+    <p class="fw-medium mb-3 main-color">شركات الطيران الشائعة</p>
+    <ul class="list-unstyled fw-normal">
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color"></i>
+        <a class="text-black" href="https://almatar.com/ar/airlines/saudi-airlines/">الخطوط الجوية السعودية</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color"></i>
+        <a class="text-black" href="https://almatar.com/ar/airlines/british-airways/">الخطوط البرطانية</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color"></i>
+        <a class="text-black" href="https://almatar.com/ar/airlines/gulf-air/">طيران الخليج</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color"></i>
+        <a class="text-black" href="https://almatar.com/ar/airlines/emirates-airlines/">طيران الامارات</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color"></i>
+        <a class="text-black" href="https://almatar.com/ar/airlines/egypt-air/">مصر للطيران</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-12 col-md-4 mb-4 text-black">
+    <p class="fw-medium mb-3 main-color">رحلات الطيران الأكثر حجزا</p>
+    <ul class="list-unstyled">
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-riyadh/">جدة - الرياض</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-cairo/">جدة - القاهرة</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-dhaka/">جدة - دكا</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/travel/ar/flights/bangalore-to-dammam/">بنغالور </a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/travel/ar/flights/riyadh-to-jeddah/">الرياض - جدة</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-12 col-md-4 mb-4 text-black">
+    <p class="fw-medium mb-3 main-color">أفضل وجهات الفنادق</p>
+    <ul class="list-unstyled">
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/ar/hotels-in/%D8%AF%D8%A8%D9%8A/%D8%AF%D8%A8%D9%8A,-%D8%A5%D9%85%D8%A7%D8%B1%D8%A9-%D8%AF%D8%A8%D9%8A,-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-560176/">دبي</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/ar/hotels-in/%D8%AC%D8%AF%D8%A9/%D8%AC%D8%AF%D8%A9,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578688/">جدة</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578695/">الدمام</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%88%D8%B3%D8%B7%D9%89,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578687/">الرياض</a>
+      </li>
+      <li class="mb-2">
+        <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+        <a class="text-black" href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578694/">الخبر</a>
+      </li>
+    </ul>
+  </div>
+
+
+
+    <hr>
+
+
+   
+  </div>
+</footer>
+
+ <div class="row " style="font-size: 13px;">
+
+  <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+    <p class="main-color mb-2 fw-medium">المطار</p>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/about-us/">عن المطار</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/installments/">التقسيط</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/offers/">العروض</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/career/">الوظائف</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/landing/tabby/">احجز مع تابي</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/landing/tamara/">احجز مع تمارا</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/landing/golden/">الضمان الذهبي</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/landing/mixfly/">ميكس فلاي</a>
+    <a class="mb-2 text-black" href="https://almatar.com/ar/landing/jawwak/">برنامج الولاء</a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+    <p class="mb-2 fw-medium text-white">-</p>
+    <a class="mb-2 text-black " href="https://almatar.com/ar/privacy-policy/">سياسة الخصوصية</a>
+    <a class="mb-2 text-black " href="https://almatar.com/ar/faqs/">الأسئلة المتكررة</a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+    <p class="mb-2 fw-medium text-white">-</p>
+    <a class="mb-2 text-black " href="https://almatar.com/ar/contact-us/">تواصل معنا</a>
+    <a class="mb-2 text-black " href="https://almatar.com/ar/auth/">تسجيل</a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+    <p class="main-color fw-medium mb-2">طلب مساعدة؟</p>
+    <a class="text-black fw-bolder mb-3" style="font-size: 12px;" href="https://wa.me/966920005511">92000 55 11</a>
+    
+    <div class="social-icons fs-6 mb-2">
+      <a href="https://x.com/almatarapp"><i class="fab fa-twitter text-info"></i></a>
+      <a href="https://www.facebook.com/almatarapp"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/channel/UCrF0WT7JPwt49xbeql6JXeA"><i class="fab fa-youtube text-danger"></i></a>
+    </div>
+    <div class="social-icons fs-6 mb-2">
+      <a href="https://www.instagram.com/almatarapp/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.snapchat.com/add/almatarapp"><i class="fab fa-snapchat"></i></a>
+      <a href="https://www.linkedin.com/company/almatarapp/"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <div class="social-icons fs-6">
+      <a href="https://www.tiktok.com/@almatarapp"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-4 d-flex flex-column mb-4">
+    <p class="main-color fw-medium mb-2">حمل تطبيقنا الآن!</p>
+    <div class="fw-medium mb-3"><img src="images/google-play.svg" class="w-75" alt="تحميل من Google Play"></div>
+    <div class="fw-medium mb-3"><img src="images/app-store.svg" class="w-75" alt="تحميل من App Store"></div>
+    <div class="fw-medium mb-3"><img src="images/app-gallery.svg" class="w-75" alt="تحميل من App Gallery"></div>
+    <div class="fw-medium mb-3 p-2 w-100 border rounded">
+      <img src="images/scan-to-download.svg" class="w-100" alt="QR Code للتحميل">
+    </div>
+    <span class="fw-medium mb-3">قم بالمسح لتنزيل التطبيق</span>
+  </div>
+</div>
+
+
+<div class="row justify-content-center text-center">
+  <span class="main-color fw-medium mb-2" style="font-size: 12px; color: #491d95;">طرق دفع آمنة</span>
+  <img src="images/payment-method.png" class="w-50 mb-3" alt="">
+  <hr>
+</div>
+
+<div class="row align-items-center text-center text-md-start">
+  <div class="col-12 col-md-2 mb-3">
+    <img src="images/almatar_logo_ar (1).png" class="w-100" alt="">
+  </div>
+  <div class="col-12 col-md-2 mb-3" style="font-size: 13px;">
+    <span>© 2025 Almatar.com - جميع الحقوق محفوظة</span>
+  </div>
+  <div class="col-12 col-md-2 mb-3">
+    <div class="dropdown"> 
+      <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">SAR</button>
+      <ul class="dropdown-menu mt-2">
+        <li><button class="dropdown-item"><img src="images/sa_icon.png" alt=""> <span class="fw-semibold">SAR</span> الريال السعودي</button></li>
+        <li><button class="dropdown-item"><img src="images/ae_icon.png" alt=""> <span class="fw-semibold">AED</span> درهم إماراتي</button></li>
+        <li><button class="dropdown-item"><img src="images/bh_icon.png" alt=""> <span class="fw-semibold">BHD</span> دينار بحريني</button></li>
+        <li><button class="dropdown-item"><img src="images/eu_icon.png" alt=""> <span class="fw-semibold">EUR</span> اليورو الأوروبي</button></li>
+        <li><button class="dropdown-item"><img src="images/kw_icon.png" alt=""> <span class="fw-semibold">KWD</span> الدينار الكويتي</button></li>
+        <li><button class="dropdown-item"><img src="images/qa_icon.png" alt=""> <span class="fw-semibold">QAR</span> الريال القطري</button></li>
+        <li><button class="dropdown-item"><img src="images/us_icon.png" alt=""> <span class="fw-semibold">USD</span> الدولار الأمريكي</button></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start mb-3">
+    <div class="lang px-2"><img src="images/en.png" alt="English"> <span>English</span></div>
+  </div>
+  <div class="col-12 col-md-3 text-center text-md-start main-color" style="font-size: 13px;">
+    <span>الشروط والأحكام | سياسة الخصوصية | خريطة الموقع</span>
+  </div>
+</div>
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ---------scripts ---------------->
+  <script src="JS/main.js"></script>
+  <script src="JS/second.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script> flatpickr("#myDate", { dateFormat: "Y-M-d", allowInput: false }); </script>
+</body>
+
+</html>

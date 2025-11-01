@@ -1,0 +1,2844 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flights</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flight.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <!--navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary top-bar fixed-top d-flex flex-column">
+      <div class="container">
+        <div class="d-flex navbox align-items-center "> <a class="navbar-brand logo" href="#"> <img
+              src="images/almatar_logo_ar.png" alt="شعار المطار"> </a>
+          <a href="#" class="mobile-whatsapp">
+            <div class="whatsappBoxmob">
+              <div class="whatsappIcons ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+              <div class="service-box-mob">
+                <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span> </div>
+                <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+                <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع"> <span>نرد في 8
+                    ثواني</span> </div>
+              </div>
+            </div>
+
+          </a>
+        </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav  mb-2 mb-lg-0 " style="margin-right: 73px;">
+            <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">الإقامات</a> </li>
+            <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">طيران</a> </li>
+            <li class="nav-item"> <a class="nav-link active main-color d-flex m" aria-current="page" href="#"> <img
+                  src="images/offer.png" alt="عروض"> عروض </a> </li>
+          </ul>
+          <a href="https://wa.me/966920005511" target="_blank"
+            class="whatsappLink whatsapp-link-desktop mx-3 d-flex text-decoration-none align-items-center">
+            <div class="whatsappBox">
+              <div class="whatsappIcon ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+            </div>
+            <div class="service-box">
+              <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span> </div>
+              <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+              <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع"> <span>نرد في 8
+                  ثواني</span> </div>
+            </div>
+          </a>
+          <div class="d-flex align-items-center lang-and-currency">
+            <div class="lang px-2"> <img src="images/en.png" alt="English"> <span>English</span> </div>
+            <div class="dropdown me-2"> <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false"> SAR </button>
+              <ul class="dropdown-menu mt-2">
+                <li><button class="dropdown-item" type="button"><img src="images/sa_icon.png" alt=""> <span
+                      class="fw-semibold">SAR </span> <span>الريال السعودي</span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/ae_icon.png" alt=""> <span
+                      class="fw-semibold">AED </span> <span>درهم اماراتي</span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/bh_icon.png" alt=""> <span
+                      class="fw-semibold">BHD </span> <span> دينار بحريني</span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/eu_icon.png" alt=""> <span
+                      class="fw-semibold">BHD </span> <span> اليورو الاوروبي </span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/kw_icon.png" alt=""> <span
+                      class="fw-semibold">BHD </span> <span> الدينار الكويتي </span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/qa_icon.png" alt=""> <span
+                      class="fw-semibold">BHD </span> <span> الريال القطري</span></button></li>
+                <li><button class="dropdown-item" type="button"><img src="images/us_icon.png" alt=""> <span
+                      class="fw-semibold">BHD </span> <span> الدولار الامريكي </span></button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="login"> <button>تسجيل دخول</button> </div>
+        </div>
+
+      </div>
+      <div class="container">
+        <ul class="d-flex text-decoration-none list-unstyled">
+          <li><a href="index.html" class="main-color">الرئيسية</a></li>
+          <li class="mx-2"><a href="index.html" class="main-color"> <i class="fa-solid fa-chevron-left"></i> </a></li>
+
+          <li class="mx-2"><a href="" class="main-color">طيران</a></li>
+          <li class="mx-2"><a href="index.html" class="main-color"> <i class="fa-solid fa-chevron-left"></i> </a></li>
+          <li>أبها</li>
+
+        </ul>
+      </div>
+    </nav>
+</div>
+<div class="bg-white">
+<div class="container">
+      <div class="flight-tabs py-5">
+      <ul class="nav nav-tabs position-relative" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation ">
+          <button class="nav-link active pb-3" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+            type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">ذهاب وعودة</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link  pb-3" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane"
+            type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">ذهاب فقط</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link  pb-3" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane"
+            type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">مدن متعدة</button>
+        </li>
+      </ul>
+
+      <div class="d-flex mt-4 align-items-center position-relative">
+        <div>
+          <i class="fa-regular fa-user"></i>
+        </div>
+        <div class=" ms-2 d-flex ">
+          <div class="dropdown"> <button class="btn bg-transparent dropdown-toggle fw-normal" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false"> <span class="" id="passengerNum">3</span>
+              راكب </button>
+            <ul class="dropdown-menu dropdownpassengers">
+              <li class="d-flex justify-content-between">
+                <div style="font-size: 14px;"> <span class="fw-normal">بالغ</span> <span class="text-secondary">(+ 12
+                    سنة)</span>
+                </div>
+                <div class="d-flex justify-content-between ">
+                  <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count" style="font-size: 15px;">1</span>
+                  <p class="plusBtn">+</p>
+                </div>
+              </li>
+              <li class="d-flex justify-content-between">
+                <div style="font-size: 14px;"> <span class="fw-normal">أطفال</span> <span class="text-secondary">(12-2
+                    سنة)</span>
+                </div>
+                <div class="d-flex justify-content-between ">
+                  <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count" style="font-size: 15px;">1</span>
+                  <p class="plusBtn">+</p>
+                </div>
+              </li>
+              <li class="d-flex justify-content-between">
+                <div style="font-size: 14px;"> <span class="fw-normal">رضيع بدون مقعد</span> <span
+                    class="text-secondary">(تحت 2
+                    سنوات)</span> </div>
+                <div class="d-flex justify-content-between ">
+                  <p class="bg-secondary mincebtn">-</p> <span class="mx-2 count" style="font-size: 15px;">1</span>
+                  <p class="plusBtn">+</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="d-flex">
+          <span class="text-secondary mt-2">|</span>
+          <svg class="mt-2 ms-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg" _ngcontent-serverapp-c103="" aria-hidden="true">
+            <path
+              d="M18.9544 14.3442C18.7209 13.08 17.7126 12.2411 16.4251 12.2352C15.2174 12.2294 14.0097 12.2352 12.8019 12.2352C12.6367 12.2352 12.5114 12.2003 12.4772 12.008C12.3576 11.3148 12.2323 10.6273 12.1069 9.91075H12.3519C13.8729 9.91075 15.394 9.91075 16.915 9.91075C17.3252 9.91075 17.6214 9.63111 17.6385 9.24078C17.6556 8.82715 17.3423 8.51838 16.9036 8.51838C15.2857 8.51838 13.6622 8.51838 12.0443 8.51838C11.9019 8.51838 11.8506 8.4776 11.8278 8.33778C11.5885 6.95124 11.3379 5.57052 11.0986 4.18398C10.9049 3.1295 10.17 2.30224 9.1845 2.07503C8.6604 1.95852 8.12491 2.01095 7.59511 2.01678C6.5583 2.02843 5.84621 2.9256 6.0285 3.96842C6.13674 4.59178 6.25637 5.20932 6.37031 5.82685C6.99125 9.22913 7.6179 12.6256 8.23884 16.0278C8.44962 17.1697 9.07627 17.9212 10.1871 18.2183C10.5005 18.2999 10.8195 18.2766 11.167 18.2824C10.9049 18.7077 10.6657 19.1039 10.4264 19.4942C10.1985 19.8671 10.1245 20.2749 10.2156 20.706C10.3808 21.4866 11.0075 21.9876 11.8164 21.9935C13.8046 21.9935 15.7927 21.9935 17.7866 21.9935C17.8379 21.9935 17.8835 21.9935 17.9347 21.9935C18.3449 21.9527 18.624 21.5391 18.5158 21.1313C18.4246 20.7875 18.1626 20.6069 17.7524 20.6069C15.7927 20.6069 13.8331 20.6069 11.8677 20.6069C11.7537 20.6069 11.6341 20.6128 11.5714 20.4904C11.5145 20.3681 11.5714 20.269 11.6284 20.1642C11.9759 19.5991 12.3234 19.034 12.6652 18.463C12.745 18.329 12.8247 18.2766 12.9785 18.2766C14.4198 18.2824 15.8611 18.2766 17.3024 18.2766C18.3107 18.2766 18.9829 17.595 18.9886 16.558C18.9886 16.1269 18.9886 15.7016 18.9886 15.2705C18.9886 14.9559 19.0057 14.6471 18.9487 14.3384L18.9544 14.3442ZM17.3081 16.8901C16.2086 16.8901 15.1034 16.8901 14.004 16.8901C12.9444 16.8901 11.8848 16.8901 10.8309 16.8901C10.1359 16.8901 9.7257 16.5289 9.59467 15.8239C8.97942 12.4508 8.35847 9.08348 7.73753 5.71034C7.62359 5.07533 7.50396 4.44031 7.39003 3.8053C7.33306 3.48488 7.40142 3.40332 7.72613 3.40332C8.02237 3.40332 8.32429 3.40332 8.62053 3.40332C9.1902 3.41497 9.62315 3.78782 9.7257 4.35292C10.153 6.73568 10.5745 9.11844 11.0018 11.5012C11.0473 11.7634 11.0872 12.0313 11.1385 12.2935C11.298 13.0916 11.9189 13.616 12.7279 13.6218C13.9584 13.6276 15.1832 13.6218 16.4137 13.6218C16.9948 13.6218 17.422 13.9306 17.5758 14.4549C17.5986 14.5364 17.6157 14.6238 17.6214 14.7112C17.6214 15.3404 17.6271 15.9754 17.6271 16.6046C17.6271 16.826 17.4961 16.8784 17.3024 16.8784L17.3081 16.8901Z"
+              _ngcontent-serverapp-c103=""></path>
+          </svg>
+          <div class="dropdown"> <button id="dropdownBtn" class="fw-normal btn text-black dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false"> الدرجة السياحية</button>
+            <ul id="dropdownMenu" class="dropdown-menu">
+              <li><a class="dropdown-item active" href="#">درجة رجال الاعمال</a></li>
+              <li><a class="dropdown-item" href="#">الدرجة السياحية</a></li>
+              <li><a class="dropdown-item" href="#">الدرجة الاولي</a></li>
+              <li><a class="dropdown-item" href="#">الدرجة السياحية المميزة</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+
+      <div class="tab-content  " id="myTabContent">
+        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+          tabindex="0" style="z-index: 1;">
+       <div class="row align-items-center g-1">
+  <!-- من / إلى -->
+  <div class="col-md-7  d-flex align-items-center ">
+    <div class="travel-search d-flex flex-column  flex-fill position-relative">
+      <span class="ms-1">من</span>
+      <input id="goBackLeaveInput" type="text" class="form-control border-0 shadow-none" placeholder="Abha,Saudi Arabia , Saudi Arabia">
+       <ol class="list-group list-group shadow-lg position-absolute" id="flightList" style= "width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+        
+
+    <div class="trans d-flex justify-content-center align-items-center  mx-1 ">
+      <i class="fa-solid fa-arrow-right-arrow-left "></i>
+    </div>
+
+    <div class="travel-search d-flex flex-column  flex-fill position-relative ">
+      <span class="ms-1">إلى</span>
+      <input id="goBackarriveInput" type="text" class="form-control border-0 shadow-none" placeholder="Riyadh,Saudi Arabia , Saudi Arabia">
+         <ol class="list-group list-group shadow-lg position-absolute" id="arriveFlightList" style="width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+  </div>
+
+  <!-- التواريخ + زر البحث -->
+<div class="col-md-5 d-flex" style="padding: 4px;" >
+    <div class="d-flex align-items-center dates rounded-2 ">
+    <div class="date-search d-flex align-items-center   me-2">
+      <i class="fs-5 fa-solid fa-calendar-days"></i>
+      <div class="d-flex flex-column ms-2  ">
+        <span >ذهاب</span>
+        <input type="date" id="myDate" class="border-0 bg-transparent w-75"  placeholder="5 Oct,2025">
+      </div>
+    </div>
+
+    <div class="date-search d-flex align-items-center  me-2">
+          <span class="text-secondary  ">|</span>
+
+      <div class="d-flex flex-column ms-2">
+        <span>عودة</span>
+        <input type="Date" id="myDate" class="border-0 bg-transparent w-75"  placeholder="5 Oct,2025">
+      </div>
+    </div>
+    
+  </div>
+  <div class="ms-1 mt-1">
+     <button class="btn search-btn d-flex justify-content-center  align-items-center">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+</div>
+
+
+        </div>
+        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">ذهاب
+                 <div class="row align-items-center g-1">
+  <!-- من / إلى -->
+  <div class="col-md-8  d-flex align-items-center ">
+    <div class="travel-search d-flex flex-column  flex-fill position-relative">
+      <span class="ms-1">من</span>
+      <input id="goOnlyInput" type="text" class="form-control border-0 shadow-none" placeholder="Abha,Saudi Arabia , Saudi Arabia">
+       <ol class="list-group list-group shadow-lg position-absolute" id="goOnlyFLightList" style= "width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item'">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-startgo-only-arrive-fligh-item'">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+        
+
+    <div class="trans d-flex justify-content-center align-items-center  mx-1 ">
+      <i class="fa-solid fa-arrow-right-arrow-left "></i>
+    </div>
+
+    <div class="travel-search d-flex flex-column  flex-fill position-relative ">
+      <span class="ms-1">إلى</span>
+      <input id="goOnlyArriveFlightInput" type="text" class="form-control border-0 shadow-none" placeholder="Riyadh,Saudi Arabia , Saudi Arabia">
+         <ol class="list-group list-group shadow-lg position-absolute" id="goOnlyArriveFlightList" style="width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start go-only-arrive-fligh-item">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+  </div>
+
+  <!-- التواريخ + زر البحث -->
+<div class="col-md-4 d-flex" style="padding: 4px;" >
+    <div class="d-flex align-items-center dates rounded-2 ">
+    <div class="date-search d-flex align-items-center   me-2">
+      <i class="fs-5 fa-solid fa-calendar-days"></i>
+      <div class="d-flex flex-column ms-2  ">
+        <span >ذهاب</span>
+        <input type="date" id="myDate" class="border-0 bg-transparent w-75"  placeholder="5 Oct,2025">
+      </div>
+    </div>
+
+  
+    
+  </div>
+  <div class="ms-1 mt-1">
+     <button class="btn search-btn d-flex justify-content-center  align-items-center">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+  </div>
+</div>
+</div>
+        </div>
+        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+          <div class="d-flex mt-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" _ngcontent-serverapp-c103="" aria-hidden="true">
+<path d="M20.7433 13.2358C20.5801 13.3979 20.3866 13.5263 20.1738 13.6135C19.961 13.7007 19.7331 13.7451 19.5031 13.7441L14.1152 13.7441L11.5738 19.6605C11.5482 19.7253 11.5085 19.7836 11.4575 19.8311C11.4065 19.8786 11.3455 19.9141 11.279 19.935L9.73383 20.4534C9.64816 20.481 9.55671 20.4853 9.46883 20.466C9.38094 20.4466 9.29976 20.4043 9.2336 20.3433C9.16743 20.2823 9.11864 20.2048 9.09222 20.1188C9.0658 20.0328 9.0627 19.9413 9.08323 19.8536L10.6182 13.7542L5.37275 13.4594L4.4985 14.6285L2.75 14.6285C3.13597 13.1696 3.45803 11.9956 3.45803 11.9956C3.45803 11.9956 3.16296 10.9223 2.75 9.37282L4.4985 9.37282L5.37275 10.5419L10.6182 10.2471L9.08323 4.14765C9.0627 4.06003 9.06581 3.96853 9.09222 3.88251C9.11864 3.79648 9.16743 3.71901 9.2336 3.65801C9.29976 3.59701 9.38094 3.55467 9.46883 3.53532C9.55671 3.51598 9.64816 3.52031 9.73383 3.54788L11.279 4.06633C11.3455 4.08722 11.4065 4.12271 11.4575 4.1702C11.5085 4.21768 11.5482 4.27597 11.5738 4.3408L14.1152 10.2572L19.5031 10.2572C19.7331 10.2562 19.961 10.3006 20.1738 10.3878C20.3866 10.475 20.5801 10.6034 20.7433 10.7655C21.068 11.0946 21.25 11.5383 21.25 12.0006C21.25 12.463 21.068 12.9067 20.7433 13.2358Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" _ngcontent-serverapp-c103=""></path>
+</svg>
+  <p>الرحلة 1</p>
+</div>
+                <div class="row align-items-center g-1">
+  <!-- من / إلى -->
+  <div class="col-md-9  d-flex align-items-center ">
+    <div class="travel-search d-flex flex-column  flex-fill position-relative">
+      <span class="ms-1">من</span>
+      <input id="leaveMultibleCitiesInput" type="text" class="form-control border-0 shadow-none" placeholder="Abha,Saudi Arabia , Saudi Arabia">
+       <ol class="list-group list-group shadow-lg position-absolute" id="leaveMultibleCitiesList" style= "width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+        
+
+    <div class="trans d-flex justify-content-center align-items-center  mx-1 ">
+      <i class="fa-solid fa-arrow-right-arrow-left "></i>
+    </div>
+
+    <div class="travel-search d-flex flex-column  flex-fill position-relative ">
+      <span class="ms-1">إلى</span>
+      <input id="arrivesMultibleCitiesInput" type="text" class="form-control border-0 shadow-none" placeholder="Riyadh,Saudi Arabia , Saudi Arabia">
+         <ol class="list-group list-group shadow-lg position-absolute" id="arrivesssMultibleCitiesList" style="width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+  </div>
+
+  <!-- التواريخ + زر البحث -->
+<div class="col-md-3 d-flex" style="padding: 4px;" >
+    <div class="d-flex align-items-center dates rounded-2 ">
+    <div class="date-search d-flex align-items-center   me-2">
+      <i class="fs-5 fa-solid fa-calendar-days"></i>
+      <div class="d-flex flex-column ms-2  ">
+        <span >ذهاب</span>
+        <input type="date" id="myDate" class="border-0 bg-transparent w-75"  placeholder="5 Oct,2025">
+      </div>
+    </div>
+
+  
+    
+  </div>
+ 
+</div>
+</div>
+<div class="d-flex justify-content-between ">
+          <div class="d-flex mt-2">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" _ngcontent-serverapp-c103="" aria-hidden="true">
+<path d="M20.7433 13.2358C20.5801 13.3979 20.3866 13.5263 20.1738 13.6135C19.961 13.7007 19.7331 13.7451 19.5031 13.7441L14.1152 13.7441L11.5738 19.6605C11.5482 19.7253 11.5085 19.7836 11.4575 19.8311C11.4065 19.8786 11.3455 19.9141 11.279 19.935L9.73383 20.4534C9.64816 20.481 9.55671 20.4853 9.46883 20.466C9.38094 20.4466 9.29976 20.4043 9.2336 20.3433C9.16743 20.2823 9.11864 20.2048 9.09222 20.1188C9.0658 20.0328 9.0627 19.9413 9.08323 19.8536L10.6182 13.7542L5.37275 13.4594L4.4985 14.6285L2.75 14.6285C3.13597 13.1696 3.45803 11.9956 3.45803 11.9956C3.45803 11.9956 3.16296 10.9223 2.75 9.37282L4.4985 9.37282L5.37275 10.5419L10.6182 10.2471L9.08323 4.14765C9.0627 4.06003 9.06581 3.96853 9.09222 3.88251C9.11864 3.79648 9.16743 3.71901 9.2336 3.65801C9.29976 3.59701 9.38094 3.55467 9.46883 3.53532C9.55671 3.51598 9.64816 3.52031 9.73383 3.54788L11.279 4.06633C11.3455 4.08722 11.4065 4.12271 11.4575 4.1702C11.5085 4.21768 11.5482 4.27597 11.5738 4.3408L14.1152 10.2572L19.5031 10.2572C19.7331 10.2562 19.961 10.3006 20.1738 10.3878C20.3866 10.475 20.5801 10.6034 20.7433 10.7655C21.068 11.0946 21.25 11.5383 21.25 12.0006C21.25 12.463 21.068 12.9067 20.7433 13.2358Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" _ngcontent-serverapp-c103=""></path>
+</svg>
+  <p>الرحلة 2</p>
+</div>
+
+<div  class="drop-trip" id="addTrip" >
+  <i class="fa-solid fa-circle-chevron-down "></i>
+</div>
+
+</div>
+<div id="moreTrips">
+                  <div class="row align-items-center g-1">
+  <!-- من / إلى -->
+  <div class="col-md-9  d-flex align-items-center ">
+    <div class="travel-search d-flex flex-column  flex-fill position-relative">
+      <span class="ms-1">من</span>
+      <input id="leaveMultibleCitiesInput" type="text" class="form-control border-0 shadow-none" placeholder="Abha,Saudi Arabia , Saudi Arabia">
+       <ol class="list-group list-group shadow-lg position-absolute" id="leaveMultibleCitiesList" style= "width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start leaveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+        
+
+    <div class="trans d-flex justify-content-center align-items-center  mx-1 ">
+      <i class="fa-solid fa-arrow-right-arrow-left "></i>
+    </div>
+
+    <div class="travel-search d-flex flex-column  flex-fill position-relative ">
+      <span class="ms-1">إلى</span>
+      <input id="arrivesMultibleCitiesInput" type="text" class="form-control border-0 shadow-none" placeholder="Riyadh,Saudi Arabia , Saudi Arabia">
+         <ol class="list-group list-group shadow-lg position-absolute" id="arrivesssMultibleCitiesList" style="width: 140%; top: 100%;">
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الرياض,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك خالد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> RUH </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">جدة,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك عبدالعزيز الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> JED </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">الدمام,السعودية</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار الملك فهد الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DMM </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">دبي,الامارات </div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار دبي الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> DXB </span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-2 me-auto d-flex">
+                  <div>
+                    <i class="fa fa-solid fa-location-dot fs-4 "></i>
+                  </div>
+                  <div class="fw-normal ms-2">القاهرة,مصر</div>
+                </div>
+                <span class="text-secondary">جميع المطارات</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start arriveMultibleCitiesItem">
+                <div class="ms-5 me-auto d-flex">
+                  <div>
+                    <i class="fa-solid fa-plane-departure"></i>
+                  </div>
+                  <div class="fw-normal ms-2">مطار القاهرة الدولي</div>
+                </div>
+                <span class="text-secondary bg-body-secondary p-1 rounded-3"> CAI </span>
+              </li>
+            </ol>
+    </div>
+  </div>
+
+  <!-- التواريخ + زر البحث -->
+<div class="col-md-3 d-flex" style="padding: 4px;" >
+    <div class="d-flex align-items-center dates rounded-2 ">
+    <div class="date-search d-flex align-items-center   me-2">
+      <i class="fs-5 fa-solid fa-calendar-days"></i>
+      <div class="d-flex flex-column ms-2  ">
+        <span >ذهاب</span>
+        <input type="date" id="myDate" class="border-0 bg-transparent w-75"  placeholder="5 Oct,2025">
+      </div>
+    </div>
+
+  
+    
+  </div>
+ 
+</div>
+</div>
+<div class="row justify-content-end"  >
+      <button class="btn search-btn d-flex justify-content-center  align-items-center" style="width: 50px; height: 50px;">
+      <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+</div>
+</div>
+        </div>
+      </div>
+</div>
+</div>
+</div>
+<div class="container">
+  <div class="row mt-4 ">
+    <div class="col-md-4 p-3 bg-white rounded-4">
+      <div class="result-head d-flex flex-column">
+      <span class="fw-semibold" style="font-size: 24px;">تصفية النتائج</span>
+      <span class="text-secondary">عرض 49 نتيجة</span>
+      </div>
+      <div class="mt-4 d-flex justify-content-between">
+        <p  style="font-size: 21px;">عدد التوقفات</p>
+        <span class="main-color" style="cursor: pointer;">مسح</span>
+      </div>
+      <div class="d-flex justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column" for="checkIndeterminate">
+   <span style="font-size: 14px;">رحلات مباشرة فقط</span>
+   <span class="text-secondary" style="font-size: 14px;">يبدأ من 465 SAR</span>
+  </label>
+</div>
+<div class="count">
+  <span  style="font-size: 14px;">29</span>
+</div>
+      </div>
+       <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column" for="checkIndeterminate">
+   <span style="font-size: 14px;">  1 نقطة توقف</span>
+   <span class="text-secondary" style="font-size: 14px;"> يبدأ من 556 SAR</span>
+  </label>
+</div>
+<div class="count">
+  <span  style="font-size: 14px;">12</span>
+</div>
+      </div>
+         <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column" for="checkIndeterminate">
+   <span style="font-size: 14px;">نقطتى توقف</span>
+   <span class="text-secondary" style="font-size: 14px;">يبدأ من 1406 SAR</span>
+  </label>
+</div>
+<div class="count">
+  <span  style="font-size: 14px;">8</span>
+</div>
+      </div>
+       <div class="mt-4 d-flex justify-content-between">
+        <p  style="font-size: 21px;"> قابلية الاسترداد</p>
+        <span class="main-color" style="cursor: pointer;">مسح</span>
+      </div>
+           <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;"> قابل للاسترداد</span>
+  </label>
+</div>
+<div class="count">
+  <span  style=" font-size: 14px;">18</span>
+</div>
+      </div>
+           <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;">غير قابل للاسترداد </span>
+  </label>
+</div>
+<div class="count">
+  <span  style=" font-size: 14px;">31</span>
+</div>
+      </div>
+<div class="mt-4 d-flex justify-content-between">
+        <p  style="font-size: 21px;"> وقت السفر</p>
+        <span class="main-color" style="cursor: pointer;">مسح</span>
+      </div>
+      <div>
+        <p>موعد المغادرة من الرياض</p>
+      </div>
+<div class="row g-2">
+  <div class="col-6 ">
+    <input type="checkbox" class="btn-check" id="btn-check" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check">
+<i class="fs-5 fa-solid fa-cloud-sun"></i>
+<span>قبل 6 ص</span>
+    </label>
+  </div>
+
+  <div class="col-6">
+      <input type="checkbox" class="btn-check" id="btn-check-2" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-2">
+<i class="fs-5 fa-solid fa-cloud-moon"></i>
+<span> 6 ص - 12 م </span>
+  </div>
+
+  <div class="col-6">
+      <input type="checkbox" class="btn-check" id="btn-check-3" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-3">
+<i class="fs-5 fa-solid fa-sun"></i>
+<span>12 م - 18 م</span>
+  </div>
+
+  <div class="col-6">
+        <input type="checkbox" class="btn-check" id="btn-check-4" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-4">
+<i class="fs-5 fa-solid fa-moon"></i>
+<span> بعد 18 م</span>
+  </div>
+</div>
+
+ <div class=" mt-4">
+        <p>موعد الوصول الي أبها</p>
+      </div>
+
+<div class="row g-2">
+  <div class="col-6 ">
+    <input type="checkbox" class="btn-check" id="btn-check-5" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-5">
+<i class=" fs-5 fa-solid fa-cloud-sun"></i>
+<span>قبل 6 ص</span>
+    </label>
+  </div>
+
+  <div class="col-6">
+      <input type="checkbox" class="btn-check" id="btn-check-6" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-6">
+<i class="fs-5 fa-solid fa-cloud-moon"></i>
+<span> 6 ص - 12 م </span>
+  </div>
+
+  <div class="col-6">
+      <input type="checkbox" class="btn-check" id="btn-check-7" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-7">
+<i class="fs-5 fa-solid fa-sun"></i>
+<span>12 م - 18 م</span>
+  </div>
+
+  <div class="col-6">
+        <input type="checkbox" class="btn-check" id="btn-check-8" autocomplete="off">
+    <label class="custom-btn text-center  d-flex flex-column" for="btn-check-8">
+<i class="fs-5 fa-solid fa-moon"></i>
+<span> بعد 18 م</span>
+  </div>
+</div>
+
+ <div class=" mt-4">
+        <p>خطوط الطيران</p>
+      </div>
+
+      
+        <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex align-items-center" for="checkIndeterminate">
+    <img src="images/F3.png " style="height: 20px; width: 20px;" alt="">
+   <span class="mt-1 ms-1" style="font-size: 14px;"> طيران أديل </span>
+  </label>
+</div>
+<div class="count">
+  <span  style=" font-size: 14px;">7</span>
+</div>
+      </div>
+
+       
+        <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex align-items-center" for="checkIndeterminate">
+    <img src="images/XY.png " style="height: 20px; width: 20px;" alt="">
+   <span class="mt-1 ms-1" style="font-size: 14px;"> طيران ناس </span>
+  </label>
+</div>
+<div class="count">
+  <span  style=" font-size: 14px;">17</span>
+</div>
+      </div>
+
+        <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex align-items-center" for="checkIndeterminate">
+    <img src="images/SV.png " style="height: 20px; width: 20px;" alt="">
+   <span class="mt-1 ms-1" style="font-size: 14px;">الخطوط الجوية السعودية</span>
+  </label>
+</div>
+<div class="count">
+  <span  style=" font-size: 14px;">53</span>
+</div>
+      </div>
+
+      <div class=" mt-4">
+        <p class="fs-5"> نطاق السعر</p>
+        <p>يشمل الضرائب والخدمات</p>
+      </div>
+      
+      <div>
+        <div class="d-flex justify-content-between">
+          <div><p style="font-size: 13px;" class="main-color fw-semibold"> ابتداءً من 465 ريال </p></div>
+          <div><p style="font-size: 13px;"> 49 رحلة </p></div>
+          <div style="font-size: 13px;" class="main-color fw-semibold"><p>23h 15m</p></div>
+          
+        </div>
+        <div>
+  <div class="range-container" id="range">
+    <div class="range-fill" id="fill"></div>
+    <div class="point" id="pointLeft"></div>
+    <div class="point" id="pointRight"></div>
+  </div>
+
+
+
+        </div>
+      </div>
+ <div class=" mt-4">
+        <p class="fs-5">مدة الرحلة</p>
+        <p class="text-secondary">الحد الأقصى لمدة الرحلة بالكامل</p>
+      </div>
+      <div class="d-flex justify-content-between">
+          <div><p style="font-size: 13px;" class="main-color fw-semibold">0h 0m</p></div>
+          <div><p style="font-size: 13px;"> 49 رحلة </p></div>
+          <div style="font-size: 13px;" class="main-color fw-semibold"><p>14h 15m</p></div>
+        </div>
+  <div class="range-container" id="range">
+    <div class="range-fill" id="fill"></div>
+    <div class="point" id="pointLeft"></div>
+    <div class="point" id="pointRight"></div>
+  </div>
+ <div class=" mt-4">
+        <p class="fs-5">المطارات</p>
+        <p class="">مطار المغادرة من الرياض</p>
+      </div>
+           <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;"><span class="fw-bold">RUH</span> مطار الملك خالد الدولي </span>
+  </label>
+</div>
+      </div>
+ <div class=" mt-4">
+        <p class="fs-5">مطار الوصول إلى أبها</p>
+      </div>
+               <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;"><span class="fw-bold">AHB</span> مطار أبها </span>
+  </label>
+</div>
+      </div>
+ <div class=" mt-4">
+        <p class="fs-5">مطارات الانتظار</p>
+      </div>
+               <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;"><span class="fw-bold">JED </span> مطار الملك عبد العزيز الدولي</span>
+  </label>
+</div>
+      </div>
+                   <div class="d-flex mt-4 justify-content-between">
+        <div class="form-check">
+  <input class="form-check-input" type="checkbox" value="" id="checkIndeterminate">
+  <label class="form-check-label ms-1 d-flex flex-column align-items-center" for="checkIndeterminate">
+   <span class="mt-1" style="font-size: 14px;"><span class="fw-bold">DXB </span> </span>
+  </label>
+</div>
+      </div>
+            </div>
+            <div class="col-md-8 ">
+          <div class="hhead  d-flex justify-content-between">
+                <div>
+                <h2>1.الرياض <i class="fa-solid fa-arrow-left"></i> أبها</h2>
+              </div>
+              <div>
+                <p class="text-secondary">21 رحلات</p>
+              </div>
+          </div>
+          <div class="botn">
+            <ul class="priceBtn trip-options-tabs nav bg-white rounded-start-4  rounded-end-4  nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item w-50" role="presentation">
+    <button class=" nav-link active w-100 py-2  rounded-start-4 rounded-end-0 d-flex flex-column justify-content-end  "  id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+      <span >الارخص</span>
+      <span >467 ريال</span>
+      <span >1h 40m</span>
+
+    </button>
+  </li>
+  <li class="nav-item faster w-50" role="presentation">
+    <button class="nav-link w-100  py-2 rounded-end-4 rounded-start-0 d-flex flex-column justify-content-start align-items-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+       <span >الأسرع</span>
+      <span >1004 ريال </span>
+      <span >1h 29m</span>
+
+    </button>
+  </li>
+  
+ 
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+  <div class="mt-2">
+      <div class="tiket-container shadow-sm bg-white position-relative  d-flex flex-column">
+        <div class="almatar-flight-ribbon fw-bold">
+الأرخص
+        </div>
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+  <div class="mt-2">
+      <div class="tiket-container shadow-sm bg-white position-relative  d-flex flex-column" style="border: #dd7702 solid 1px;">
+        <div class="almatar-flight-ribbon fw-bold" style="background-color: #dd7702;">
+الأسرع
+        </div>
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+      <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+      <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    <div class="mt-2">
+      <div class="tiket-container  shadow-sm bg-white position-relative  d-flex flex-column" style="border: #eee;">
+      
+   <div class="tiket-details">
+  <div class="row  mt-2 px-4 justify-content-between text-center">
+    
+    <!-- الجزء اليمين -->
+    <div class="col-2 text-start">
+      <p class="timee">12:50</p>
+      <span style="font-size: 10px;">DXB · 15 أكتوبر</span>
+      <div class="d-flex align-items-center mt-1">
+        <img src="images/F3.png" style="width: 20px; height: 20px;" alt="">
+        <span style="font-size: 10px;" class="ms-1"> أديل</span>
+      </div>
+    </div>
+
+    <!-- الجزء النص -->
+    <div class="col-7 position-relative top-0">
+      <p style="font-size: 10px;">1س 40م</p>
+      <div class="line-container position-relative">
+        <div class="line"></div>
+        <p class="duration position-absolute top-50 start-50 translate-middle bg-white px-2 m-0"></p>
+      </div>
+    </div>
+
+    <!-- الجزء الشمال -->
+    <div class="col-2 text-end">
+      <p class="timee">16:25</p>
+      <span style="font-size: 10px;">AHB · 11 نوفمبر</span>
+    </div>
+
+  </div>
+  <hr>
+<div class="d-flex align-items-center justify-content-between flex-nowrap w-100" dir="rtl">
+  <div class=" d-flex  col-md-6 flex-column">
+    <span style="color: #22c55e; font-size: 10px;">قسّمها حتى 12</span>
+    <span style="font-size: 10px;" class="fw-medium">إجمالي المبلغ (للذهاب والعودة)</span>
+    <span style="font-size: 16px;" class="fw-bold">645 ريال</span>
+  </div>
+
+  <div class="me-auto col-md-6  d-flex justify-content-end" style="min-width: 200px;">
+    <button class="tripBtn">اختر الرحلة</button>
+  </div>
+</div>
+
+
+
+</div>
+
+      <div class="ticket-price">
+
+      </div>
+    </div>
+  </div>
+    
+  </div>
+</div>
+          </div>
+
+            </div>
+
+    </div>
+  </div>
+</div>
+
+
+    <script src="JS/fligh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script> flatpickr("#myDate", { dateFormat: "Y-M-d", allowInput: false }); </script>
+</body>
+
+</html>

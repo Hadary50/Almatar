@@ -1,0 +1,313 @@
+body{
+      font-family: "Rubik", sans-serif;
+  background-color: #f7f7f8;
+  padding-top: 80px;
+}
+:root {
+  --main-color: #7c3aed;
+  --secondary-color: #ffbe0b;
+  --btn-color: #efe5ff;
+  --light-color: #f8f9fa;
+  --rating-color: #ffc908;
+}
+/* taps تحت النافبار */
+.flight-tabs ul{
+    margin-top: 22px !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
+    transition: all 0.3s;
+}
+.nav-tabs .nav-link{
+    background-color: transparent;
+    color: #000 !important;
+    transition: all 0.5s;
+}
+.nav-tabs .nav-link:hover{
+color: #7c3aed !important;
+}
+.nav-tabs .nav-link.active{
+    background-color: transparent;
+    border: 0;
+    border-bottom: 3px solid var(--main-color);
+    color: #7c3aed !important;
+    border-radius: 2px;
+}
+.dropdownpassengerss{
+    background-color: #efe5ff !important;
+    width: 100%;
+}
+.dropdown-menu.show{
+    background-color: #fff !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 300px;
+    transform: translate3d(0px,0px, 0px) !important;
+}
+.travel-search {
+  background-color: #eeeef0;
+  border-radius: 5px;
+  flex: 1;
+  min-width: 0;
+}
+
+.travel-search input {
+  background-color: transparent !important;
+  outline: none;
+}
+
+.trans {
+     background-color: var(--btn-color);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: .3s ease-out;
+        padding: 20px 8px !important;
+}
+
+.trans:hover {
+  background-color: #dccef3;
+}
+
+.date-search {
+  background-color: #eeeef0;
+  border-radius: 5px;
+  padding: 6px;
+  flex: 1;
+  min-width: 0;
+}
+
+.date-search input {
+  background-color: transparent !important;
+  outline: none;
+}
+
+.search-btn {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 12px;
+  padding: 17px 24px;
+  font-size: 16px !important;
+  transition: all 0.3s ease;
+  
+}
+.search-btn:hover{
+    background-color: #722cea;
+    color: #fff;
+}
+
+.dates{
+    background-color: #eeeef0;
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+    .dates{
+            width:100% !important;
+    }
+  }
+  #leaveMultibleCitiesList{
+    display: none;
+  }
+  @media all and (min-width: 576px) and (max-width: 767px) {
+  #arriveFlightList{
+    width: 140% !important;
+    max-width: 300px;
+    
+  }}
+
+.drop-trip{
+  background-color: var(--btn-color);
+    color: var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+ #moreTrips{
+  display: none;
+ }
+
+.form-check-input {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #7c3aed;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: none !important;
+  cursor: pointer;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.form-check-input:checked {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+  box-shadow: none !important;
+}
+
+.form-check-input:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+.custom-btn {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+  background-color: transparent;
+  border: 1px solid #d9d9de;
+  border-radius: 12px;
+      padding: 8px 2px;
+  color: #000001;
+  width: 100%;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+
+
+.btn-check:checked + .custom-btn {
+  background-color: #7c3aed;
+  border-color: #7c3aed;
+  color: #fff;
+}
+
+.btn-check:focus + .custom-btn,
+.custom-btn:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+  @media(max-width: 991px) {
+ 
+  #flightList{
+    width: 222% !important;
+  }}
+
+
+   .range-container {
+    position: relative;
+    /* width: 320px; */
+    height: 7px;
+    background: #ddd;
+    border-radius: 10px;
+  }
+
+  .range-fill {
+    position: absolute;
+    height: 100%;
+    background: #7c3aed;
+    border-radius: 10px;
+  }
+
+  .point {
+    position: absolute;
+    top: 50%;
+    width: 24px;
+    height: 24px;
+    background: #7c3aed;
+    border: 3px solid #7c3aed;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  }
+
+  .values {
+    margin-top: 30px;
+    text-align: center;
+    color: #7c3aed;
+    font-weight: 600;
+  }
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+background: #22c55e !important;
+ }
+
+
+
+
+  .trip-options-tabs .nav-link {
+  color: #22c55e !important;
+  background-color: #fff !important;
+  transition: all 0.3s ease;
+}
+.trip-options-tabs .faster .nav-link{
+color: #dd7702 !important;
+}
+.trip-options-tabs .nav-link.active {
+  background-color: #22c55e !important;
+  color: white !important;
+  border-color: #22c55e!important;
+}
+.trip-options-tabs span{
+  margin-left: 75%;
+  min-width: 80px !important;
+}
+
+.tiket-container{
+  border: solid 1px #22c55e;
+  border-radius: 20px ;
+  padding: 16px !important;
+} 
+.tiket-details .timee {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.line-container {
+  height: 2px;
+  background-color: transparent;
+  position: relative;
+  margin: 10px 0;
+}
+
+.line-container .line {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #8c8b90;
+  z-index: 1;
+}
+
+.line-container .duration {
+  font-size: 12px;
+  z-index: 2;
+}
+.tripBtn{
+  color: #ffff ;
+  background-color: #7c3aed !important;
+  padding: 9px 25px ;
+  font-size: 16px ;
+border-radius: 12px;
+border: 0;
+}
+.almatar-flight-ribbon{
+  width: 40px;
+right: -1%;
+    position: absolute;
+    padding: 6px 4px;
+    background-color: #22c55e;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-end-end-radius: 3px;
+    box-shadow: 0 1px 4px #90b9d13d;
+    font-size: 10px;
+    color: #fff;
+    text-transform: uppercase;}
+.almatar-flight-ribbon::before{
+      content: "";
+    position: absolute;
+    top: 100%;
+    left: 88%;
+    border-style: solid;
+    border-color: #0F2E5C transparent transparent transparent;
+    border-width: 6px 0 0;
+    border-inline-start-width: 6px;
+}

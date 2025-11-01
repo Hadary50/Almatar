@@ -1,0 +1,1088 @@
+:root {
+  --main-color: #7c3aed;
+  --secondary-color: #ffbe0b;
+  --btn-color: #efe5ff;
+  --light-color: #f8f9fa;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  background-color: #f7f7f8;
+  padding-top: 80px;
+}
+
+.main-color {
+  color: var(--main-color) !important;
+}
+
+.navbar {
+  padding: 5px 0px !important;
+  background: #f7f7f8 !important;
+  border-bottom: solid 1px #d9d9de;
+  flex-wrap: nowrap;
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.nav-link {
+  font-weight: 400;
+  margin: 0 5px;
+  transition: all 0.3s;
+}
+
+.nav-link {
+  margin: 0;
+}
+
+.whatsappLink {
+  background: #fff;
+  border-radius: 999px;
+  padding: 0 2px;
+  transition: all 0.3s;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  height: 52px;
+  overflow: hidden;
+}
+
+.whatsappBoxmob {
+  background: #fff;
+  border-radius: 999px;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  max-width: 140px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.whatsappIcons img {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.service-box-mob {
+  font-size: 0.75rem;
+  line-height: 1.1;
+  margin-left: 6px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.service-box-mob .line1,
+.service-box-mob .line3 {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.service-box-mob .line1 img,
+.service-box-mob .line3 img {
+  width: 12px;
+  height: 12px;
+}
+
+.whatsappIcons img {
+  width: 28px;
+  height: 28px;
+}
+
+.whatsappIcon img {
+  width: 28px;
+  height: 28px;
+}
+
+.service-box {
+  font-size: 0.8rem;
+  line-height: 1.2;
+  margin-left: 8px;
+}
+
+.line1,
+.line3 {
+  font-size: 0.7rem;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+
+.line1 img,
+.line3 img {
+  width: 12px;
+  height: 12px;
+  margin-left: 3px;
+}
+
+.whatsappNumber {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.lang {
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+.lang img {
+  width: 20px;
+  height: 15px;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.dropdown-toggle {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+}
+
+.dropdown-menu {
+  border: none;
+  padding: 10px;
+}
+
+.dropdown-item {
+  padding: 8px 12px;
+  padding-left: 100px;
+  border-bottom: solid 1px #eeeeef;
+  font-size: 0.9rem;
+}
+
+.dropdown-item img {
+  width: 20px;
+  height: 15px;
+  margin-left: 8px;
+  border-radius: 2px;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.login button {
+  background-color: var(--btn-color);
+  color: var(--main-color);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 18px;
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.mobile-whatsapp {
+  display: none;
+}
+
+.mobile-whatsapp img {
+  width: 32px;
+  height: 32px;
+}
+
+.rate img {
+  width: 41.3px;
+  height: auto;
+}
+
+.home .nav-tabs {
+  border: 0;
+}
+
+.ekamabtn,
+.tyranbtn {
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  outline: none;
+  border-radius: 3px;
+  color: var(--main-color);
+  transition: all 0.5s;
+}
+
+.ekamabtn:focus,
+.tyranbtn:focus {
+  background: var(--btn-color);
+}
+
+.nav-tabs .nav-link {
+  background-color: #f5f5f5;
+  color: #7c3aed !important;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: #fff;
+  border: solid 1px transparent;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #efe5ff;
+}
+
+.ekama-content {
+  border: 4px solid #7c3aed;
+  margin-top: 10px;
+  border-radius: 9px;
+  padding: 8px 33px;
+}
+
+.ekama-content span {
+  color: #7c3aed;
+  font-size: 12px;
+}
+
+.place-box {
+  border: 4px solid var(--btn-color);
+  padding: 8px 10px;
+  border-radius: 9px;
+}
+
+input {
+  outline: 0;
+  border: 0;
+  color: #7c3aed;
+}
+
+.arrival-box {
+  border: 4px solid var(--btn-color);
+  padding: 3px 10px;
+  border-radius: 9px;
+}
+
+.arr-date {
+  border: 0;
+  outline: 0;
+}
+  
+flatpickr-day.selected,
+.flatpickr-day.startRange,
+.flatpickr-day.endRange,
+.flatpickr-day.selected.inRange,
+.flatpickr-day.startRange.inRange,
+.flatpickr-day.endRange.inRange,
+.flatpickr-day:hover,
+.flatpickr-day:focus {
+  background: #7c3aed !important;
+  border-color: #7c3aed !important;
+  color: #fff !important;
+}
+
+.flatpickr-current-month .flatpickr-monthDropdown-months,
+.flatpickr-current-month input.cur-year {
+  color: #7c3aed !important;
+  font-weight: bold;
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+  fill: #7c3aed;
+  
+}
+
+.btnekam {
+  background-color: #7c3aed;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+}
+/* flights */
+
+
+
+
+
+
+.mincebtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  font-size: 15px;
+  padding: 0;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.plusBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  font-size: 15px;
+  padding: 0;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  background-color: #7c3aed;
+  cursor: pointer;
+}
+
+.home .nav-tabs {
+  background-color: var(--btn-color);
+  border-radius: 6px;
+}
+
+.home .nav-tabs .nav-link {
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+.btn-circle,
+.carousel-control-next,
+.carousel-control-prev,
+.rightt,
+.leftt {
+  border-radius: 24px;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* الهوفر */
+.btn-circle:hover,
+.carousel-control-prev:hover,
+.carousel-control-next:hover,
+.rightt:hover,
+.leftt:hover {
+  color: #7c3aed !important;
+  border-color: var(--main-color);
+}
+
+.cards {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.cards img {
+  max-width: 64px;
+}
+
+.card-cities img {
+  width: 100% !important;
+  height: 200px !important;
+  object-fit: cover !important;
+  border-radius: 0.5rem !important;
+}
+
+
+
+.my-box::-webkit-scrollbar {
+  width: 3px;
+}
+
+.my-box::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.my-box::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
+
+.my-box::-webkit-scrollbar-thumb:hover {
+  background: #5b21b6;
+}
+
+.hotel-nav .active {
+  background-color: transparent !important;
+  border-bottom: #5b21b6 solid 1px !important;
+}
+
+.custom-tabs {
+  border-bottom: 1px solid var(--btn-color);
+}
+
+.custom-tabs .nav-link {
+  background: transparent;
+  color: #666 !important;
+  font-size: 12px !important;
+}
+
+.rating-color {
+  color: var(--rating-color);
+}
+
+.custom-tabs .nav-link.active {
+  background-color: transparent;
+  border: none;
+  border-bottom: solid 2px #7c3aed;
+  color: #7c3aed !important;
+  font-size: 12px !important;
+}
+
+.slider-city {
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-behavior: smooth !important;
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+.map {
+  border-radius: 8px;
+  height: 640px;
+}
+
+.custom-tabs-wrapper::-webkit-scrollbar {
+  height: 2px;
+}
+
+.custom-tabs-wrapper::-webkit-scrollbar-thumb {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-card-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-card {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.custom-card::-webkit-scrollbar {
+  display: none;
+}
+
+.card-img-top {
+  height: 96px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cards .cardss {
+  display: flex;
+}
+
+.cards .cardss > div {
+  flex: 1;
+}
+
+#cardsContainer {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+#cardsContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.login-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 9999;
+}
+
+.jok {
+  background-image: linear-gradient(
+    90deg,
+    #fff8e7 0%,
+    #eaf9f8 33.33%,
+    #deedfe 66.66%,
+    #f3f1fe 100%
+  );
+}
+
+.login-overlay {
+  display: none;
+}
+
+#exitBtn {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 77% !important;
+}
+
+.footer {
+  margin-right: 2px !important;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    width: 60%;
+    background-color: white;
+    padding: 20px;
+    padding-right: 2px;
+    margin-top: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 53px;
+    right: 0;
+    z-index: 9999;
+    height: 100vh;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  .whatsapp-link-desktop {
+    display: none !important;
+  }
+
+  .mobile-whatsapp {
+    display: block;
+  }
+
+  .navbar-toggler {
+    border: none;
+    font-size: 1.1rem;
+    padding-right: 5px;
+  }
+  .navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: none;
+  }
+  .nav-item {
+    margin: 8px 0;
+    text-align: right;
+  }
+
+  .lang-and-currency {
+    justify-content: center;
+    margin: 15px 0;
+  }
+
+  .login {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .login button {
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100% !important;
+  }
+
+  .navbar-collapse .nav-item {
+    margin: 10px 0;
+    text-align: right;
+  }
+
+  .footer {
+    display: flex;
+  }
+
+  .login-overlay {
+    padding: 22px;
+  }
+
+  .login-overlay .container .row {
+    justify-content: center;
+    border-radius: 5px !important;
+    height: 630px !important;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .container {
+    max-width: 95% !important;
+  }
+  .hotels {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+@media all and (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 95% !important;
+  }
+
+  .card-img-top {
+    height: 180px;
+    object-fit: cover;
+  }
+}
+
+
+
+@media (max-width: 900.98px) {
+  .row > [class*="col-12"] {
+    flex: 0 0 50%;
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .row > [class*="col-12"] {
+    flex: 0 0 50%;
+    max-width: 30%;
+  }
+  .navbar-nav,
+  .login {
+    margin-right: 10px !important;
+  }
+}
+
+.righSummer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.righSummer .col-md-4 {
+  flex: 1 1 calc(33.333% - 10px);
+}
+
+@media (max-width: 768px) {
+  .righSummer {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .righSummer .col-md-4 {
+    flex: 0 0 95%;
+    scroll-snap-align: start;
+  }
+
+  .righSummer::-webkit-scrollbar {
+    display: none;
+  }
+
+  .righSummer img {
+    height: 120px !important;
+  }
+}
+
+.responsive-slider .col-lg-6 {
+  flex: 1 1 calc(50% - 10px);
+}
+
+@media (max-width: 768px) {
+  .responsive-slider {
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    margin-bottom: 0;
+  }
+
+  .responsive-slider .row {
+    margin-top: 0 !important;
+  }
+
+  .responsive-slider .col-lg-6 {
+    flex: 0 0 95%;
+    scroll-snap-align: start;
+  }
+
+  .responsive-slider::-webkit-scrollbar {
+    display: none;
+  }
+
+  .responsive-slider img {
+    height: 150px !important;
+    object-fit: cover;
+  }
+
+  .card-body-mob img {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-slider .card-body {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px !important;
+    padding: 0.5rem !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .responsive-slider {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    overflow: visible !important;
+    scroll-snap-type: none !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .responsive-slider > .col-lg-6 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* الموبايل */
+@media (max-width: 767px) {
+  .responsive-slider {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .responsive-slider > .col-lg-6 {
+    flex: 0 0 90%; /* عرض الكارت */
+    max-width: 90%;
+    scroll-snap-align: start;
+  }
+
+  .responsive-slider::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media (min-width: 1600px) {
+  .home .booking {
+    max-width: 500px;
+  }
+  .navbar {
+    margin-right: 5%;
+  }
+
+  .container {
+    max-width: 1200px !important; /* أو 1320px حسب التصميم */
+    margin: 0 auto;
+  }
+  .login-overlay .container .row {
+    height: 50vh !important;
+  }
+  .login-overlay .container .row i {
+    right: 93%;
+    margin-top: 20px;
+  }
+}
+
+/* الفورم  */
+.ekama-form {
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 4px;
+}
+.ekama-form span{
+      font-size: 12px;
+    color: var(--main-color);
+    margin-bottom: 8px;
+    display: block;
+}
+.ekama-form input{
+      font-size: 13px;
+    border-radius: 0;
+    padding-right: 3px;
+    color: var(--main-color);
+    line-height: 18.5px;
+}
+.search-distnation{
+      background-color: #ffffff;
+    border-radius: 8px ;
+    color: var(var--main-color);
+    padding-left: 8px;
+    padding-right: 8px;
+    min-height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative
+}
+
+.chickout-content{
+      border-radius: 8px 6px !important;
+    background-color: #ffff !important;
+
+}
+.app-calender {
+  display: flex;
+  background-color: transparent;
+  border-radius: 0;
+    column-gap: 3.5px;
+}
+
+.chickin {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-right: none;             
+  border-radius: 8px 6px;
+  flex: 1;
+}
+
+.chickOut {
+  padding-right: 3px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px 8px;
+  flex: 1;
+}
+/* ليست الاقامة  */
+.distnation-list-group{
+  background-color: #fff;
+      position: absolute;
+     width: calc(100% + 19px);
+    right: -9px;
+    max-height: 50vh;
+    overflow: scroll;
+    border-radius: 6px;
+    z-index: 999;
+    box-shadow: 0 6px 6px #00000029;
+    display: none;
+}
+.distnation-list-group::-webkit-scrollbar {
+  width: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-thumb {
+  background: #7c3aed;
+  border-radius: 3px;
+}
+
+.distnation-list-group::-webkit-scrollbar-thumb:hover {
+  background: #5b21b6;
+}
+.distnation-head{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--main-color);
+}
+.list-group-item{
+border: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 3px;
+    transition: background-color 0.3s ease-in-out;
+padding-block: 12px;
+    padding-inline: 6px 10px;}
+.list-group-item:hover{
+    background-color:#e5d6fe
+}
+/* /////////// */
+.flight-box .nav-pills .nav-link{
+  color: var(--main-color);
+}
+.flight-box .nav-pills .nav-link.active{
+ background-color:var(--main-color); 
+     border-radius: 12px 12px 0 0;
+     padding: 9px;
+     cursor: pointer;
+     position: relative;
+     z-index: 1;
+     color: #fff;
+}
+.flight-box .go-back-tap .nav-link.active::before{
+content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+    left: 0;
+    transform: translate(-100%);
+    box-shadow: 10px 0 0 var(--main-color)
+}
+.flight-box .go-only-tap .nav-link.active::before{
+content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+    left: 0;
+    transform: translate(-100%);
+    box-shadow: 10px 0 0 var(--main-color)
+}
+.flight-box .go-only-tap .nav-link.active::after{
+  content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+        right: 0;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color)
+}
+.go-back-form{
+  display: flex
+;
+    flex-direction: column;
+    border: 4px solid var(--main-color);
+    padding: 16px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-top: -8px;
+}
+
+
+.flight-box .Multiple-cities-tap .nav-link.active::after{
+      content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    width: 30px;
+    height: 6px;
+    border-radius: 0 0 8px 8px;
+        right: 0;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color)
+}
+.flight-box .go-back-tap .nav-link.active::after{
+   content: "";
+    position: absolute;
+    z-index: -1;
+    bottom: -7px;
+   width: 6.1px;
+    height: 8px;
+    border-radius: 0px 0px 0px 0px;
+    right: -3.6px;
+    transform: translate(100%);
+    box-shadow: -10px 0 0 var(--main-color);
+
+}
+
+.go-back-form::before{
+      content: "";
+    position: absolute;
+    inset: -4px;
+    border: 4px solid var(--main-color);
+    border-radius: 12px;
+    z-index: -1;
+        border-start-end-radius:4px
+}
+@media (max-width: 991px) { /* لحد التابلت والموبايل */
+  .flight-box .nav-pills {
+    margin-bottom: 0 !important;
+  }
+  .go-back-form {
+    margin-top: -15px !important;
+  }
+}
+@media (max-width: 991px) {
+  .go-back-form {
+    border-top: none !important;
+    border-radius: 0 0 10px 10px !important; /* بس الحواف من تحت */
+    margin-top: -5px !important;
+  }
+}
+/* ليست الطيران  */
+#flightList{
+  display: none;
+  cursor: pointer;
+}
+#arriveFlightList{
+  display: none;
+  cursor: pointer;
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  #arriveFlightList{
+    width: 100% !important;
+    max-width: 300px;
+    
+  }
+   #leaveMultibleCitiesList{
+    width: 100% !important;
+  }
+  }
+  @media(max-width: 991px) {
+  #arriveFlightList{
+    width: 100% !important;
+  }
+  #leaveMultibleCitiesList{
+    width: 100% !important;
+  }
+  #arrivesssMultibleCitiesList{
+    
+        width: 100%;
+    left: 0%;
+  }
+  }
+  /* ذهاب بس */
+  #goOnlyFLightList{
+    display: none;
+  }
+  #goOnlyArriveFlightList{
+    display: none;
+  }
+  #leaveMultibleCitiesList{
+    display: none;
+  }
+  #arrivesssMultibleCitiesList{
+    display: none;
+  }
+  .Add-Trip{
+    cursor: pointer;
+  }
+  @media (max-width: 767px) {
+  .why-section, .cards {
+    display: block !important;
+  }
+}
+.sidebar {
+  position: relative;   
+  height: auto;
+  overflow: visible;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+  }
+}
