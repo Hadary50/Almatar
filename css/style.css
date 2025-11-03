@@ -265,7 +265,7 @@ input {
   border: 0;
   outline: 0;
 }
-  
+
 flatpickr-day.selected,
 .flatpickr-day.startRange,
 .flatpickr-day.endRange,
@@ -288,7 +288,6 @@ flatpickr-day.selected,
 .flatpickr-months .flatpickr-prev-month svg,
 .flatpickr-months .flatpickr-next-month svg {
   fill: #7c3aed;
-  
 }
 
 .btnekam {
@@ -299,11 +298,6 @@ flatpickr-day.selected,
   border-radius: 8px;
 }
 /* flights */
-
-
-
-
-
 
 .mincebtn {
   width: 20px;
@@ -352,13 +346,6 @@ a {
   text-decoration: none;
 }
 
-
-
-
-
-
-
-
 .btn-circle,
 .carousel-control-next,
 .carousel-control-prev,
@@ -401,8 +388,6 @@ a {
   object-fit: cover !important;
   border-radius: 0.5rem !important;
 }
-
-
 
 .my-box::-webkit-scrollbar {
   width: 3px;
@@ -648,8 +633,6 @@ a {
   }
 }
 
-
-
 @media (max-width: 900.98px) {
   .row > [class*="col-12"] {
     flex: 0 0 50%;
@@ -809,48 +792,47 @@ a {
   row-gap: 4px;
   padding: 4px;
 }
-.ekama-form span{
-      font-size: 12px;
-    color: var(--main-color);
-    margin-bottom: 8px;
-    display: block;
+.ekama-form span {
+  font-size: 12px;
+  color: var(--main-color);
+  margin-bottom: 8px;
+  display: block;
 }
-.ekama-form input{
-      font-size: 13px;
-    border-radius: 0;
-    padding-right: 3px;
-    color: var(--main-color);
-    line-height: 18.5px;
+.ekama-form input {
+  font-size: 13px;
+  border-radius: 0;
+  padding-right: 3px;
+  color: var(--main-color);
+  line-height: 18.5px;
 }
-.search-distnation{
-      background-color: #ffffff;
-    border-radius: 8px ;
-    color: var(var--main-color);
-    padding-left: 8px;
-    padding-right: 8px;
-    min-height: 56px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative
+.search-distnation {
+  background-color: #ffffff;
+  border-radius: 8px;
+  color: var(var--main-color);
+  padding-left: 8px;
+  padding-right: 8px;
+  min-height: 56px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
 }
 
-.chickout-content{
-      border-radius: 8px 6px !important;
-    background-color: #ffff !important;
-
+.chickout-content {
+  border-radius: 8px 6px !important;
+  background-color: #ffff !important;
 }
 .app-calender {
   display: flex;
   background-color: transparent;
   border-radius: 0;
-    column-gap: 3.5px;
+  column-gap: 3.5px;
 }
 
 .chickin {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-right: none;             
+  border-right: none;
   border-radius: 8px 6px;
   flex: 1;
 }
@@ -863,17 +845,17 @@ a {
   flex: 1;
 }
 /* ليست الاقامة  */
-.distnation-list-group{
+.distnation-list-group {
   background-color: #fff;
-      position: absolute;
-     width: calc(100% + 19px);
-    right: -9px;
-    max-height: 50vh;
-    overflow: scroll;
-    border-radius: 6px;
-    z-index: 999;
-    box-shadow: 0 6px 6px #00000029;
-    display: none;
+  position: absolute;
+  width: calc(100% + 19px);
+  right: -9px;
+  max-height: 50vh;
+  overflow: scroll;
+  border-radius: 6px;
+  z-index: 999;
+  box-shadow: 0 6px 6px #00000029;
+  display: none;
 }
 .distnation-list-group::-webkit-scrollbar {
   width: 3px;
@@ -892,120 +874,119 @@ a {
 .distnation-list-group::-webkit-scrollbar-thumb:hover {
   background: #5b21b6;
 }
-.distnation-head{
+.distnation-head {
   font-size: 16px;
   font-weight: 500;
   color: var(--main-color);
 }
-.list-group-item{
-border: 0;
-    display: flex;
-    align-items: center;
-    border-radius: 3px;
-    transition: background-color 0.3s ease-in-out;
-padding-block: 12px;
-    padding-inline: 6px 10px;}
-.list-group-item:hover{
-    background-color:#e5d6fe
+.list-group-item {
+  border: 0;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  transition: background-color 0.3s ease-in-out;
+  padding-block: 12px;
+  padding-inline: 6px 10px;
+}
+.list-group-item:hover {
+  background-color: #e5d6fe;
 }
 /* /////////// */
-.flight-box .nav-pills .nav-link{
+.flight-box .nav-pills .nav-link {
   color: var(--main-color);
 }
-.flight-box .nav-pills .nav-link.active{
- background-color:var(--main-color); 
-     border-radius: 12px 12px 0 0;
-     padding: 9px;
-     cursor: pointer;
-     position: relative;
-     z-index: 1;
-     color: #fff;
+.flight-box .nav-pills .nav-link.active {
+  background-color: var(--main-color);
+  border-radius: 12px 12px 0 0;
+  padding: 9px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  color: #fff;
 }
-.flight-box .go-back-tap .nav-link.active::before{
-content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 30px;
-    height: 6px;
-    border-radius: 0 0 8px 8px;
-    left: 0;
-    transform: translate(-100%);
-    box-shadow: 10px 0 0 var(--main-color)
-}
-.flight-box .go-only-tap .nav-link.active::before{
-content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 30px;
-    height: 6px;
-    border-radius: 0 0 8px 8px;
-    left: 0;
-    transform: translate(-100%);
-    box-shadow: 10px 0 0 var(--main-color)
-}
-.flight-box .go-only-tap .nav-link.active::after{
+.flight-box .go-back-tap .nav-link.active::before {
   content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 30px;
-    height: 6px;
-    border-radius: 0 0 8px 8px;
-        right: 0;
-    transform: translate(100%);
-    box-shadow: -10px 0 0 var(--main-color)
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 30px;
+  height: 6px;
+  border-radius: 0 0 8px 8px;
+  left: 0;
+  transform: translate(-100%);
+  box-shadow: 10px 0 0 var(--main-color);
 }
-.go-back-form{
-  display: flex
-;
-    flex-direction: column;
-    border: 4px solid var(--main-color);
-    padding: 16px;
-    border-radius: 10px;
-    position: relative;
-    z-index: 1;
-    margin-top: -8px;
+.flight-box .go-only-tap .nav-link.active::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 30px;
+  height: 6px;
+  border-radius: 0 0 8px 8px;
+  left: 0;
+  transform: translate(-100%);
+  box-shadow: 10px 0 0 var(--main-color);
 }
-
-
-.flight-box .Multiple-cities-tap .nav-link.active::after{
-      content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: 0;
-    width: 30px;
-    height: 6px;
-    border-radius: 0 0 8px 8px;
-        right: 0;
-    transform: translate(100%);
-    box-shadow: -10px 0 0 var(--main-color)
+.flight-box .go-only-tap .nav-link.active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 30px;
+  height: 6px;
+  border-radius: 0 0 8px 8px;
+  right: 0;
+  transform: translate(100%);
+  box-shadow: -10px 0 0 var(--main-color);
 }
-.flight-box .go-back-tap .nav-link.active::after{
-   content: "";
-    position: absolute;
-    z-index: -1;
-    bottom: -7px;
-   width: 6.1px;
-    height: 8px;
-    border-radius: 0px 0px 0px 0px;
-    right: -3.6px;
-    transform: translate(100%);
-    box-shadow: -10px 0 0 var(--main-color);
-
+.go-back-form {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid var(--main-color);
+  padding: 16px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  margin-top: -8px;
 }
 
-.go-back-form::before{
-      content: "";
-    position: absolute;
-    inset: -4px;
-    border: 4px solid var(--main-color);
-    border-radius: 12px;
-    z-index: -1;
-        border-start-end-radius:4px
+.flight-box .Multiple-cities-tap .nav-link.active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  width: 30px;
+  height: 6px;
+  border-radius: 0 0 8px 8px;
+  right: 0;
+  transform: translate(100%);
+  box-shadow: -10px 0 0 var(--main-color);
 }
-@media (max-width: 991px) { /* لحد التابلت والموبايل */
+.flight-box .go-back-tap .nav-link.active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -7px;
+  width: 6.1px;
+  height: 8px;
+  border-radius: 0px 0px 0px 0px;
+  right: -3.6px;
+  transform: translate(100%);
+  box-shadow: -10px 0 0 var(--main-color);
+}
+
+.go-back-form::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border: 4px solid var(--main-color);
+  border-radius: 12px;
+  z-index: -1;
+  border-start-end-radius: 4px;
+}
+@media (max-width: 991px) {
+  /* لحد التابلت والموبايل */
   .flight-box .nav-pills {
     margin-bottom: 0 !important;
   }
@@ -1021,60 +1002,59 @@ content: "";
   }
 }
 /* ليست الطيران  */
-#flightList{
+#flightList {
   display: none;
   cursor: pointer;
 }
-#arriveFlightList{
+#arriveFlightList {
   display: none;
   cursor: pointer;
 }
 @media all and (min-width: 576px) and (max-width: 767px) {
-  #arriveFlightList{
+  #arriveFlightList {
     width: 100% !important;
     max-width: 300px;
-    
   }
-   #leaveMultibleCitiesList{
+  #leaveMultibleCitiesList {
     width: 100% !important;
   }
-  }
-  @media(max-width: 991px) {
-  #arriveFlightList{
+}
+@media (max-width: 991px) {
+  #arriveFlightList {
     width: 100% !important;
   }
-  #leaveMultibleCitiesList{
+  #leaveMultibleCitiesList {
     width: 100% !important;
   }
-  #arrivesssMultibleCitiesList{
-    
-        width: 100%;
+  #arrivesssMultibleCitiesList {
+    width: 100%;
     left: 0%;
   }
-  }
-  /* ذهاب بس */
-  #goOnlyFLightList{
-    display: none;
-  }
-  #goOnlyArriveFlightList{
-    display: none;
-  }
-  #leaveMultibleCitiesList{
-    display: none;
-  }
-  #arrivesssMultibleCitiesList{
-    display: none;
-  }
-  .Add-Trip{
-    cursor: pointer;
-  }
-  @media (max-width: 767px) {
-  .why-section, .cards {
+}
+/* ذهاب بس */
+#goOnlyFLightList {
+  display: none;
+}
+#goOnlyArriveFlightList {
+  display: none;
+}
+#leaveMultibleCitiesList {
+  display: none;
+}
+#arrivesssMultibleCitiesList {
+  display: none;
+}
+.Add-Trip {
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .why-section,
+  .cards {
     display: block !important;
   }
 }
 .sidebar {
-  position: relative;   
+  position: relative;
   height: auto;
   overflow: visible;
 }

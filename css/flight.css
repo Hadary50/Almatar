@@ -311,6 +311,9 @@ right: -1%;
     border-width: 6px 0 0;
     border-inline-start-width: 6px;
 }
+.quick-filter-container{
+  display: none;
+}
 @media (max-width: 767px) {
   #arriveFlightList {
     width: 200% !important;
@@ -327,7 +330,14 @@ right: -1%;
       font-size: 16px !important;
       transition: all 0.3s ease;
   }
+  .leftSideBar{
+    display: none;
+  }
+  .quick-filter-container{
+  display: block;
 }
+}
+
 @media (max-width: 991.98px) {
     .navbar-collapse {
         width: 60%;
@@ -342,4 +352,26 @@ right: -1%;
         z-index: 9999;
         height: 100vh;
     }
+}
+.quick-tabs .nav-item{
+      padding: 0 !important;
+  margin: 0 !important;
+}
+.quick-tabs .nav-item .nav-link{
+  background-color: var(--btn-color) !important;
+  color: #fff !important;
+    padding: 0 !important;
+  margin: 0 !important;
+}
+.quick-tabs .nav-item .nav-link.active{
+  background-color: var(--btn-color) !important;
+  color: #fff !important;
+    padding: 12px !important;
+  margin: 0 !important;
+}
+.quick-tabs .nav-item .nav-link  {
+    background-color: var(--main-color) !important;
+    color: #fff !important;
+    padding: 12px !important;
+    margin: 0 !important;
 }
