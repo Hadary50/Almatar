@@ -1,0 +1,2804 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css">
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/flight.css">
+  <link rel="stylesheet" href="css/stay.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary top-bar fixed-top d-flex flex-column">
+    <div class="container">
+      <div class="d-flex navbox align-items-center "> <a class="navbar-brand logo" href="#"> <img
+            src="images/almatar_logo_ar.png" alt="شعار المطار"> </a>
+        <a href="#" class="mobile-whatsapp">
+          <div class="whatsappBoxmob">
+            <div class="whatsappIcons ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+            <div class="service-box-mob">
+              <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span>
+              </div>
+              <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+              <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع">
+                <span>نرد في 8
+                  ثواني</span>
+              </div>
+            </div>
+          </div>
+
+        </a>
+      </div> <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <div class="collapse  navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav  mb-2 mb-lg-0 " style="margin-right: 73px;">
+          <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">الإقامات</a> </li>
+          <li class="nav-item"> <a class="nav-link active main-color" aria-current="page" href="#">طيران</a>
+          </li>
+          <li class="nav-item"> <a class="nav-link active main-color d-flex m" aria-current="page" href="#">
+              <img src="images/offer.png" alt="عروض"> عروض </a> </li>
+        </ul>
+        <a href="https://wa.me/966920005511" target="_blank"
+          class="whatsappLink whatsapp-link-desktop mx-3 d-flex text-decoration-none align-items-center">
+          <div class="whatsappBox">
+            <div class="whatsappIcon ms-1"> <img src="images/whatsapp-icon.png" alt="واتساب"> </div>
+          </div>
+          <div class="service-box">
+            <div class="line1"> <img src="images/availability.png" alt="متاح"> <span>نخدمك 24/7</span>
+            </div>
+            <div class="whatsappNumber fw-bold text-black">92000 55 11</div>
+            <div class="line3 d-flex align-items-center"> <img src="images/reply.png" alt="رد سريع">
+              <span>نرد في 8
+                ثواني</span>
+            </div>
+          </div>
+        </a>
+        <div class="d-flex align-items-center lang-and-currency">
+          <div class="lang px-2"> <img src="images/en.png" alt="English"> <span>English</span> </div>
+          <div class="dropdown me-2"> <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
+              aria-expanded="false"> SAR </button>
+            <ul class="dropdown-menu mt-2">
+              <li><button class="dropdown-item" type="button"><img src="images/sa_icon.png" alt=""> <span
+                    class="fw-semibold">SAR </span> <span>الريال السعودي</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/ae_icon.png" alt=""> <span
+                    class="fw-semibold">AED </span> <span>درهم اماراتي</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/bh_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> دينار بحريني</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/eu_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> اليورو الاوروبي </span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/kw_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الدينار الكويتي </span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/qa_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الريال القطري</span></button></li>
+              <li><button class="dropdown-item" type="button"><img src="images/us_icon.png" alt=""> <span
+                    class="fw-semibold">BHD </span> <span> الدولار الامريكي </span></button></li>
+            </ul>
+          </div>
+        </div>
+        <div class="login"> <button>تسجيل دخول</button> </div>
+      </div>
+
+    </div>
+    <div class="container">
+      <ul class="d-flex text-decoration-none list-unstyled">
+        <li><a href="index.html" class="main-color">الرئيسية</a></li>
+        <li class="mx-2"><a href="index.html" class="main-color"> <i class="fa-solid fa-chevron-left"></i> </a>
+        </li>
+
+        <li class="mx-2"><a href="" class="main-color">طيران</a></li>
+        <li class="mx-2"><a href="index.html" class="main-color"> <i class="fa-solid fa-chevron-left"></i> </a>
+        </li>
+        <li>فندق جيه إيه ليك فيو، دبي</li>
+
+      </ul>
+    </div>
+  </nav>
+  <div class="container mt-5">
+    <div class="row mt-3 g-3 align-items-stretch">
+      <!-- الصورة الكبيرة -->
+      <div class="col-md-6">
+        <div class="h-100">
+          <img src="images/8845f276-3269-469b-a8d6-5f2d163a7339.jpeg"
+            class="img-fluid rounded-4 w-100 h-100 object-fit-cover" alt="">
+        </div>
+      </div>
+
+      <!-- الصور الجانبية -->
+      <div class="col-md-3 d-flex flex-column justify-content-between">
+        <div>
+          <img src="images/a91b0e63-9a35-4548-91e1-a09ac6935f4d.jpeg"
+            class="img-fluid rounded-4 w-100 mb-2 object-fit-cover" alt="">
+        </div>
+        <div class="d-flex gap-1">
+          <img src="images/9fa98ce5-6007-4c84-a487-ea155b18119c.jpeg" class="img-fluid rounded-4 w-50  object-fit-cover"
+            alt="">
+          <img src="images/2998d074-f85a-4c6c-8249-f0b128e6a504.jpeg" class="img-fluid rounded-4 w-50 object-fit-cover"
+            alt="">
+        </div>
+      </div>
+
+      <!-- التقييم -->
+      <div class="col-md-3 bg-white rounded-4 p-3 shadow-sm">
+        <p class="fw-bold mb-2">تقييمات الضيوف</p>
+
+        <div class="d-flex align-items-center mb-2">
+          <div class="bg-light px-2 py-1 rounded-1 text-center">
+            <span class="fs-3 fw-bold text-primary">4.7</span>
+          </div>
+          <div class="ms-2">
+            <span class="fw-bold" style="font-size: 14px;">فندق ممتاز</span><br>
+            <span style="font-size: 10px;">استنادًا إلى 5994 تعليق</span>
+          </div>
+        </div>
+
+        <div class="d-flex align-items-start mb-2">
+          <i class="fa-solid fa-award mt-1"></i>
+          <span class="ms-1" style="font-size: 12px;">أجواء الفندق التقييم 4.4/5 استنادًا إلى التعليقات</span>
+        </div>
+
+        <!-- البارات -->
+        <div class="mt-2">
+          <div class="d-flex justify-content-between align-items-center mb-1" style="font-size: 12px;">
+            <span>5</span>
+            <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+              <div class="progress-bar" style="width: 75%;"></div>
+            </div>
+            <span>75%</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-1" style="font-size: 12px;">
+            <span>4</span>
+            <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+              <div class="progress-bar" style="width: 50%;"></div>
+            </div>
+            <span>50%</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-1" style="font-size: 12px;">
+            <span>3</span>
+            <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+              <div class="progress-bar" style="width: 3%;"></div>
+            </div>
+            <span>3%</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-1" style="font-size: 12px;">
+            <span>2</span>
+            <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+              <div class="progress-bar" style="width: 10%;"></div>
+            </div>
+            <span>10%</span>
+          </div>
+          <div class="d-flex justify-content-between align-items-center" style="font-size: 12px;">
+            <span>1</span>
+            <div class="progress flex-grow-1 mx-2" style="height: 8px;">
+              <div class="progress-bar" style="width: 2%;"></div>
+            </div>
+            <span>2%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="bg-white rounded-3 mt-3 p-3">
+      <div class="row justify-content-between">
+        <div class="col-md-6">
+          <p class="fs-2 fw-bold">فندق جيه إيه ليك فيو، دبي</p>
+          <div class="d-flex">
+            <div>
+              <i class="fa-solid fa-star rating-color" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star rating-color" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star rating-color" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star rating-color" style="font-size: 12px;"></i>
+              <i class="fa-solid fa-star rating-color" style="font-size: 12px;"></i>
+            </div>
+            <div>
+              <span style="font-size: 12px;" class="ms-2">5-مستوى النجوم فندق</span>
+            </div>
+          </div>
+          <div class="d-flex mt-3 ">
+            <div>
+              <i class="fa-solid fa-location-dot" style="font-size: 27px;"></i>
+
+            </div>
+            <div>
+              <span style="font-size: 12px;" class="ms-2 fw-medium">دبي, داخل جيه ايه ذا ريزورت، شاطئ جبل
+                علي</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="row">
+            <div class="col-md-5">
+              <div>
+                <span>وقت تسجيل الوصول</span>
+                <div>
+                  <i class="fa-solid fa-door-open"></i>
+                  <span>3:00 PM</span>
+
+                </div>
+              </div>
+              <div class="mt-3">
+                <span>وقت تسجيل المغادرة</span>
+                <div>
+                  <i class="fa-solid fa-right-from-bracket"></i>
+                  <span>12:00 PM</span>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-md-7">
+              <div class="rounded-3 mt-2">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.577952230228!2d55.0261647!3d24.980470099999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f11451d1e2f2d%3A0x25611a1e01c28695!2z2KzZitmHINin2YrZhyDYsNinINix2YrYstmI2LHYqiAtINmB2YbYr9mCINis2YrZhyDYp9mK2Ycg2YTZitmDINmB2YrZiA!5e0!3m2!1sar!2seg!4v1762788535832!5m2!1sar!2seg"
+                  style="border:0;" class="w-100 rounded-3" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="d-flex align-items-center ">
+          <div>
+            <img src="images/guest_reviwe.svg" alt="">
+          </div>
+          <div class="d-flex flex-column ms-2">
+            <span style="font-size: 16;" class="fw-medium">تصميم ممتاز</span>
+            <span style="font-size: 12px;">من أفضل 5% في المدينة</span>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-3 py-3">
+        <div class="col-6 col-md-3 mb-3">
+          <div class="d-flex">
+            <div>
+              <span style="font-size: 24px; color: #2563eb;">4.4/5</span>
+            </div>
+            <div class="d-flex flex-column ms-2">
+              <span style="font-size: 14px;" class="fw-medium">أجواء الفندق</span>
+              <span style="font-size: 12px;">307 التعليقات</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="d-flex">
+            <div>
+              <span style="font-size: 24px; color: #2563eb;">4/5</span>
+            </div>
+            <div class="d-flex flex-column ms-2">
+              <span style="font-size: 14px;" class="fw-medium">الإفطار</span>
+              <span style="font-size: 12px;">152 التعليقات</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="d-flex">
+            <div>
+              <span style="font-size: 24px; color: #2563eb;">4/5</span>
+            </div>
+            <div class="d-flex flex-column ms-2">
+              <span style="font-size: 14px;" class="fw-medium">الغرفة</span>
+              <span style="font-size: 12px;">639 التعليقات</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-3 mb-3">
+          <div class="d-flex">
+            <div>
+              <span style="font-size: 24px; color: #2563eb;">3.9/5</span>
+            </div>
+            <div class="d-flex flex-column ms-2">
+              <span style="font-size: 14px;" class="fw-medium">الخدمة</span>
+              <span style="font-size: 12px;">1283 التعليقات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="container mt-4">
+    <div class="main-container p-4 bg-white rounded-3 shadow-sm ">
+
+      <div class="inputs-stay">
+        <div class="row g-1 align-items-center">
+          <div class="col-md-6  mb-2 mb-md-0">
+            <div class="d-flex align-items-center minww bg-light rounded-2 px-3 py-1">
+              <div class="d-flex flex-column zahab-box me-3">
+                <span class="small text-muted mb-1">ذهاب</span>
+                <input id="myDate" type="date" class=" border-0 shadow-none p-0 bg-transparent"
+                  placeholder="17 NOV, 2025">
+              </div>
+              <div class="border-start border-2 h-100 mx-2"></div>
+              <div class="d-flex flex-column  zahab-box">
+                <span class="small text-muted mb-1">عودة</span>
+                <input id="myDate" type="date" class=" border-0 shadow-none p-0 bg-transparent"
+                  placeholder="25 NOV, 2025">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-5 ">
+            <div class="bg-light rounded-2 px-3 py-1 d-flex align-items-center minww">
+              <div class="d-flex flex-column flex-fill">
+                <span class="small text-muted mb-1">الغرف والضيوف</span>
+                <input type="text" class=" border-0 shadow-none p-0 bg-transparent" placeholder="1 غرفة, 2 نزيل">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1">
+            <button class="search-btn ms-1    btn btn-primary px-3 py-3 rounded-2  top-50  end-0 me-3">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- ........ -->
+      <div class="d-felx flex-column mt-3">
+        <p class="fw-medium fs-4">اختر من الغرف المتاحة</p>
+        <span class="fw-medium">التصفية حسب:</span>
+      </div>
+      <div class="row">
+        <div class="mt-2 ">
+          <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck1">اقامة وافطار</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck2">افطار + غداء وعشاء</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck3">king bed</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck4">Twin bed</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck5">king bed 2</label>
+
+          <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-primary custom-check" for="btncheck6">غير قابل للاسترداد</label>
+
+
+        </div>
+      </div>
+      <div class="row mt-4 position-relative">
+        <!-- المحتوى المتحرك -->
+        <div class="col-md-9 hotel-rooms">
+          <div class="hotel-room">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="images/cb0c7d8d-4265-4c2d-b29f-f58eb151750d.jpeg"
+                    class="w-100 h-100 img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ">
+                    <h5 class="card-title"> غرفة ستاندرد </h5>
+                    <div class="d-flex flex-column justify-content-between h-100 p-3 r">
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="me-1 fa-solid fa-bed"></i>
+                            <span>king bed</span>
+                          </div>
+                          <div>
+                            <i class="me-1 fa-solid fa-expand"></i>
+                            <span>جم الغرفة 40 م²</span>
+                          </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-fan"></i>
+                            <span>مكيف</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span>مجفف للشعر</span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <span>غلاية كهربائية</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-tv"></i>
+                            <span>تلفزيون</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- الجزء السفلي الثابت -->
+                      <div class="mt-auto pt-3  ">
+                        <p class="m-0 fw-medium mt-3" style="cursor:pointer; color: #7c3aed;"> مزيد من المعلومات > </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row  ">
+              <div class="d-flex justify-content-end align-items-center mb-3">
+                <p class="mx-2 mt-2">ضيوف</p>
+                <div class="bg-light rounded-2 p-1 mx-2  d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user mx-2"></i>
+                  <span>x 2</span>
+                </div>
+                <div class="d-flex">
+                  <button class="btn rightt me-2" onclick="scrollCards(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="btn leftt  " onclick="scrollCards(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <div class="d-flex overflow-x-auto flex-nowrap px-2" id="cardsContainer"
+                  style="scroll-behavior:smooth;">
+                  <div class="card rounded-4  py-3 me-3 flex-shrink-0"
+                    style="width:200px; background-color: #d9d9de ; border: #2563eb solid 1px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>2898 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="hotel-room">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="images/8087d8b4-c536-4208-9704-05ff924d06f8.jpeg"
+                    class="w-100 h-100 img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ">
+                    <h5 class="card-title">غرفة ديلوكس بسرير كينج </h5>
+                    <div class="d-flex flex-column justify-content-between h-100 p-3 r">
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="me-1 fa-solid fa-bed"></i>
+                            <span>king bed</span>
+                          </div>
+                          <div>
+                            <i class="me-1 fa-solid fa-expand"></i>
+                            <span>جم الغرفة 40 م²</span>
+                          </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-fan"></i>
+                            <span>مكيف</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span>مجفف للشعر</span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <span>غلاية كهربائية</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-tv"></i>
+                            <span>تلفزيون</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- الجزء السفلي الثابت -->
+                      <div class="mt-auto pt-3  ">
+                        <p class="m-0 fw-medium mt-3" style="cursor:pointer; color: #7c3aed;"> مزيد من المعلومات > </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row  ">
+              <div class="d-flex justify-content-end align-items-center mb-3">
+                <p class="mx-2 mt-2">ضيوف</p>
+                <div class="bg-light rounded-2 p-1 mx-2  d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user mx-2"></i>
+                  <span>x 2</span>
+                </div>
+                <div class="d-flex">
+                  <button class="btn rightt me-2" onclick="scrollCards(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="btn leftt  " onclick="scrollCards(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <div class="d-flex overflow-x-auto flex-nowrap px-2" id="cardsContainer"
+                  style="scroll-behavior:smooth;">
+                  <div class="card rounded-4  py-3 me-3 flex-shrink-0"
+                    style="width:200px; background-color: #d9d9de ; border: #2563eb solid 1px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>2898 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="hotel-room">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="images/adb9634e-0440-476d-8574-371d35a89260.jpeg"
+                    class="w-100 h-100 img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ">
+                    <h5 class="card-title">غرفة ديلوكس بسرير كينج </h5>
+                    <div class="d-flex flex-column justify-content-between h-100 p-3 r">
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="me-1 fa-solid fa-bed"></i>
+                            <span>king bed</span>
+                          </div>
+                          <div>
+                            <i class="me-1 fa-solid fa-expand"></i>
+                            <span>جم الغرفة 40 م²</span>
+                          </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-fan"></i>
+                            <span>مكيف</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span>مجفف للشعر</span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <span>غلاية كهربائية</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-tv"></i>
+                            <span>تلفزيون</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-auto pt-3  ">
+                        <p class="m-0 fw-medium mt-3" style="cursor:pointer; color: #7c3aed;"> مزيد من المعلومات > </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row  ">
+              <div class="d-flex justify-content-end align-items-center mb-3">
+                <p class="mx-2 mt-2">ضيوف</p>
+                <div class="bg-light rounded-2 p-1 mx-2  d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user mx-2"></i>
+                  <span>x 2</span>
+                </div>
+                <div class="d-flex">
+                  <button class="btn rightt me-2" onclick="scrollCards(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="btn leftt  " onclick="scrollCards(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <div class="d-flex overflow-x-auto flex-nowrap px-2" id="cardsContainer"
+                  style="scroll-behavior:smooth;">
+                  <div class="card rounded-4  py-3 me-3 flex-shrink-0"
+                    style="width:200px; background-color: #d9d9de ; border: #2563eb solid 1px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>2898 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+          <div class="hotel-room">
+            <div class="card mb-3">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img src="images/e320c16e-5519-4fa8-bf75-5cb369560cf6.jpeg"
+                    class="w-100 h-100 img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body ">
+                    <h5 class="card-title">غرفة ديلوكس</h5>
+                    <div class="d-flex flex-column justify-content-between h-100 p-3 r">
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="me-1 fa-solid fa-bed"></i>
+                            <span>king bed</span>
+                          </div>
+                          <div>
+                            <i class="me-1 fa-solid fa-expand"></i>
+                            <span>جم الغرفة 40 م²</span>
+                          </div>
+                        </div>
+                        <hr class="my-2">
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-fan"></i>
+                            <span>مكيف</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-temperature-arrow-down"></i>
+                            <span>مجفف للشعر</span>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <div>
+                            <i class="fa-solid fa-bowl-rice"></i>
+                            <span>غلاية كهربائية</span>
+                          </div>
+                          <div>
+                            <i class="fa-solid fa-tv"></i>
+                            <span>تلفزيون</span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-auto pt-3  ">
+                        <p class="m-0 fw-medium mt-3" style="cursor:pointer; color: #7c3aed;"> مزيد من المعلومات > </p>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row  ">
+              <div class="d-flex justify-content-end align-items-center mb-3">
+                <p class="mx-2 mt-2">ضيوف</p>
+                <div class="bg-light rounded-2 p-1 mx-2  d-flex justify-content-center align-items-center">
+                  <i class="fa-solid fa-user mx-2"></i>
+                  <span>x 2</span>
+                </div>
+                <div class="d-flex">
+                  <button class="btn rightt me-2" onclick="scrollCards(1)">
+                    <i class="fa-solid fa-chevron-right"></i>
+                  </button>
+                  <button class="btn leftt  " onclick="scrollCards(-1)">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+
+                </div>
+              </div>
+
+              <div class="position-relative">
+                <div class="d-flex overflow-x-auto flex-nowrap px-2" id="cardsContainer"
+                  style="scroll-behavior:smooth;">
+                  <div class="card rounded-4  py-3 me-3 flex-shrink-0"
+                    style="width:200px; background-color: #d9d9de ; border: #2563eb solid 1px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>2898 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="card rounded-4 py-3 me-3 flex-shrink-0" style="width:200px;">
+                    <div class="card-header d-flex flex-column border-0 d-flex  bg-transparent">
+                      <div>
+                        <i class="fa-solid text-success fa-circle-check " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">إقامة وإفطار</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">غير قابل للاسترداد</span>
+                      </div>
+                      <div>
+                        <i class="fa-solid  fa-circle-xmark " style="font-size: 12px;"></i>
+                        <span style="font-size: 12px;">سياسة الالغاء > </span>
+                      </div>
+                      <hr>
+                    </div>
+                    <div
+                      class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between align-items-center">
+                      <span class="fw-medium" style="font-size: 14px;">الغرف</span>
+                      <div class="hotel-backage-rooms ">
+                        <i class="fa-solid fa-circle-plus main-color"></i>
+                        <span>1</span>
+                        <i class="fa-solid fa-circle-minus main-color"></i>
+                      </div>
+
+                    </div>
+                    <div class="card-header border-0 bg-transparent">
+                      <hr>
+                    </div>
+                    <div class="card-header d-flex border-0 d-flex  bg-transparent justify-content-between">
+                      <div>
+                        <span>ضيوف</span>
+                        <div>
+                          <i class="fa-solid fa-user-tie"></i>
+                          <span>x2</span>
+                        </div>
+                        <span>1 غرفة</span>
+                      </div>
+                      <div>
+                        <span>المبلغ الإجمالي</span>
+                        <div>
+                          <span>(شامل الضريبة)</span>
+                        </div>
+                        <span>1,614 ريال</span>
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-3 leftsside">
+          <div class="sticky-card position-sticky" style="top: 100px; background-color: #f7f3ff;">
+            <div class="card shadow-sm " style="background-color: #f7f3ff;">
+              <div class="px-2 py-3 ">
+                <div class="d-flex justify-content-between align-items-center rounded-3 shadow-sm p-2 bg-white"
+                  style="border: 1px solid #d9d9de;">
+                  <div class="d-flex ">
+                    <div class="me-1">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none"
+                        _ngcontent-serverapp-c4110783435="" aria-hidden="true">
+                        <path
+                          d="M4.4987 3.16602H11.4987C11.9656 3.16599 12.4148 3.34408 12.7549 3.66394C13.095 3.98381 13.3002 4.42136 13.3287 4.88735L13.332 4.99935V7.23535C13.6954 7.33851 14.0181 7.55132 14.256 7.84472C14.4939 8.13813 14.6355 8.49782 14.6614 8.87468L14.6654 8.99935V13.9993C14.6653 14.126 14.6172 14.248 14.5307 14.3405C14.4442 14.4331 14.3258 14.4894 14.1994 14.498C14.0731 14.5067 13.9481 14.467 13.8498 14.3871C13.7516 14.3071 13.6873 14.1928 13.67 14.0673L13.6654 13.9993V12.4993H2.33203V13.9993C2.33203 14.1202 2.28827 14.2369 2.20885 14.328C2.12944 14.419 2.01973 14.4782 1.90003 14.4947L1.83203 14.4993C1.71121 14.4993 1.59447 14.4556 1.50341 14.3762C1.41235 14.2968 1.35313 14.187 1.3367 14.0673L1.33203 13.9993V8.99935C1.33203 8.16002 1.89603 7.45268 2.66536 7.23468V4.99935C2.66534 4.53249 2.84343 4.08321 3.16329 3.74315C3.48316 3.40309 3.92071 3.19787 4.3867 3.16935L4.4987 3.16602ZM12.832 8.16602H3.16536C2.95906 8.16592 2.76005 8.24236 2.60685 8.38053C2.45366 8.51871 2.35716 8.70879 2.33603 8.91402L2.33203 8.99935V11.4993H13.6654V8.99935C13.6653 8.79316 13.5888 8.59432 13.4506 8.44126C13.3125 8.2882 13.1225 8.1918 12.9174 8.17068L12.832 8.16602ZM11.4987 4.16602H4.4987C4.29239 4.16592 4.09339 4.24236 3.94019 4.38053C3.78699 4.51871 3.69049 4.70879 3.66936 4.91402L3.66536 4.99935V7.16602H4.66536C4.66536 6.9892 4.7356 6.81964 4.86063 6.69461C4.98565 6.56959 5.15522 6.49935 5.33203 6.49935H6.66536C6.82865 6.49937 6.98626 6.55932 7.10828 6.66783C7.2303 6.77633 7.30826 6.92585 7.32736 7.08802L7.33203 7.16602H8.66536C8.66536 6.9892 8.7356 6.81964 8.86063 6.69461C8.98565 6.56959 9.15522 6.49935 9.33203 6.49935H10.6654C10.8287 6.49937 10.9863 6.55932 11.1083 6.66783C11.2303 6.77633 11.3083 6.92585 11.3274 7.08802L11.332 7.16602H12.332V4.99935C12.3321 4.79304 12.2557 4.59404 12.1175 4.44084C11.9793 4.28764 11.7893 4.19114 11.584 4.17002L11.4987 4.16602Z"
+                          fill="currentColor" _ngcontent-serverapp-c4110783435=""></path>
+                      </svg>
+                    </div>
+                    <span style="font-size: 12px; cursor: pointer;">1x غرفة ديلوكس بسرير كينج - 2 ضيوف</span>
+                  </div>
+                  <div class="ms-1" style="cursor: pointer;">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body mt-0">
+                <div class="d-flex flex-nowrap">
+                  <span style="font-size: 10px;">ادفع ب</span>
+                  <img src="images/Tamara-icon.svg" class="w-25" alt="" style="cursor: pointer;">
+                  <img src="images/tabby.svg" alt="" class="mx-1" style="max-width: 40px; cursor: pointer;">
+                  <img src="images/mispay.svg" alt="">
+                </div>
+                <div class="d-flex flex-column text-end mt-2">
+                  <p style=" font-size: 13px;">(شامل الضريبة) المبلغ الإجمالي</p>
+                  <div class="fs-2 fw-bold">
+                    <svg-icon _ngcontent-serverapp-c4110783435=""
+                      class="almatar-icon fs-2 fw-bold ryal ng-star-inserted"><svg width="15" height="16"
+                        viewBox="0 0 15 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-6 h-6"
+                        xmlns="http://www.w3.org/2000/svg" _ngcontent-serverapp-c4110783435="">
+                        <path
+                          d="M9.594 14.1741C9.33854 14.7405 9.16967 15.3553 9.10498 15.9999L14.5111 14.8507C14.7665 14.2844 14.9353 13.6695 15.0001 13.0249L9.594 14.1741Z"
+                          fill="currentColor" _ngcontent-serverapp-c4110783435=""></path>
+                        <path
+                          d="M14.5109 11.4079C14.7664 10.8416 14.9353 10.2268 15 9.58212L10.7888 10.4778V8.75601L14.5108 7.96504C14.7663 7.39872 14.9351 6.78388 14.9998 6.13924L10.7886 7.03412V0.842159C10.1434 1.20447 9.5703 1.68674 9.10446 2.25561V7.39223L7.42027 7.7502V0C6.77499 0.362181 6.20192 0.844578 5.73608 1.41345V8.10806L1.96769 8.90883C1.71223 9.47515 1.54324 10.09 1.47842 10.7346L5.73608 9.82981V11.9981L1.17316 12.9677C0.917701 13.534 0.748836 14.1489 0.684143 14.7935L5.46024 13.7785C5.84904 13.6977 6.1832 13.4678 6.40046 13.1515L7.27636 11.8529V11.8526C7.36729 11.7183 7.42027 11.5563 7.42027 11.3818V9.47184L9.10446 9.11386V12.5574L14.5108 11.4077L14.5109 11.4079Z"
+                          fill="currentColor" _ngcontent-serverapp-c4110783435=""></path>
+                      </svg></svg-icon>
+                    <span class="fs-2 fw-bold">1,633</span>
+                  </div>
+                </div>
+                <a href="#" class="btn mt-3 py-3 w-100 text-white" style="background-color: #7c3aed;">احجز الآن</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about-area bg-white rounded-3 p-3  mt-4">
+      <h4 class="fw-bold">حول هذه المنطقة</h4>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">الموقع</h5>
+        <p style="font-size: 16px ;">عند إقامتك في فندق جيه إيه ليك فيو، دبي بمدينة دبي، ستكون على بُعد ١٨ كم من
+          LEGOLAND® دبي و١٨٫١ كم من مدينة
+          ملاهي موشنجيت دبي. استمتع بالإقامة في هذا الفندق، حيث ستضعك هذه المنشأة الواقعة على الشاطئ على بُعد ١٩٫٥ كم من
+          مركز دبي للمعارض و٢٨٫٢ كم من ذا ووك.</p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">تناول الطعام</h5>
+        <p style="font-size: 16px ;">
+          توقّف لتناول وجبة سريعة في مطعم 81، وهو واحد من 3 مطاعم موجودة في منشأة فندقية، أو أقم هنا واستمتع بالاستفادة
+          من خدمة الغرف على مدار 24 ساعة. وهناك أيضا وجبات خفيفة متوفرة في الكافيتيريا. لتناول شراب منعش، قم بالمرور على
+          البار/الاستراحة أو واحد من 2 بارات على الشاطئ أو 4 بارات قرب حمّام السباحة. يتم تقديم بوفيه فطور يوميًا من
+          7:00 صباحًا إلى 11 صباحاً مقابل رسم إضافي.s
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">الغرف</h5>
+        <p style="font-size: 16px ;">
+          دلل نفسك بالإقامة في واحدة من 348 غرفة ضيافة بديكورات فريدة لكل منها توفر مدافئ. تتميز الأسرّة بوجود ألحفة
+          محشوة بالريش وأغطية فراش متميزة. تحتوي الغرف على شرفات. يُتاح لك اتصال لاسلكي بالإنترنت مجانًا لتبقى على اتصال
+          دائمًا. تضم الحمامات حوض استحمام عميق ودُش غزير.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">وسائل الراحة</h5>
+        <p style="font-size: 16px ;">
+          دلل نفسك بزيارة إلى النادي الصحي للاستمتاع بخدمات جلسات التدليك وعلاجات الجسم وعلاجات الوجه. استمتع بجولة من
+          لعب الجولف أو بقضاء يوم من الاسترخاء على الشاطيء الخاص. ستجد في هذا الفندق وسائل راحة إضافية تشمل اتصال لاسلكي
+          مجاني بالإنترنت وخدمات الاستعلامات والإرشاد وخدمة مجالسة/رعاية الأطفال (نظير تكلفة إضافية). الانتقالات إلى
+          الشاطيء سهلة للغاية مع خدمة الحافلة المكوكية المجانية التي توفرها المنشأة.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">وسائل الراحة للأعمال</h5>
+        <p style="font-size: 16px ;">
+          تضم وسائل الرائحة المميزة مركز لرجال الأعمال وجرائد مجانية في الردهة وخدمة الغسيل/التنظيف الجاف. تضم مرافق
+          المناسبات المتاحة في هذه المنشأة السياحية مركز للمؤتمرات و5 قاعات اجتماعات. يتم تأمين حافلة للتوصيل من وإلى
+          المطار لقاء تكلفة إضافية (متوفرة على مدار 24 ساعة)، وتتوفر أيضا خدمة صف السيارات بمعرفة الفندق مجانا في مقر
+          المنشأة.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">تحديثات التجديد</h5>
+        <p style="font-size: 16px ;">
+          ستكون المرافق والخدمات التالية غير متوفر من 19 أكتوبر 2025 وحتى 1 نوفمبر 2025 (التواريخ عرضةً للتغيير): أحد
+          حمامات السباحة.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">مواصفات العقار</h5>
+        <p style="font-size: 16px ;">
+          عدد الغرف - 348
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">اللغات التي يمكن لموظفينا مساعدتك بها</h5>
+        <p style="font-size: 16px ;">
+          الألمانية, الإسبانية, الإنجليزية, الإيطالية, البلغارية, الروسية, الصينية (الماندارين), العربية, الفرنسية,
+          الفلبينية, الهندية, الهولندية
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">أنواع الدفع في العقار</h5>
+        <p style="font-size: 16px ;">
+          أمريكان إكسبريس, دينرز كلوب, جي سي بي إنترناشيونال, بطاقة MasterCard, فيزا, نقدًا, بطاقات الخصم, UnionPay
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">تعليمات تسجيل الوصول</h5>
+        <p style="font-size: 16px ;">
+          قد يتم تطبيق رسوم على إقامة شخص إضافي، وتختلف تلك الرسوم تبعًا لسياسة المنشأة. عند تسجيل الوصول، يلزَم تقديم
+          بطاقة هوية شخصية صادرة عن جهة حكوميّة، بالإضافة إلى بطاقة ائتمان أو بطاقة سحب مباشر أو مبلغ تأمين نقدي لتغطية
+          التكاليف النثرية. تخضع الطلبات الخاصة لمدى التوفر وقت تسجيل الوصول، وقد تستلزم سداد رسوم إضافية، ولا يمكن ضمان
+          تلبية الطلبات الخاصة.. يبلغ الحد الأدنى للسن اللازم لتسجيل الوصول في هذه المنشأة خلال عطلة الربيع 18 عامًا.
+          تقبل هذه المنشأة السداد باستخدام البطاقات المدينة والدفع النقدي. يتوفر إجراء معاملات السداد غير النقدية. لا
+          يمكن ضمان توفير غرف نزلاء خالية من الضوضاء. تشمل ميزات الأمن والسلامة في هذه المنشأة الفندقية طفّاية حريق،
+          وكاشف دخان، ونظام أمان، وحقيبة إسعافات أولية. تتوفر في هذه المنشأة الفندقية مساحات خارجية، مثل البلكونات،
+          والباحات، والشرفات، التي قد لا تكون مناسبة للأطفال؛ إذا كانت لديك أي مخاوف بشأن ذلك، نُوصيك بالتواصل مع
+          المنشأة الفندقية قبل وصولك للتأكد مما إذا كان بإمكانها توفير غرفة مناسبة لك. يُرجى الانتباه إلى أن المعايير
+          الثقافية وسياسات النزلاء قد تختلف باختلاف الدولة وباختلاف المنشأة. وقد تمّ تقديم السياسات المُدرجة من قِبَل
+          المنشأة. لا يُسمح بإدخال الأطعمة الخارجية إلى المنشأة باستثناء أطعمة الأطفال فقط..الحد الأدنى لعمر تسجيل
+          الوصول هو 18. </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">تعليمات خاصة لتسجيل الوصول</h5>
+        <p style="font-size: 16px ;">
+          توفّر هذه المنشأة الفندقية خدمات النقل من المطار (قد يتم تطبيق رسوم إضافية). يجب أن يتواصل النزلاء مع المنشأة
+          الفندقية لذكر تفاصيل الوصول قبل السفر، وذلك باستخدام تفاصيل الاتصال الواردة في تأكيد الحجز.سيتم الترحيب
+          بالنزلاء عند وصولهم المنشأة الفندقية من قِبَل طاقم مكتب الاستقبال. يبلغ الحد الأدنى للطول المسموح به لدخول
+          الملاهي المائية 39 بوصة (100 سم). يجب على الأطفال الذين يقل طولهم عن 47 بوصة (120 سنتيمترًا) أن يكونوا برفقة
+          شخص بالغ. الحد الأدنى لعمر تسجيل الوصول هو: 18. </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">إضافات اختيارية</h5>
+        <p style="font-size: 16px ;">
+          رسوم فطور بوفيه: تبلغ تقريبًا 130 AED للفرد. رسوم التوصيل من وإلى المطار: 295 AED للسيارة (ذهاب). خدمة تسجيل
+          الوصول المُبكّر متوفرة مقابل رسم (تخضع الخدمة لمدى التوفر). خدمة تسجيل الوصول المُتأخّر متوفرة مقابل رسم (تخضع
+          الخدمة لمدى التوفر). رسوم السرير القابل للطي: 250.0 AED في اليوم. القائمة الموضحة أعلاه قد لا تكون شاملة.
+          فالرسوم ومبالغ التأمين قد لا تشمل الضريبة كما قد تخضع للتغيير.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">سياسة الحيوانات الأليفة</h5>
+        <p style="font-size: 16px ;">
+          غير مسموح باصطحاب الحيوانات الأليفة, لا يُسمح باصطحاب حيوانات الخدمة
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">ما تحتاج إلى معرفته</h5>
+        <p style="font-size: 16px ;">
+          يمكن استخدام المسبح من الساعة 9 صباحاً إلى 6 مساءً.يكون الحجز مطلوبًا لما يلي: أوقات جولات الجولف وخدمات
+          التدليك وعلاجات النادي الصحي. ويمكن إجراء الحجوزات عن طريق الاتصال بالمنشأة السياحية قبل الوصول باستخدام
+          بيانات الاتصال الموجودة في تأكيد الحجز. يتم تحصيل رسوم إلزامية على حفل عشاء يوم الكريسماس عند الحجز وذلك
+          بالنسبة لحجوزات الإقامة التي تتم في يوم 25 ديسمبر. يتم تحصيل رسوم إلزامية على حفل عشاء ليلة الكريسماس عند
+          الحجز وذلك بالنسبة لحجوزات الإقامة التي تتم في يوم 24 ديسمبر. تشتمل رسوم الغرف ليلة 31 ديسمبر على رسوم إلزامية
+          لحفل عشاء ليلة رأس السنة الجديدة. لا يتم احتساب رسوم إقامة على الأطفال حتى عدد 2 أطفال في سن 11 من السنوات
+          وأصغر، والذين يقيمون مع ذويهم في نفس الغرفة ويستخدمون الأسرّة المتواجدة. لا يسمح بتواجد أشخاص آخرين في الغرف
+          بخلاف النزلاء المسجلين لدى المنشأة. تتاح لدى المنشأة غرف متصلة/متجاورة حسب التوفر، ويمكن للنزلاء طلب الحصول
+          عليها عن طريق بالاتصال بالمنشأة مباشرة بالاستعانة ببيانات الاتصال الموجودة في تأكيد الحجز. غير مسموح
+          بالحيوانات الأليفة في هذه المنشأة السياحية، بما يشمل الحيوانات المدربة على أغراض مساعدة أصحابها. تتوفر طرق
+          السداد غير النقدي لجميع المعاملات.
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; ">السجل العقاري</h5>
+        <p style="font-size: 16px ;">
+          رقم تسجيل/ترخيص الإقامة: 825850
+        </p>
+      </div>
+      <div class="mt-3">
+        <h5 style="margin-bottom: 8px; "></h5>
+        <p style="font-size: 16px ;">
+        </p>
+      </div>
+      <div>
+        <h5 style="margin-bottom: 8px; ">اكتشاف الأماكن القريبة من الفندق</h5>
+        <div class="col-12 col-md-6">
+          <ul class="list-group custom-scroll " style="max-height: 300px ; overflow-y: scroll;">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                Palm Islands
+              </div>
+              <span class="badge main-color fs-6">300 m</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                Jebel Ali Go Karting
+              </div>
+              <span class="badge main-color fs-6">1.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                نيون جالاكسي
+              </div>
+              <span class="badge main-color fs-6">17.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                ريفرلاند™ دبي
+              </div>
+              <span class="badge main-color fs-6">17.7 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                LEGOLAND® دبي
+              </div>
+              <span class="badge main-color fs-6">18.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                مدينة ملاهي موشنجيت دبي
+              </div>
+              <span class="badge main-color fs-6">18.1 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                حديقة LEGOLAND® المائية
+              </div>
+              <span class="badge main-color fs-6">18.1 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                عالم ريال مدريد
+              </div>
+              <span class="badge main-color fs-6">19.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                محلّ ذات أوتليت فيليدج من شركة Meras
+              </div>
+              <span class="badge main-color fs-6">19.2 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                مركز دبي للمعارض
+              </div>
+              <span class="badge main-color fs-6">19.5 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                المعبد السيخي جورو ناناك داربار
+
+              </div>
+              <span class="badge main-color fs-6">19.5 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                نادي غانتوت للسباقات ورياضة البولو
+
+
+              </div>
+              <span class="badge main-color fs-6">19.5 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                Dubai Intl. Airport (DXB)
+
+
+              </div>
+              <span class="badge main-color fs-6">19.5 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                Sharjah (SHJ-Sharjah Intl.)
+
+              </div>
+              <span class="badge main-color fs-6">19.5 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                Jebel Ali Go Karting
+              </div>
+              <span class="badge main-color fs-6">1.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                نيون جالاكسي
+              </div>
+              <span class="badge main-color fs-6">17.0 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                ريفرلاند™ دبي
+              </div>
+              <span class="badge main-color fs-6">17.7 km</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              <div class="d-flex">
+                <div class="location-box">
+                  <i class="fa fa-solid fa-location-dot  "></i>
+                </div>
+                LEGOLAND® دبي
+              </div>
+              <span class="badge main-color fs-6">18.0 km</span>
+            </li>
+          </ul>
+
+        </div>
+
+        <h5 class="mt-3">وسائل الراحة في الفندق</h5>
+
+        <ul class="d-flex flex-wrap align-items-center p-0 m-0" style="font-size: 18px;">
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 20px;">
+            <i class="fa-solid fa-utensils me-2" style="font-size: 14px;"></i>
+            <span>Dinner</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-mug-hot me-2"></i>
+            <span>Coffee</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-water-ladder me-2"></i>
+            <span>مسبح للأطفال</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-couch me-2"></i>
+            <span>yoga</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-shower me-2"></i>
+            <span>shower</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-fire me-2"></i>
+            <span>Fireplace</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-wifi me-2"></i>
+            <span>Wifi</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-WATER me-2"></i>
+            <span>Water</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-shop me-2"></i>
+            <span>Shop</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-wifi me-2"></i>
+            <span>Free Wi-Fi</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-utensils me-2"></i>
+            <span>Breakfast Included</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-snowflake me-2"></i>
+            <span>Air Conditioning</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-tv me-2"></i>
+            <span>Flat-Screen TV</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-person-swimming me-2"></i>
+            <span>Swimming Pool</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-dumbbell me-2"></i>
+            <span>Fitness Center</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-spa me-2"></i>
+            <span>Spa & Wellness</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-square-parking me-2"></i>
+            <span>Free Parking</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-mug-saucer me-2"></i>
+            <span>Coffee Maker</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bed me-2"></i>
+            <span>Comfortable Beds</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bath me-2"></i>
+            <span>Private Bathroom</span>
+          </li>
+
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-concierge-bell me-2"></i>
+            <span>24-Hour Reception</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bath me-2"></i>
+            <span>Private Bathroom</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-concierge-bell me-2"></i>
+            <span>24-Hour Reception</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-person-shelter me-2"></i>
+            <span>Room Service</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-elevator me-2"></i>
+            <span>Elevator</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-smoking-ban me-2"></i>
+            <span>Non-Smoking Rooms</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-lock me-2"></i>
+            <span>Safe Deposit Box</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-car me-2"></i>
+            <span>Car Rental</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bell-concierge me-2"></i>
+            <span>Concierge Service</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-plane-arrival me-2"></i>
+            <span>Airport Shuttle</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-laptop me-2"></i>
+            <span>Business Center</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-paw me-2"></i>
+            <span>Pet Friendly</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-baby-carriage me-2"></i>
+            <span>Family Rooms</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-umbrella-beach me-2"></i>
+            <span>Beach Access</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-tree me-2"></i>
+            <span>Garden Area</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-champagne-glasses me-2"></i>
+            <span>Bar & Lounge</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-wifi me-2"></i>
+            <span>Free Wi-Fi</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-utensils me-2"></i>
+            <span>Breakfast Included</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-person-swimming me-2"></i>
+            <span>Swimming Pool</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-snowflake me-2"></i>
+            <span>Air Conditioning</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-tv me-2"></i>
+            <span>Flat-Screen TV</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-square-parking me-2"></i>
+            <span>Free Parking</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-dumbbell me-2"></i>
+            <span>Fitness Center</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-spa me-2"></i>
+            <span>Spa & Wellness</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-mug-saucer me-2"></i>
+            <span>Coffee Maker</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bed me-2"></i>
+            <span>Comfortable Beds</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-wifi me-2"></i>
+            <span>Free Wi-Fi</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-utensils me-2"></i>
+            <span>Breakfast Included</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-person-swimming me-2"></i>
+            <span>Swimming Pool</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-snowflake me-2"></i>
+            <span>Air Conditioning</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-tv me-2"></i>
+            <span>Flat-Screen TV</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-square-parking me-2"></i>
+            <span>Free Parking</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-dumbbell me-2"></i>
+            <span>Fitness Center</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-spa me-2"></i>
+            <span>Spa & Wellness</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-mug-saucer me-2"></i>
+            <span>Coffee Maker</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-bed me-2"></i>
+            <span>Comfortable Beds</span>
+          </li>
+          <li class="list-unstyled restList d-flex align-items-center me-3 mb-2" style="font-size: 18px;">
+            <i class="fa-solid fa-person-swimming me-2"></i>
+            <span>Swimming Pool</span>
+          </li>
+
+        </ul>
+
+
+
+
+      </div>
+    </div>
+    <div class="bg-white rounded-3 p-3 overflow-y-scroll  mt-4">
+      <div class="">
+        <ul class="ps-0" style="border-bottom: solid #d9d9de 1px; padding: 10px; ">
+          <li class="list-unstyled  ">
+            <a href="" class="main-color " style="border-bottom: solid #7c3aed 3px;  padding: 10px;">مراجعات تراست
+              يو</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="d-flex my-5 ">
+        <div class="rate-box ">
+          <svg width="36" height="38" viewBox="0 0 36 38" fill="#3498DB" style="display: block;">
+            <path d="M4 0C1.79086 0 0 1.79086 0 4V32V38L9 32H32C34.2091 32 36 30.2091 36 28V0H4Z"></path>
+            <text x="18" y="23" text-anchor="middle" fill="white" font-size="14" font-weight="bold">7.4</text>
+          </svg>
+        </div>
+        <div>
+          <p class="fw-bold mx-2">ممتاز</p>
+        </div>
+        <div>
+          <p>ملخص 5,994 من التعليقات</p>
+
+        </div>
+      </div>
+      <div class="prize-box d-flex  align-items-center">
+        <div style="border: 3px solid #d9d9de; width: 40px; height: 40px;"
+          class="d-flex rounded-circle justify-content-center align-items-center bg-white">
+          <i class="fa-solid fa-trophy" style="color: #7c3aed; font-size: 18px;"></i>
+        </div>
+        <div class="mx-2 mt-2">
+          <span style="font-size: 14px;">تصميم ممتاز</span>
+          <p style="font-size: 14px;">من أفضل 5% في المدينة</p>
+        </div>
+
+      </div>
+      <div class="">
+        <div class="d-flex mt-4">
+          <div class="dropdown-custom me-3">
+            <div class="dropdown-toggle-custom" id="dropdownBtn">
+              <span>جميع اللغات 100%</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="dropdown-menu-custom p-0" id="dropdownMenu">
+              <li class="active"><span>جميع اللغات</span><span>100%</span></li>
+              <li><span>إنكليزي</span><span>74%</span></li>
+              <li><span>عربي</span><span>12%</span></li>
+              <li><span>فرنسية</span><span>5%</span></li>
+              <li><span>الروسية</span><span>4%</span></li>
+              <li><span>بولندية</span><span>3%</span></li>
+              <li><span>ألمانية</span><span>2%</span></li>
+            </ul>
+          </div>
+
+          <div class="dropdown-custom">
+            <div class="dropdown-toggle-custom" id="dropdownBtnn">
+              <span>الجميع 100%</span>
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="dropdown-menu-custom p-0" id="dropdownMenuu">
+              <li class="active"><span> الجميع</span><span>100%</span></li>
+              <li><span>العائلات</span><span>74%</span></li>
+              <li><span>الازواج</span><span>12%</span></li>
+              <li><span>رجال الاعمال</span><span>5%</span></li>
+              <li><span>المنفردين</span><span>4%</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class=" shadow-sm p-3 rounded-3 mt-3 d-flex flex-column" style="background-color: #d9d9de;">
+        <span>تم تقييمه 4.7/5 وفقاً لتعليقات من جميع المسافرين.</span>
+        <span style="font-size: 14px ;">فندق ممتاز. يقع بالقرب من مناطق التسوق والشاطئ.</span>
+
+      </div>
+      <div>
+        <div>
+          <p>معلومات هامة</p>
+        </div>
+        <div>
+          <ul class="custom-list d-flex flex-wrap">
+            <li>منطقة الفندق مرضية</li>
+            <li>المبنى لطيف</li>
+            <li>الخدمة ودية</li>
+            <li>أجواء ودية</li>
+          </ul>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between">
+              <span style="font-size: 14px;">شعور</span>
+              <span style="font-size: 14px;">4.4</span>
+            </div>
+            <div>
+              <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+              </div>
+              <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 8px; border-radius: 0;">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px;">307 مراجعات</span>
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p style="font-size: 14px;">الجو العام رائع. أجواء ودية. الفندق حديث. الفندق أنيق. الفندق فاخر.</p>
+            <p style="font-size: 13px;">منطقة المدخل ليست ساحرة بشكل خاص.</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between">
+              <span style="font-size: 14px;">الإفطار</span>
+              <span style="font-size: 14px;">4.0</span>
+            </div>
+            <div>
+              <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+              </div>
+              <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 8px; border-radius: 0;">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px;">152 مراجعات</span>
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p style="font-size: 14px;">الفطور شهي</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between">مستوى النظافة<span style="font-size: 14px;">4.0</span>
+            </div>
+            <div>
+              <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+              </div>
+              <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 8px; border-radius: 0;">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px;">152 مراجعات</span>
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p style="font-size: 14px;">مرافق الفندق نظيفة. الغرف نظيفة. الحمام يحتاج للتنظيف. </p>
+            <p style="font-size: 12px;">حمام السباحة يحتاج للتنظيف. </p>
+
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between">
+              <span style="font-size: 14px;">الخدمة</span>
+              <span style="font-size: 14px;">4.0</span>
+            </div>
+            <div>
+              <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+              </div>
+              <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 8px; border-radius: 0;">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px;">152 مراجعات</span>
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p style="font-size: 14px;">خدمة ودوة والإدارة وخدمة التنظيف رائعة مع أن مكتب الاستقبال لا بأس به</p>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-md-3">
+            <div class="d-flex justify-content-between">
+              <span style="font-size: 14px;">الغرفة</span>
+              <span style="font-size: 14px;">4.0</span>
+            </div>
+            <div>
+              <div class="progress" role="progressbar" aria-label="Example 1px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 1px">
+              </div>
+              <div class="progress" role="progressbar" aria-label="Example 20px high" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100" style="height: 8px; border-radius: 0;">
+                <div class="progress-bar" style="width: 80%"></div>
+              </div>
+              <span style="font-size: 10px;">152 مراجعات</span>
+            </div>
+            <div>
+
+            </div>
+          </div>
+          <div class="col-md-7">
+            <p style="font-size: 14px;">الغرف واسعة. غرف جديدة ونظيفة مزودة بإطلالات رائعة من الشرفات </p>
+            <p style="font-size: 12px;">حمامات كبيرة ولكنها وسخة الأثاث لا بأس به ولكن التكييف سيء الدش مقبول.
+              التلفاز بحاجة إلى التحديث.</p>
+          </div>
+        </div>
+        <div class="d-flex justify-content-end">
+        <div style="width: 100px; height: 50px; cursor: pointer;" class="d-flex justify-content-end">
+          <svg viewBox="0 0 60 8" class="sc-fLlhyt kmEnXb">
+            <polygon fill="#3498DB"
+              points="31.2262 3.73271806 31.2262 5.87730806 29.7248 5.87730806 29.7248 3.73271806 27.625 0.12788006 29.3309 0.12788006 30.4807 2.45967806 31.6305 0.12788006 33.3364 0.12788006">
+            </polygon>
+            <path
+              d="M33.1724,3.00172806 C33.1724,4.66589806 34.2084,6.00172806 36.0159,6.00172806 C37.8229,6.00172806 38.8595,4.67684806 38.8595,3.00172806 C38.8589,1.33813806 37.8258,0.00172806 36.0159,0.00172806 C34.1963,0.00172806 33.1724,1.33813806 33.1724,3.00172806 Z M34.6739,3.00172806 C34.6739,2.14458806 35.0527,1.28743806 36.0136,1.28743806 C36.9867,1.28743806 37.3534,2.13190806 37.3534,3.00172806 C37.3534,3.85886806 36.9867,4.71601806 36.0136,4.71601806 C35.0406,4.71601806 34.6739,3.87154806 34.6739,3.00172806 Z"
+              fill="#3498DB"></path>
+            <path
+              d="M43.055,0.12788006 L43.055,3.59446806 C43.055,4.33812806 42.7894,4.71658806 42.0438,4.71658806 C41.2983,4.71658806 41.0327,4.33870806 41.0327,3.59446806 L41.0327,0.12788006 L39.5312,0.12788006 L39.5312,3.50575806 C39.5312,5.16992806 40.3021,6.00172806 42.0462,6.00172806 C43.7902,6.00172806 44.5612,5.16992806 44.5612,3.50575806 L44.5612,0.12788006 L43.0597,0.12788006 L43.055,0.12788006 Z"
+              fill="#3498DB"></path>
+            <polygon fill="#2A5CAA"
+              points="0 0.12788006 0 1.41359806 1.61698 1.41359806 1.61698 5.87730806 3.11846 5.87730806 3.11846 1.41359806 4.73545 1.41359806 4.73545 0.12788006">
+            </polygon>
+            <path
+              d="M14.8231,0.12788006 L14.8231,3.59446806 C14.8231,4.33812806 14.5575,4.71658806 13.8119,4.71658806 C13.0664,4.71658806 12.8007,4.33870806 12.8007,3.59446806 L12.8007,0.12788006 L11.2992,0.12788006 L11.2992,3.50575806 C11.2992,5.16992806 12.0702,6.00172806 13.8142,6.00172806 C15.5583,6.00172806 16.3292,5.16992806 16.3292,3.50575806 L16.3292,0.12788006 L14.8277,0.12788006 L14.8231,0.12788006 Z"
+              fill="#2A5CAA"></path>
+            <path
+              d="M17.1741,1.75402806 C17.1741,2.81278806 18.0461,3.17856806 18.8673,3.41819806 C19.7012,3.65783806 20.523,3.74596806 20.523,4.24999806 C20.523,4.67856806 20.0552,4.84216806 19.599,4.84216806 C18.9545,4.84216806 18.5375,4.62787806 18.5121,3.94700806 L17.0107,3.94700806 C17.0107,5.42165806 18.1986,6.00172806 19.5129,6.00172806 C20.7765,6.00172806 22.0279,5.53513806 22.0279,4.07315806 C22.0268,3.03974806 21.194,2.65149806 20.3584,2.40955806 C19.5245,2.16992806 18.69,2.10713806 18.69,1.65322806 C18.69,1.27534806 19.0942,1.16186806 19.4228,1.16186806 C19.8779,1.16186806 20.3705,1.33813806 20.3578,1.85310806 L21.8593,1.85310806 C21.8593,0.56739606 20.6841,0 19.5493,0 C18.4371,0 17.1735,0.49135906 17.1735,1.75230806"
+              fill="#2A5CAA"></path>
+            <polygon fill="#2A5CAA"
+              points="22.3553 0.12788006 22.3553 1.41359806 23.9723 1.41359806 23.9723 5.87730806 25.4738 5.87730806 25.4738 1.41359806 27.0908 1.41359806 27.0908 0.12788006">
+            </polygon>
+            <path
+              d="M5.50986,0.12788006 L5.50986,5.88824806 L7.01134,5.88824806 L7.01134,3.97234806 L7.97171,3.97234806 L8.90667,5.88824806 L10.6259,5.88824806 L9.38715,3.75691806 C9.98312,3.48098806 10.3371,2.92626806 10.3371,1.99308806 C10.3371,0.63191306 9.32593,0.13997706 8.2518,0.13997706 L5.50986,0.12788006 Z M7.01134,1.32545806 L8.02715,1.32545806 C8.48222,1.32545806 8.83564,1.53974806 8.83564,2.08179806 C8.83564,2.61117806 8.50705,2.80011806 8.02715,2.80011806 L7.01365,2.80011806 L7.01365,1.32661806 L7.01134,1.32545806 Z"
+              fill="#2A5CAA"></path>
+            <polygon fill="#2A5CAA"
+              points="55.4972 2.87038806 53.5856 2.87038806 52.7656 3.58467806 52.7656 0.14573706 55.5029 0.14573706 55.5029 2.87038806">
+            </polygon>
+            <polygon fill="#2A5CAA"
+              points="52.0795 2.87038806 50.1623 2.87038806 49.3422 3.58467806 49.3422 0.14573706 52.0795 0.14573706">
+            </polygon>
+            <polygon fill="#2A5CAA"
+              points="48.6648 2.87038806 46.7533 2.87038806 45.9332 3.58467806 45.9332 0.14573706 48.6706 0.14573706">
+            </polygon>
+          </svg>
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+   <div class="bg-white">
+    <div class="container">
+      <div class="row g-1 mt-3 bg-white rounded-3 p-3  footer">
+        <footer class="mt-3 ">
+          <div class="row text-center text-md-start" style="font-size: 13px;">
+
+            <div class="col-12 col-md-4 mb-4 text-black">
+              <p class="fw-medium mb-3 main-color">شركات الطيران الشائعة</p>
+              <ul class="list-unstyled fw-normal">
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color"></i>
+                  <a class="text-black" href="https://almatar.com/ar/airlines/saudi-airlines/">الخطوط الجوية
+                    السعودية</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color"></i>
+                  <a class="text-black" href="https://almatar.com/ar/airlines/british-airways/">الخطوط البرطانية</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color"></i>
+                  <a class="text-black" href="https://almatar.com/ar/airlines/gulf-air/">طيران الخليج</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color"></i>
+                  <a class="text-black" href="https://almatar.com/ar/airlines/emirates-airlines/">طيران الامارات</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color"></i>
+                  <a class="text-black" href="https://almatar.com/ar/airlines/egypt-air/">مصر للطيران</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-black">
+              <p class="fw-medium mb-3 main-color">رحلات الطيران الأكثر حجزا</p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-riyadh/">جدة - الرياض</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-cairo/">جدة - القاهرة</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black" href="https://almatar.com/travel/ar/flights/jeddah-to-dhaka/">جدة - دكا</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black" href="https://almatar.com/travel/ar/flights/bangalore-to-dammam/">بنغالور </a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black" href="https://almatar.com/travel/ar/flights/riyadh-to-jeddah/">الرياض - جدة</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-12 col-md-4 mb-4 text-black">
+              <p class="fw-medium mb-3 main-color">أفضل وجهات الفنادق</p>
+              <ul class="list-unstyled">
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black"
+                    href="https://almatar.com/ar/hotels-in/%D8%AF%D8%A8%D9%8A/%D8%AF%D8%A8%D9%8A,-%D8%A5%D9%85%D8%A7%D8%B1%D8%A9-%D8%AF%D8%A8%D9%8A,-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9-560176/">دبي</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black"
+                    href="https://almatar.com/ar/hotels-in/%D8%AC%D8%AF%D8%A9/%D8%AC%D8%AF%D8%A9,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578688/">جدة</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black"
+                    href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85/%D8%A7%D9%84%D8%AF%D9%85%D8%A7%D9%85,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578695/">الدمام</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black"
+                    href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D9%88%D8%B3%D8%B7%D9%89,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578687/">الرياض</a>
+                </li>
+                <li class="mb-2">
+                  <i class="fa fa-solid fa-chevron-left main-color mx-2"></i>
+                  <a class="text-black"
+                    href="https://almatar.com/ar/hotels-in/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1/%D8%A7%D9%84%D8%AE%D8%A8%D8%B1,-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9,-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-578694/">الخبر</a>
+                </li>
+              </ul>
+            </div>
+
+
+
+            <hr>
+
+
+
+          </div>
+        </footer>
+
+        <div class="row " style="font-size: 13px;">
+
+          <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+            <p class="main-color mb-2 fw-medium">المطار</p>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/about-us/">عن المطار</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/installments/">التقسيط</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/offers/">العروض</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/career/">الوظائف</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/landing/tabby/">احجز مع تابي</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/landing/tamara/">احجز مع تمارا</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/landing/golden/">الضمان الذهبي</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/landing/mixfly/">ميكس فلاي</a>
+            <a class="mb-2 text-black" href="https://almatar.com/ar/landing/jawwak/">برنامج الولاء</a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+            <p class="mb-2 fw-medium text-white">-</p>
+            <a class="mb-2 text-black " href="https://almatar.com/ar/privacy-policy/">سياسة الخصوصية</a>
+            <a class="mb-2 text-black " href="https://almatar.com/ar/faqs/">الأسئلة المتكررة</a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+            <p class="mb-2 fw-medium text-white">-</p>
+            <a class="mb-2 text-black " href="https://almatar.com/ar/contact-us/">تواصل معنا</a>
+            <a class="mb-2 text-black " href="https://almatar.com/ar/auth/">تسجيل</a>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-2 d-flex flex-column mb-4">
+            <p class="main-color fw-medium mb-2">طلب مساعدة؟</p>
+            <a class="text-black fw-bolder mb-3" style="font-size: 12px;" href="https://wa.me/966920005511">92000 55
+              11</a>
+
+            <div class="social-icons fs-6 mb-2">
+              <a href="https://x.com/almatarapp"><i class="fab fa-twitter text-info"></i></a>
+              <a href="https://www.facebook.com/almatarapp"><i class="fab fa-facebook"></i></a>
+              <a href="https://www.youtube.com/channel/UCrF0WT7JPwt49xbeql6JXeA"><i
+                  class="fab fa-youtube text-danger"></i></a>
+            </div>
+            <div class="social-icons fs-6 mb-2">
+              <a href="https://www.instagram.com/almatarapp/"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.snapchat.com/add/almatarapp"><i class="fab fa-snapchat"></i></a>
+              <a href="https://www.linkedin.com/company/almatarapp/"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="social-icons fs-6">
+              <a href="https://www.tiktok.com/@almatarapp"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 d-flex flex-column mb-4">
+            <p class="main-color fw-medium mb-2">حمل تطبيقنا الآن!</p>
+            <div class="fw-medium mb-3"><img src="images/google-play.svg" class="w-25" alt="تحميل من Google Play"></div>
+            <div class="fw-medium mb-3"><img src="images/app-store.svg" class="w-25" alt="تحميل من App Store"></div>
+            <div class="fw-medium mb-3"><img src="images/app-gallery.svg" class="w-55" alt="تحميل من App Gallery"></div>
+            <div class="fw-medium mb-3 p-2 w-100">
+              <img src="images/scan-to-download.svg" class="w-25" alt="QR Code للتحميل">
+            </div>
+            <span class="fw-medium mb-3">قم بالمسح لتنزيل التطبيق</span>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-center text-center">
+          <span class="main-color fw-medium mb-2" style="font-size: 12px; color: #491d95;">طرق دفع آمنة</span>
+          <img src="images/payment-method.png" class="w-50 mb-3" alt="">
+          <hr>
+        </div>
+
+        <div class="row align-items-center text-center text-md-start">
+          <div class="col-12 col-md-2 mb-3">
+            <img src="images/almatar_logo_ar (1).png" class="w-100" alt="">
+          </div>
+          <div class="col-12 col-md-2 mb-3" style="font-size: 13px;">
+            <span>© 2025 Almatar.com - جميع الحقوق محفوظة</span>
+          </div>
+          <div class="col-12 col-md-2 mb-3">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">SAR</button>
+              <ul class="dropdown-menu mt-2">
+                <li><button class="dropdown-item"><img src="images/sa_icon.png" alt=""> <span
+                      class="fw-semibold">SAR</span> الريال السعودي</button></li>
+                <li><button class="dropdown-item"><img src="images/ae_icon.png" alt=""> <span
+                      class="fw-semibold">AED</span> درهم إماراتي</button></li>
+                <li><button class="dropdown-item"><img src="images/bh_icon.png" alt=""> <span
+                      class="fw-semibold">BHD</span> دينار بحريني</button></li>
+                <li><button class="dropdown-item"><img src="images/eu_icon.png" alt=""> <span
+                      class="fw-semibold">EUR</span> اليورو الأوروبي</button></li>
+                <li><button class="dropdown-item"><img src="images/kw_icon.png" alt=""> <span
+                      class="fw-semibold">KWD</span> الدينار الكويتي</button></li>
+                <li><button class="dropdown-item"><img src="images/qa_icon.png" alt=""> <span
+                      class="fw-semibold">QAR</span> الريال القطري</button></li>
+                <li><button class="dropdown-item"><img src="images/us_icon.png" alt=""> <span
+                      class="fw-semibold">USD</span> الدولار الأمريكي</button></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-start mb-3">
+            <div class="lang px-2"><img src="images/en.png" alt="English"> <span>English</span></div>
+          </div>
+          <div class="col-12 col-md-3 text-center text-md-start main-color" style="font-size: 13px;">
+            <span>الشروط والأحكام | سياسة الخصوصية | خريطة الموقع</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+ 
+
+    <div>
+
+    </div>
+  
+    <script src="JS/stay.js"></script>
+    <script src="JS/main.js"></script>
+    <script src="JS/fligh.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script> flatpickr("#myDate", { dateFormat: "", allowInput: false }); </script>
+
+</body>
+
+</html>
