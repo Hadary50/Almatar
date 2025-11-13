@@ -10,7 +10,6 @@ body{
   --light-color: #f8f9fa;
   --rating-color: #ffc908;
 }
-/* taps تحت النافبار */
 .flight-tabs ul{
     margin-top: 22px !important;
     background-color: transparent !important;
@@ -321,6 +320,9 @@ right: -1%;
     left: 1%;
     top: 100%;
     z-index: 999999999;
+  }
+  .travel-search{
+    width: 140px !important;
   }
     .search-btn {
       background-color: var(--main-color);

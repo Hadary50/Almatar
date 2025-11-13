@@ -24,14 +24,13 @@ body{
   .btn-check:checked + .custom-check::before {
     content: "✓";
     position: absolute;
-    right: 12px; /* مكان علامة الصح في أول الزر */
+    right: 12px; 
     top: 50%;
     transform: translateY(-50%);
     font-weight: bold;
     color: #fff;
   }
 
-  /* نضيف مسافة صغيرة بين علامة الصح والنص */
   .btn-check:checked + .custom-check {
     padding-right: 28px !important;
   }
@@ -110,7 +109,7 @@ body{
 
 
 .restList {
-  width: calc(31.333% - 10px); /* كل 3 عناصر في صف واحد */
+  width: calc(31.333% - 10px); 
 }
 
   @media (max-width: 767px) {
@@ -131,7 +130,7 @@ body{
       margin-top: 10px;
     }
     .restList {
-  width: calc(28.333% - 10px); /* كل 3 عناصر في صف واحد */
+  width: calc(28.333% - 10px); 
   font-size: 12px !important;
 }
   }
@@ -192,7 +191,7 @@ body{
     }
 
     .dropdown-menu-custom li:hover {
-      background-color: #efe5ff; /* اللون اللايت اللي طلبته */
+      background-color: #efe5ff; 
     }
 
     .dropdown-menu-custom li.active {
@@ -205,12 +204,12 @@ body{
   gap: 20px;
   padding: 3px;
   margin: 0;
-  list-style: none; /* نشيل النقطة الأصلية */
+  list-style: none; 
 }
 
 .custom-list li {
   position: relative;
-  padding-left: 15px; /* مساحة للنقطة */
+  padding-left: 15px; 
   font-size: 13px;
 }
 
@@ -220,7 +219,7 @@ body{
   left: 100%;
   top: 50%;
   transform: translateY(-50%);
-  color: #007bff; /* الأزرق */
-  font-size: 40px; /* حجم النقطة */
+  color: #007bff; 
+  font-size: 40px; 
   line-height: 1;
 }
